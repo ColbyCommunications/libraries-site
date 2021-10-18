@@ -45,6 +45,9 @@
 # baseinstall
 !/web/wp-content/themes/baseinstall
 
+# colbycollege theme
+!/web/wp-content/themes/colbycollege
+
 # libraries
 !/web/wp-content/plugins/colby-libraries
 !/web/wp-content/plugins/colby-onesearch
