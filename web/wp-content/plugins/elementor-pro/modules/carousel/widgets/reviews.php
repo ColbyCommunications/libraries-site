@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\Carousel\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\Schemes;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Group_Control_Typography;
 use Elementor\Icons_Manager;
 use Elementor\Repeater;
@@ -30,8 +30,8 @@ class Reviews extends Base {
 		return [ 'reviews', 'social', 'rating', 'testimonial', 'carousel' ];
 	}
 
-	protected function _register_controls() {
-		parent::_register_controls();
+	protected function register_controls() {
+		parent::register_controls();
 
 		$this->update_control(
 			'slide_padding',
@@ -172,7 +172,9 @@ class Reviews extends Base {
 			[
 				'name' => 'name_typography',
 				'selector' => '{{WRAPPER}} .elementor-testimonial__header, {{WRAPPER}} .elementor-testimonial__name',
-				'scheme' => Schemes\Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 			]
 		);
 
@@ -229,7 +231,9 @@ class Reviews extends Base {
 			[
 				'name' => 'content_typography',
 				'selector' => '{{WRAPPER}} .elementor-testimonial__text',
-				'scheme' => Schemes\Typography::TYPOGRAPHY_3,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_TEXT,
+				],
 			]
 		);
 
@@ -376,7 +380,6 @@ class Reviews extends Base {
 			[
 				'label' => __( 'Unmarked Style', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
-				'label_block' => false,
 				'options' => [
 					'solid' => [
 						'title' => __( 'Solid', 'elementor-pro' ),
@@ -530,7 +533,6 @@ class Reviews extends Base {
 				'label' => __( 'Icon', 'elementor-pro' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'social_icon',
-				'label_block' => true,
 				'default' => [
 					'value' => 'fab fa-twitter',
 					'library' => 'fa-brands',
@@ -562,6 +564,7 @@ class Reviews extends Base {
 						'linkedin',
 						'medium',
 						'meetup',
+						'mix',
 						'mixcloud',
 						'odnoklassniki',
 						'pinterest',
@@ -574,7 +577,6 @@ class Reviews extends Base {
 						'spotify',
 						'stack-overflow',
 						'steam',
-						'stumbleupon',
 						'telegram',
 						'tripadvisor',
 						'tumblr',
@@ -778,15 +780,7 @@ class Reviews extends Base {
 				$this->add_render_attribute( $header_element, 'class', 'elementor-testimonial__header' );
 
 				if ( ! empty( $link_url ) ) {
-					$this->add_render_attribute( $header_element, 'href', $link_url );
-
-					if ( $slide['link']['is_external'] ) {
-						$this->add_render_attribute( $header_element, 'target', '_blank' );
-					}
-
-					if ( ! empty( $slide['link']['nofollow'] ) ) {
-						$this->add_render_attribute( $header_element, 'rel', 'nofollow' );
-					}
+					$this->add_link_attributes( $header_element, $slide['link'] );
 				}
 				?>
 				<<?php echo $header_tag; ?> <?php echo $this->get_render_attribute_string( $header_element ); ?>>
@@ -812,5 +806,9 @@ class Reviews extends Base {
 
 	protected function render() {
 		$this->print_slider();
+	}
+
+	public function get_group_name() {
+		return 'carousel';
 	}
 }

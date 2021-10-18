@@ -1,8 +1,6 @@
 <?php
 namespace ElementorPro\Modules\DynamicTags\ACF\Tags;
 
-use Elementor\Controls_Manager;
-use Elementor\Core\DynamicTags\Data_Tag;
 use ElementorPro\Modules\DynamicTags\ACF\Module;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -25,7 +23,7 @@ class ACF_File extends ACF_Image {
 		];
 	}
 
-	protected function get_supported_fields() {
+	public function get_supported_fields() {
 		return [
 			'file',
 		];

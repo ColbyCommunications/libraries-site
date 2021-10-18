@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\DynamicTags\Tags;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\DynamicTags\Tag;
+use ElementorPro\Modules\DynamicTags\Tags\Base\Tag;
 use ElementorPro\Modules\DynamicTags\Module;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -44,6 +44,8 @@ class User_Info extends Tag {
 				$value = isset( $user->$field ) ? $user->$field : '';
 				break;
 			case 'id':
+				$value = $user->ID;
+				break;
 			case 'description':
 			case 'first_name':
 			case 'last_name':
@@ -65,7 +67,7 @@ class User_Info extends Tag {
 		return 'type';
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->add_control(
 			'type',
 			[

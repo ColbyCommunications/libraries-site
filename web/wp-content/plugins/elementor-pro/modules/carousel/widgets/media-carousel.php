@@ -2,10 +2,11 @@
 namespace ElementorPro\Modules\Carousel\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\Schemes;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Embed;
 use Elementor\Group_Control_Text_Shadow;
 use Elementor\Group_Control_Typography;
+use Elementor\Icons_Manager;
 use Elementor\Repeater;
 use Elementor\Utils;
 use ElementorPro\Plugin;
@@ -60,8 +61,8 @@ class Media_Carousel extends Base {
 		$this->print_slider( $settings );
 	}
 
-	protected function _register_controls() {
-		parent::_register_controls();
+	protected function register_controls() {
+		parent::register_controls();
 
 		$this->start_controls_section(
 			'section_lightbox_style',
@@ -147,7 +148,6 @@ class Media_Carousel extends Base {
 						'icon' => 'eicon-video-camera',
 					],
 				],
-				'label_block' => false,
 				'toggle' => false,
 			]
 		);
@@ -181,6 +181,7 @@ class Media_Carousel extends Base {
 			[
 				'type' => Controls_Manager::URL,
 				'placeholder' => __( 'https://your-link.com', 'elementor-pro' ),
+				'show_external' => 'true',
 				'condition' => [
 					'type' => 'image',
 					'image_link_to_type' => 'custom',
@@ -197,7 +198,7 @@ class Media_Carousel extends Base {
 				'type' => Controls_Manager::URL,
 				'placeholder' => __( 'Enter your video link', 'elementor-pro' ),
 				'description' => __( 'YouTube or Vimeo link', 'elementor-pro' ),
-				'show_external' => false,
+				'options' => false,
 				'condition' => [
 					'type' => 'video',
 				],
@@ -240,8 +241,8 @@ class Media_Carousel extends Base {
 	}
 
 	protected function get_image_link_to( $slide ) {
-		if ( $slide['video']['url'] ) {
-			return $slide['image']['url'];
+		if ( ! empty( $slide['video']['url'] ) ) {
+			return $slide['image']['url'] ? $slide['image']['url'] : '#';
 		}
 
 		if ( ! $slide['image_link_to_type'] ) {
@@ -276,26 +277,15 @@ class Media_Carousel extends Base {
 		$image_link_to = $this->get_image_link_to( $slide );
 
 		if ( $image_link_to && empty( $settings['thumbs_slider'] ) ) {
-			$this->add_render_attribute( $element_key . '_link', 'href', $image_link_to );
-
 			if ( 'custom' === $slide['image_link_to_type'] ) {
-				if ( $slide['image_link_to']['is_external'] ) {
-					$this->add_render_attribute( $element_key . '_link', 'target', '_blank' );
-				}
-
-				if ( $slide['image_link_to']['nofollow'] ) {
-					$this->add_render_attribute( $element_key . '_link', 'nofollow', '' );
-				}
+				$this->add_link_attributes( $element_key . '_link', $slide['image_link_to'] );
 			} else {
-				$this->add_render_attribute( $element_key . '_link', [
-					'data-elementor-lightbox-slideshow' => $this->get_id(),
-					'data-elementor-lightbox-index' => $this->lightbox_slide_index,
-				] );
+				$this->add_render_attribute( $element_key . '_link', 'href', $image_link_to );
+
+				$this->add_lightbox_data_attributes( $element_key . '_link', $slide['image']['id'], 'yes', $this->get_id() );
 
 				if ( Plugin::elementor()->editor->is_edit_mode() ) {
-					$this->add_render_attribute( $element_key . '_link', [
-						'class' => 'elementor-clickable',
-					] );
+					$this->add_render_attribute( $element_key . '_link', 'class', 'elementor-clickable' );
 				}
 
 				$this->lightbox_slide_index++;
@@ -333,11 +323,14 @@ class Media_Carousel extends Base {
 		</div>
 		<?php if ( $settings['overlay'] ) : ?>
 			<div <?php echo $this->get_render_attribute_string( 'image-overlay' ); ?>>
-				<?php if ( 'text' === $settings['overlay'] ) : ?>
-					<?php echo $this->get_image_caption( $slide ); ?>
-				<?php else : ?>
-					<i class="fa fa-<?php echo $settings['icon']; ?>"></i>
-				<?php endif; ?>
+				<?php
+				if ( 'text' === $settings['overlay'] ) {
+					echo wp_kses_post( $this->get_image_caption( $slide ) );
+				} else {
+					// TODO: replace with print_unescaped_string.
+					echo $this->get_overlay_icon( $settings['icon'] );
+				}
+				?>
 			</div>
 			<?php
 		endif;
@@ -495,13 +488,13 @@ class Media_Carousel extends Base {
 				'default' => 'search-plus',
 				'options' => [
 					'search-plus' => [
-						'icon' => 'eicon-search-plus',
+						'icon' => 'eicon-search-bold',
 					],
 					'plus-circle' => [
 						'icon' => 'eicon-plus-circle',
 					],
 					'eye' => [
-						'icon' => 'eicon-eye',
+						'icon' => 'eicon-preview-medium',
 					],
 					'link' => [
 						'icon' => 'eicon-link',
@@ -571,7 +564,7 @@ class Media_Carousel extends Base {
 				'label' => __( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .elementor-carousel-image-overlay' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .elementor-carousel-image-overlay' => '--e-carousel-image-overlay-color: {{VALUE}};',
 				],
 			]
 		);
@@ -580,7 +573,9 @@ class Media_Carousel extends Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'caption_typography',
-				'scheme' => Schemes\Typography::TYPOGRAPHY_4,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_ACCENT,
+				],
 				'selector' => '{{WRAPPER}} .elementor-carousel-image-overlay',
 				'condition' => [
 					'overlay' => 'text',
@@ -594,7 +589,7 @@ class Media_Carousel extends Base {
 				'label' => __( 'Icon Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'selectors' => [
-					'{{WRAPPER}} .elementor-carousel-image-overlay i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .elementor-carousel-image-overlay' => '--e-carousel-image-overlay-icon-size: {{SIZE}}{{UNIT}};',
 				],
 				'condition' => [
 					'overlay' => 'icon',
@@ -764,5 +759,24 @@ class Media_Carousel extends Base {
 				],
 			]
 		);
+	}
+
+	public function get_group_name() {
+		return 'carousel';
+	}
+
+	private function get_overlay_icon( $icon_name ) {
+		$icon_value = 'fas fa-' . $icon_name;
+
+		if ( Plugin::elementor()->experiments->is_feature_active( 'e_font_icon_svg' ) ) {
+			$icon = [
+				'library' => 'fa-solid',
+				'value' => $icon_value,
+			];
+
+			return Icons_Manager::render_font_icon( $icon );
+		}
+
+		return sprintf( '<i class="%s"></i>', $icon_value );
 	}
 }

@@ -30,12 +30,18 @@ class Document extends Theme_Section_Document {
 
 		$properties['admin_tab_group'] = 'popup';
 		$properties['location'] = 'popup';
+		$properties['support_kit'] = true;
+		$properties['support_site_editor'] = false;
 
 		return $properties;
 	}
 
 	public static function get_title() {
 		return __( 'Popup', 'elementor-pro' );
+	}
+
+	public static function get_plural_title() {
+		return __( 'Popups', 'elementor-pro' );
 	}
 
 	public function get_display_settings() {
@@ -66,8 +72,8 @@ class Document extends Theme_Section_Document {
 		return $this->display_settings;
 	}
 
-	public function _get_initial_config() {
-		$config = parent::_get_initial_config();
+	public function get_initial_config() {
+		$config = parent::get_initial_config();
 
 		$display_settings = $this->get_display_settings();
 
@@ -121,7 +127,26 @@ class Document extends Theme_Section_Document {
 		return $settings;
 	}
 
-	protected function _register_controls() {
+	public function get_export_data() {
+		$data = parent::get_export_data();
+
+		$display_settings = $this->get_display_settings();
+
+		$data['display_settings'] = [
+			'triggers' => $display_settings['triggers']->get_frontend_settings(),
+			'timing' => $display_settings['timing']->get_frontend_settings(),
+		];
+
+		return $data;
+	}
+
+	public function import( array $data ) {
+		parent::import( $data );
+
+		$this->save_display_settings_data( $data['display_settings'] );
+	}
+
+	protected function register_controls() {
 		$this->start_controls_section(
 			'popup_layout',
 			[
@@ -241,7 +266,6 @@ class Document extends Theme_Section_Document {
 			[
 				'label' => __( 'Horizontal', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
-				'label_block' => false,
 				'toggle' => false,
 				'default' => 'center',
 				'options' => [
@@ -273,7 +297,6 @@ class Document extends Theme_Section_Document {
 			[
 				'label' => __( 'Vertical', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
-				'label_block' => false,
 				'toggle' => false,
 				'default' => 'center',
 				'options' => [
@@ -382,13 +405,12 @@ class Document extends Theme_Section_Document {
 						],
 					],
 				],
-				'frontend_available' => true,
 			]
 		);
 
 		$this->end_controls_section();
 
-		parent::_register_controls();
+		parent::register_controls();
 
 		$this->start_controls_section(
 			'section_page_style',
@@ -775,8 +797,8 @@ class Document extends Theme_Section_Document {
 
 	protected function get_remote_library_config() {
 		$config = parent::get_remote_library_config();
-
 		$config['type'] = 'popup';
+		$config['default_route'] = 'templates/popups';
 		$config['autoImportSettings'] = true;
 
 		return $config;

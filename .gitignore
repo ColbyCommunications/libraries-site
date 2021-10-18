@@ -30,6 +30,18 @@
 !/web/wp-content/plugins/gravityformssurvey
 !/web/wp-content/plugins/colbyTicket.php
 
+# Jet Elements
+!/web/wp-content/plugins/jet-tabs
+!/web/wp-content/plugins/jet-elements
+!/web/wp-content/plugins/jet-menu
+!/web/wp-content/plugins/jet-tricks
+!/web/wp-content/plugins/jet-blocks
+!/web/wp-content/plugins/jet-popup
+!/web/wp-content/plugins/jet-blog
+!/web/wp-content/plugins/jet-search
+!/web/wp-content/plugins/jet-style-manager
+!/web/wp-content/plugins/jet-theme-core
+
 # baseinstall
 !/web/wp-content/themes/baseinstall
 
@@ -58,3 +70,5 @@
 
 # Ignore simplesaml dir locally
 /simplesaml
+
+	KuwdWutOlbJpW4@I6bg(6GW2

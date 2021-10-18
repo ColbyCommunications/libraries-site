@@ -1,9 +1,8 @@
 <?php
 namespace ElementorPro\Modules\AssetsManager\AssetTypes\Icons\IconSets;
 
-use ElementorPro\Classes\Utils;
+use ElementorPro\Core\Utils;
 use ElementorPro\Modules\AssetsManager\AssetTypes\Icons\Custom_Icons;
-use ElementorPro\Modules\AssetsManager\AssetTypes\Icons_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

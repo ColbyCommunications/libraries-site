@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\Social\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Widget_Base;
+use ElementorPro\Base\Base_Widget;
 use ElementorPro\Modules\Social\Classes\Facebook_SDK_Manager;
 use ElementorPro\Modules\Social\Module;
 
@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class Facebook_Comments extends Widget_Base {
+class Facebook_Comments extends Base_Widget {
 
 	public function get_name() {
 		return 'facebook-comments';
@@ -24,15 +24,11 @@ class Facebook_Comments extends Widget_Base {
 		return 'eicon-facebook-comments';
 	}
 
-	public function get_categories() {
-		return [ 'pro-elements' ];
-	}
-
 	public function get_keywords() {
 		return [ 'facebook', 'comments', 'embed' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_content',
 			[
@@ -131,6 +127,7 @@ class Facebook_Comments extends Widget_Base {
 		$attributes = [
 			'class' => 'elementor-facebook-widget fb-comments',
 			'data-href' => $permalink,
+			'data-width' => '100%',
 			'data-numposts' => $settings['comments_number'],
 			'data-order-by' => $settings['order_by'],
 			// The style prevent's the `widget.handleEmptyWidget` to set it as an empty widget
@@ -143,4 +140,8 @@ class Facebook_Comments extends Widget_Base {
 	}
 
 	public function render_plain_content() {}
+
+	public function get_group_name() {
+		return 'social';
+	}
 }

@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class Single_Elements extends Widget_Base {
+class Single_Elements extends Base_Widget {
 
 	public function get_name() {
 		return 'wc-single-elements';
@@ -27,7 +27,7 @@ class Single_Elements extends Widget_Base {
 		return false;
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_product',
 			[

@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\DynamicTags\Tags;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\DynamicTags\Data_Tag;
+use ElementorPro\Modules\DynamicTags\Tags\Base\Data_Tag;
 use ElementorPro\Modules\DynamicTags\Module;
 use ElementorPro\Modules\QueryControl\Module as QueryModule;
 
@@ -55,7 +55,7 @@ class Internal_URL extends Data_Tag {
 		return '';
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->add_control( 'type', [
 			'label' => __( 'Type', 'elementor-pro' ),
 			'type' => Controls_Manager::SELECT,

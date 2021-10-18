@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class Product_Add_To_Cart extends Widget_Base {
+class Product_Add_To_Cart extends Base_Widget {
 
 	public function get_name() {
 		return 'woocommerce-product-add-to-cart';
@@ -45,7 +45,7 @@ class Product_Add_To_Cart extends Widget_Base {
 		<?php
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'section_atc_button_style',

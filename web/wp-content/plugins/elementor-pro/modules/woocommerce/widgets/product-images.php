@@ -3,13 +3,12 @@ namespace ElementorPro\Modules\Woocommerce\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Border;
-use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class Product_Images extends Widget_Base {
+class Product_Images extends Base_Widget {
 
 	public function get_name() {
 		return 'woocommerce-product-images';
@@ -27,7 +26,7 @@ class Product_Images extends Widget_Base {
 		return [ 'woocommerce', 'shop', 'store', 'image', 'product', 'gallery', 'lightbox' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'section_product_gallery_style',

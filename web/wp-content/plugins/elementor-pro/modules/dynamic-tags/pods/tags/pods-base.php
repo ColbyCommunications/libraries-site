@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\DynamicTags\Pods\Tags;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\DynamicTags\Tag;
+use ElementorPro\Modules\DynamicTags\Tags\Base\Tag;
 use ElementorPro\Modules\DynamicTags\Pods\Module;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -47,7 +47,7 @@ abstract class Pods_Base extends Tag {
 		];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->add_control(
 			'key',
 			[

@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class Elements extends Widget_Base {
+class Elements extends Base_Widget {
 
 	public function get_name() {
 		return 'wc-elements';
@@ -49,7 +49,7 @@ class Elements extends Widget_Base {
 		];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_product',
 			[

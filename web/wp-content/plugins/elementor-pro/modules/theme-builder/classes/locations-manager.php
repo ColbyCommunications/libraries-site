@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\ThemeBuilder\Classes;
 
 use Elementor\Core\Files\CSS\Post as Post_CSS;
-use ElementorPro\Classes\Utils;
+use ElementorPro\Core\Utils;
 use ElementorPro\Modules\ThemeBuilder\Documents\Theme_Document;
 use ElementorPro\Modules\ThemeBuilder\Module;
 use ElementorPro\Plugin;
@@ -494,7 +494,7 @@ class Locations_Manager {
 		}
 
 		if ( ! empty( $args['document'] ) ) {
-			$title[] = $args['document']->get_post()->post_title;
+			$title[] = esc_html( $args['document']->get_post()->post_title );
 			$url = $args['document']->get_edit_url();
 		}
 

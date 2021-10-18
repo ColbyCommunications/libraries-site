@@ -2,14 +2,14 @@
 namespace ElementorPro\Modules\Social\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Widget_Base;
+use ElementorPro\Base\Base_Widget;
 use ElementorPro\Modules\Social\Classes\Facebook_SDK_Manager;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-class Facebook_Page extends Widget_Base {
+class Facebook_Page extends Base_Widget {
 
 	public function get_name() {
 		return 'facebook-page';
@@ -23,15 +23,11 @@ class Facebook_Page extends Widget_Base {
 		return 'eicon-fb-feed';
 	}
 
-	public function get_categories() {
-		return [ 'pro-elements' ];
-	}
-
 	public function get_keywords() {
 		return [ 'facebook', 'social', 'embed', 'page' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_content',
 			[
@@ -144,11 +140,11 @@ class Facebook_Page extends Widget_Base {
 			'data-href' => $settings['url'],
 			'data-tabs' => implode( ',', $settings['tabs'] ),
 			'data-height' => $height,
+			'data-width' => '500px', // Try the max possible width
 			'data-small-header' => $settings['small_header'] ? 'true' : 'false',
 			'data-hide-cover' => $settings['show_cover'] ? 'false' : 'true', // if `show` - don't hide.
 			'data-show-facepile' => $settings['show_facepile'] ? 'true' : 'false',
 			'data-hide-cta' => $settings['show_cta'] ? 'false' : 'true', // if `show` - don't hide.
-			'data-adapt-container-width' => 'true', // try to adapt width (min 180px max 500px)
 			// The style prevent's the `widget.handleEmptyWidget` to set it as an empty widget.
 			'style' => 'min-height: 1px;height:' . $height,
 		];
@@ -159,4 +155,8 @@ class Facebook_Page extends Widget_Base {
 	}
 
 	public function render_plain_content() {}
+
+	public function get_group_name() {
+		return 'social';
+	}
 }

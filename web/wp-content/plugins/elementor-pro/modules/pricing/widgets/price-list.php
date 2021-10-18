@@ -2,7 +2,8 @@
 namespace ElementorPro\Modules\Pricing\Widgets;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\Schemes;
+use Elementor\Core\Kits\Documents\Tabs\Global_Colors;
+use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Group_Control_Typography;
 use Elementor\Repeater;
@@ -26,15 +27,11 @@ class Price_List extends Base_Widget {
 		return 'eicon-price-list';
 	}
 
-	public function get_categories() {
-		return [ 'pro-elements' ];
-	}
-
 	public function get_keywords() {
 		return [ 'pricing', 'list', 'product', 'image', 'menu' ];
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->start_controls_section(
 			'section_list',
 			[
@@ -157,9 +154,8 @@ class Price_List extends Base_Widget {
 			[
 				'label' => __( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => Schemes\Color::get_type(),
-					'value' => Schemes\Color::COLOR_1,
+				'global' => [
+					'default' => Global_Colors::COLOR_PRIMARY,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-price-list-header' => 'color: {{VALUE}};',
@@ -171,7 +167,9 @@ class Price_List extends Base_Widget {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'heading_typography',
-				'scheme' => Schemes\Typography::TYPOGRAPHY_1,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
+				],
 				'selector' => '{{WRAPPER}} .elementor-price-list-header',
 			]
 		);
@@ -190,9 +188,8 @@ class Price_List extends Base_Widget {
 			[
 				'label' => __( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => Schemes\Color::get_type(),
-					'value' => Schemes\Color::COLOR_3,
+				'global' => [
+					'default' => Global_Colors::COLOR_TEXT,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-price-list-description' => 'color: {{VALUE}};',
@@ -204,7 +201,9 @@ class Price_List extends Base_Widget {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'description_typography',
-				'scheme' => Schemes\Typography::TYPOGRAPHY_3,
+				'global' => [
+					'default' => Global_Typography::TYPOGRAPHY_TEXT,
+				],
 				'selector' => '{{WRAPPER}} .elementor-price-list-description',
 			]
 		);
@@ -265,9 +264,8 @@ class Price_List extends Base_Widget {
 			[
 				'label' => __( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => Schemes\Color::get_type(),
-					'value' => Schemes\Color::COLOR_2,
+				'global' => [
+					'default' => Global_Colors::COLOR_SECONDARY,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-price-list-separator' => 'border-bottom-color: {{VALUE}};',
@@ -439,14 +437,9 @@ class Price_List extends Base_Widget {
 		if ( $url ) {
 			$unique_link_id = 'item-link-' . $item_id;
 
-			$this->add_render_attribute( $unique_link_id, [
-				'href' => $url,
-				'class' => 'elementor-price-list-item',
-			] );
+			$this->add_render_attribute( $unique_link_id, 'class', 'elementor-price-list-item' );
 
-			if ( $item['link']['is_external'] ) {
-				$this->add_render_attribute( $unique_link_id, 'target', '_blank' );
-			}
+			$this->add_link_attributes( $unique_link_id, $item['link'] );
 
 			return '<li><a ' . $this->get_render_attribute_string( $unique_link_id ) . '>';
 		} else {
@@ -467,8 +460,15 @@ class Price_List extends Base_Widget {
 
 		<ul class="elementor-price-list">
 
-		<?php foreach ( $settings['price_list'] as $item ) : ?>
-			<?php if ( ! empty( $item['title'] ) || ! empty( $item['price'] ) || ! empty( $item['item_description'] ) ) : ?>
+		<?php foreach ( $settings['price_list'] as $index => $item ) : ?>
+			<?php if ( ! empty( $item['title'] ) || ! empty( $item['price'] ) || ! empty( $item['item_description'] ) ) :
+				$title_repeater_setting_key = $this->get_repeater_setting_key( 'title', 'price_list', $index );
+				$description_repeater_setting_key = $this->get_repeater_setting_key( 'item_description', 'price_list', $index );
+				$this->add_inline_editing_attributes( $title_repeater_setting_key );
+				$this->add_inline_editing_attributes( $description_repeater_setting_key );
+				$this->add_render_attribute( $title_repeater_setting_key, 'class', 'elementor-price-list-title' );
+				$this->add_render_attribute( $description_repeater_setting_key, 'class', 'elementor-price-list-description' );
+				?>
 				<?php echo $this->render_item_header( $item ); ?>
 				<?php if ( ! empty( $item['image']['url'] ) ) : ?>
 					<div class="elementor-price-list-image">
@@ -480,7 +480,7 @@ class Price_List extends Base_Widget {
 				<?php if ( ! empty( $item['title'] ) || ! empty( $item['price'] ) ) : ?>
 					<div class="elementor-price-list-header">
 					<?php if ( ! empty( $item['title'] ) ) : ?>
-						<span class="elementor-price-list-title"><?php echo $item['title']; ?></span>
+						<span <?php echo $this->get_render_attribute_string( $title_repeater_setting_key ); ?>><?php echo $item['title']; ?></span>
 					<?php endif; ?>
 						<?php if ( 'none' != $settings['separator_style'] ) : ?>
 							<span class="elementor-price-list-separator"></span>
@@ -491,7 +491,7 @@ class Price_List extends Base_Widget {
 				</div>
 				<?php endif; ?>
 					<?php if ( ! empty( $item['item_description'] ) ) : ?>
-						<p class="elementor-price-list-description"><?php echo $item['item_description']; ?></p>
+						<p <?php echo $this->get_render_attribute_string( $description_repeater_setting_key ); ?>><?php echo $item['item_description']; ?></p>
 					<?php endif; ?>
 			</div>
 				<?php echo $this->render_item_footer( $item ); ?>
@@ -503,7 +503,15 @@ class Price_List extends Base_Widget {
 		<?php
 	}
 
-	protected function _content_template() {
+	/**
+	 * Render Price List widget output in the editor.
+	 *
+	 * Written as a Backbone JavaScript template and used to generate the live preview.
+	 *
+	 * @since 2.9.0
+	 * @access protected
+	 */
+	protected function content_template() {
 		?>
 		<ul class="elementor-price-list">
 			<#
@@ -572,5 +580,9 @@ class Price_List extends Base_Widget {
 			 <# } #>
 		</ul>
 		<?php
+	}
+
+	public function get_group_name() {
+		return 'pricing';
 	}
 }

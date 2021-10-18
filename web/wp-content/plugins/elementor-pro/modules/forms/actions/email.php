@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\Forms\Actions;
 
 use Elementor\Controls_Manager;
-use ElementorPro\Classes\Utils;
+use ElementorPro\Core\Utils;
 use ElementorPro\Modules\Forms\Classes\Ajax_Handler;
 use ElementorPro\Modules\Forms\Classes\Action_Base;
 use ElementorPro\Modules\Forms\Classes\Form_Record;
@@ -69,7 +69,6 @@ class Email extends Action_Base {
 				'default' => '[all-fields]',
 				'placeholder' => '[all-fields]',
 				'description' => sprintf( __( 'By default, all form fields are sent via %s shortcode. To customize sent fields, copy the shortcode that appears inside each field and paste it above.', 'elementor-pro' ), '<code>[all-fields]</code>' ),
-				'label_block' => true,
 				'render_type' => 'none',
 			]
 		);
@@ -210,7 +209,7 @@ class Email extends Action_Base {
 			'email_content' => '[all-fields]',
 			'email_from_name' => get_bloginfo( 'name' ),
 			'email_from' => get_bloginfo( 'admin_email' ),
-			'email_reply_to' => 'noreplay@' . Utils::get_site_domain(),
+			'email_reply_to' => 'noreply@' . Utils::get_site_domain(),
 			'email_to_cc' => '',
 			'email_to_bcc' => '',
 		];
@@ -297,7 +296,11 @@ class Email extends Action_Base {
 		do_action( 'elementor_pro/forms/mail_sent', $settings, $record );
 
 		if ( ! $email_sent ) {
-			$ajax_handler->add_error_message( Ajax_Handler::get_default_message( Ajax_Handler::SERVER_ERROR, $settings ) );
+			$message = Ajax_Handler::get_default_message( Ajax_Handler::SERVER_ERROR, $settings );
+
+			$ajax_handler->add_error_message( $message );
+
+			throw new \Exception( $message );
 		}
 	}
 

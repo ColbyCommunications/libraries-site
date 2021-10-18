@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\DynamicTags\Pods\Tags;
 
 use Elementor\Controls_Manager;
-use Elementor\Core\DynamicTags\Data_Tag;
+use ElementorPro\Modules\DynamicTags\Tags\Base\Data_Tag;
 use ElementorPro\Modules\DynamicTags\Pods\Module;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -71,7 +71,7 @@ class Pods_URL extends Data_Tag {
 		return wp_kses_post( $value );
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->add_control(
 			'key',
 			[
