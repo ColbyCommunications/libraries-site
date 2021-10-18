@@ -1,0 +1,82 @@
+// Responsive breakpoints for mixins, based on default Bootstrap 4
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+$width_mobile: 576px;
+$width_tablet: 768px;
+$width_laptop: 992px;
+$width_desktop: 1200px;
+
+$gray_blue: #758195;
+$button_blue: #2d4ea4;
+$button_text: #fff;
+$loading_green: #4CAF50;
+$not_found_yellow: #f0ad4e;
+$light_gray: #eee;
+$lighter_gray: #f5f5f5;
+$warning_yellow: #9f6000;
+
+// Media query mixin
+// @include mobile { selector: style; }
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+@mixin mobile { 
+	@media (min-width: #{$width_mobile})  { 
+		@content; 
+	} 
+}
+
+@mixin tablet { 
+	@media (min-width: #{$width_tablet})  { 
+		@content; 
+	} 
+}
+
+@mixin laptop { 
+	@media (min-width: #{$width_laptop})  { 
+		@content; 
+	} 
+}
+
+@mixin desktop { 
+	@media (min-width: #{$width_desktop}) { 
+		@content; 
+	} 
+}
+
+@mixin bento-box() {
+	width: 100%;
+	min-height: 150px;
+	margin: 0 auto 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #fff;
+	box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+
+	@include tablet {
+		transition: .125s;
+
+		&:hover {
+			box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+			transform: translateY(-6px) scale(1.0125);
+		}
+	}
+}
+
+@mixin bento-button() {
+    cursor: pointer;
+    display: block;
+    background-color: $button_blue;
+    color: $button_text;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    height: 40px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+        color: $button_text;
+        background-color: lighten($button_blue, 5%);
+    }
+}

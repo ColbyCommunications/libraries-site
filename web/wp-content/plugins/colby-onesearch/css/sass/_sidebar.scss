@@ -1,0 +1,88 @@
+.bento-sidebar {
+    .bento-inner & {
+        display: none;
+    }
+    .bento__footer & {
+        display: block;
+    }
+
+    padding: 0 15px 30px;
+    text-align: center;
+
+    h4 {
+        color: initial !important;
+    }
+
+    @include tablet {
+        padding: 0 0 30px;
+
+        .bento-inner & {
+            display: block;
+        }
+        .bento__footer & {
+            display: none;
+        }
+    }
+}
+
+.bento-sidebar__need-help {
+    display: block;
+    width: 100%;
+    max-width: 460px;
+    background-color: $button_blue;
+    padding: 15px 0;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 auto 10px;
+    color: $button_text;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+
+    &:hover,
+    &:focus {
+        background-color: lighten($button_blue, 5%);
+        color: $button_text;
+        text-decoration: none;
+    }
+}
+
+.bento-sidebar__feedback {
+    background: transparent;
+    background-image: none !important;
+    border-width: 0 !important;
+    box-shadow: none !important;
+    color: black !important;
+    outline: none !important;
+    cursor: auto;
+    white-space: normal !important;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.facet-counts-container {
+    @include bento-box;
+    margin: 10px auto;
+    padding: 15px 45px;
+    border-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .02);
+    text-align: left;
+}
+
+.facet-counts {
+    list-style-type: none;
+    margin: 10px 0 30px;
+    font-size: 90%;
+}
+
+.facet-counts__item {
+    padding-bottom: 2px;
+}

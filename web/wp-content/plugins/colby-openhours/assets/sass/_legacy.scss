@@ -1,0 +1,88 @@
+$hoursFontSize: 16px;
+$hoursLineHeight: 21px;
+
+
+.upcoming-hours {
+    font-size: $hoursFontSize;
+    line-height: $hoursLineHeight;
+
+    svg {
+        position: relative;
+        display: inline-block;
+        margin-right: $hoursLineHeight / 4;
+        bottom: -($hoursLineHeight / 6);
+        width: $hoursLineHeight;
+        height: $hoursLineHeight;
+        line-height: $hoursLineHeight;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    strong {
+        text-transform: uppercase;
+    }
+
+    .location-title {
+        font-size: $hoursLineHeight * 1.2;
+        display: block;
+        margin: 0;
+        color: #2d4ea4;
+    }
+
+    .hourtype-header {
+        padding-left: $hoursLineHeight / 1.5;
+        font-style: italic;
+        margin: $hoursLineHeight 0 ($hoursLineHeight / 2) ;
+    }
+
+    .dow {
+        padding-left: $hoursLineHeight * 1.5;
+        margin: 0 0 ($hoursLineHeight / 4);
+    }
+
+    .asterisk {
+        font-size: .7em;
+        color: #999;
+    }
+
+    .asterisklegend {
+        color: #999;
+        position: relative;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: $hoursLineHeight / 3;
+        padding-left: $hoursLineHeight * 1.5;
+
+        &:before {
+            content: '*';
+            position: absolute;
+            display: inline-block;
+            margin-left: -11px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            line-height: 10px;
+        }
+    }
+
+    &.vertical {
+        margin-bottom: $hoursLineHeight * 2;
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0 0 ($hoursLineHeight * 2);
+            padding: $hoursLineHeight 0 0;
+        }
+
+        .asterisklegend {
+            padding: 0;
+        }
+    }
+}
