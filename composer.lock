@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "765db941c0fcda64d4623af0b83f9755",
+    "content-hash": "e11f79f1f26381fa6a7b7b420c660986",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -2250,24 +2250,6 @@
             "time": "2020-09-08T18:17:17+00:00"
         },
         {
-            "name": "wpackagist-plugin/bootstrap-shortcodes",
-            "version": "3.4.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/bootstrap-shortcodes/",
-                "reference": "tags/3.4.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/bootstrap-shortcodes.3.4.0.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/bootstrap-shortcodes/"
-        },
-        {
             "name": "wpackagist-plugin/cache-control",
             "version": "2.2.5",
             "source": {
@@ -2413,15 +2395,15 @@
         },
         {
             "name": "wpackagist-plugin/elementor",
-            "version": "3.4.5",
+            "version": "3.4.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.4.5"
+                "reference": "tags/3.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.4.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.4.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0 || ~2.0"
