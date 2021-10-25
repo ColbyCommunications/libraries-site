@@ -1,5 +1,15 @@
 <?php
 
+/* 
+Plugin Name: colbyTicket
+Version: 1.0.2
+Description: Plugin to integrate WordPress with Colby's web authentication ticket system
+Author: Keith McGlauflin
+Date: 09/25/2009
+
+Copyright (C) 2013 Colby College - use with permission only!!!
+*/
+
 add_action('wp_login', array('colbyTicket','login'));
 add_action('wp_logout', array('colbyTicket','logout'));
 add_action('lost_password', array('colbyTicket','disable_function'));
