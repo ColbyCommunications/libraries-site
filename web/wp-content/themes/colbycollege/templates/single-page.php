@@ -1,7 +1,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 		<?php $hideTitle = get_post_custom_values('hidetitle');?>
 		<header>					
-			<div class="page-header"><?php if(count($hideTitle)==0){?><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1><?php }else{echo '&nbsp;';}?></div>						
+			<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>						
 		</header> <!-- end article header -->
 	
 		<section class="post_content clearfix" itemprop="articleBody">						
