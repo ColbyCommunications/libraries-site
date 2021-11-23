@@ -10,7 +10,7 @@ Date: 09/25/2009
 Copyright (C) 2013 Colby College - use with permission only!!!
 */
 
-add_action('wp_login', array('colbyTicket','login'));
+add_action('wp_login', array('colbyTicket','login'), 10, 2);
 add_action('wp_logout', array('colbyTicket','logout'));
 add_action('lost_password', array('colbyTicket','disable_function'));
 add_action('retrieve_password', array('colbyTicket','disable_function'));
