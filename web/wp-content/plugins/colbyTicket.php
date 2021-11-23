@@ -22,7 +22,7 @@ class colbyTicket {
         if( !isset($_COOKIE['ColbyAuth']) ) {
 
             $value = [
-              'email' => $user-> $user->user_email,
+              'email' => $user->user_email,
               'roles' => (array) $user->roles,
             ];
 
