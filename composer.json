@@ -23,7 +23,7 @@
         "wp-graphql/wp-graphql": "^0.12.1",
         "wp-graphql/wp-graphiql": "^1.0",
         "pristas-peter/wp-graphql-gutenberg": "^0.3.4",
-        "wpackagist-plugin/wp-saml-auth": "^1.1.0",
+        "wpackagist-plugin/wp-saml-auth": "^1.2.7",
         "wpackagist-plugin/siteimprove": "1.2.0",
         "wpackagist-plugin/custom-post-type-ui": "^1.9.1",
         "wpackagist-plugin/display-posts-shortcode": "^3.0.2",
