@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b2e5b2d00e02c34e925a9bb9bb86887",
+    "content-hash": "8c91bc6791c552dfa0b3f97f950b4346",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -2464,6 +2464,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/public-post-preview/"
+        },
+        {
+            "name": "wpackagist-plugin/query-monitor",
+            "version": "3.7.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/query-monitor/",
+                "reference": "tags/3.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.3.7.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/query-monitor/"
         },
         {
             "name": "wpackagist-plugin/siteimprove",
