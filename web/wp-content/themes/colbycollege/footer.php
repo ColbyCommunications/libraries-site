@@ -44,34 +44,34 @@
 			<div id="footerWrapper">
 				<div id="footerNav">
 				<ul class="footerCol firstCol">
-					<li><a href="/news/">News</a></li>
-					<li><a href="/events/">Events</a></li>
-					<li><a href="/magazine/"><em>Colby</em> Magazine</a></li>
-					<li><a href="/museum">Museum of Art</a></li>
-					<li><a href="/library">Libraries</a></li>
+					<li><a href="https://news.colby.edu">News</a></li>
+					<li><a href="https://events.colby.edu">Events</a></li>
+					<li><a href="https://news.colby.edu/magazine/"><em>Colby</em> Magazine</a></li>
+					<li><a href="https://www.colby.edu/museum">Museum of Art</a></li>
+					<li><a href="/">Libraries</a></li>
 				</ul>
 				<ul class="footerCol secondCol">
-					<li><a href="/about/">About Colby</a></li>
-					<li><a href="/visit/">Visit Colby</a></li>
-					<li><a href="/directory/">Directory</a></li>
-					<li><a href="/map">Campus Map</a></li>
-					<li><a href="/employment">Employment</a></li>
+					<li><a href="https://www.colby.edu/about/">About Colby</a></li>
+					<li><a href="https://www.colby.edu/visit/">Visit Colby</a></li>
+					<li><a href="https://www.colby.edu/directory/">Directory</a></li>
+					<li><a href="https://map.colby.edu">Campus Map</a></li>
+					<li><a href="https://www.colby.edu/employment">Employment</a></li>
 
 				</ul>
 				<ul class="footerCol thirdCol">
 					<li><a href="http://my.colby.edu">myColby</a></li>
 
 					<li><a href="http://www.colby.edu/accessibility-policy/">Accessibility Policy</a></li>
-					<li><a href="/careercenter/">DavisConnects</a></li>
-					<li><a href="/diningservices/menus/">Dining Menus</a></li>
-					<li><a href="/contact-colby-college/">Site Feedback</a></li>
+					<li><a href="https://www.colby.edu/careercenter/">DavisConnects</a></li>
+					<li><a href="https://www.colby.edu/diningservices/menus/">Dining Menus</a></li>
+					<li><a href="https://www.colby.edu/contact-colby-college/">Site Feedback</a></li>
 				</ul>
 				<ul class="footerCol lastCol">
 					<li id="colby-loginli"></li>
-					<li><a href="/generalcounsel/privacy-policy/">Privacy Policy</a></li>
-					<li><a href="/colbyalumni/">Alumni</a></li>
-					<li><a href="/parents/">Parents</a></li>
-					<li><a href="/admission/">Admissions</a></li>
+					<li><a href="https://www.colby.edu/generalcounsel/privacy-policy/">Privacy Policy</a></li>
+					<li><a href="https://www.colby.edu/colbyalumni/">Alumni</a></li>
+					<li><a href="https://www.colby.edu/parents/">Parents</a></li>
+					<li><a href="https://www.colby.edu/admission/">Admissions</a></li>
 				</ul>
 				<a rel="nofollow" href="/reflective.php" style="display:none;">uvular-surrounding</a>
 			</div>
