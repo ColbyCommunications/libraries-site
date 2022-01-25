@@ -178,7 +178,7 @@ if ( is_front_page() || is_home() ) {
 			  <!-- Everything you want hidden at 940px or less, place within here -->
 			  <nav role=navigation class="nav-collapse collapse top-menu">
 				<ul class=mainSubmenuCol id=audienceLinksInner>
-					<li id=top-support-colby><a href="<?php echo network_home_url(); ?>advancement/">Support Colby</a></li>
+					<li id=top-support-colby><a href="http://www.colby.edu/advancement/">Support Colby</a></li>
 					<li id=top-visitors><a href="http://www.colby.edu/visitors/">Visitors</a></li>
 					<li id=top-alumni><a href="http://www.colby.edu/alumni">Alumni</a></li>
 					<li id=top-parents><a href="http://www.colby.edu/parents/">Parents</a></li>

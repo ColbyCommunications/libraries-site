@@ -75,15 +75,10 @@
 		</a></p>
 		
 </div>
-<div class="bottom-text option2">
-	<strong>What's this?</strong>
-	<p>Colby, Bates, Bowdoin, Middlebury, Wellesley, and Williams</p>
-	<a href=https://libguides.colby.edu/nexpress_help>Help with NExpress</a>
-</div>
 <div class="bottom-text option3">
 	<strong>What's this?</strong>
 	<p>Academic and public libraries in Maine</p>
-	<a href=https://libguides.colby.edu/mainecat_help>Help with MaineCat</a>
+	<a href=https://www.maineinfonet.org/mainecat/about/>Help with MaineCat</a>
 </div>
 <div class="bottom-text option4">
 	<strong>What's this?</strong>
@@ -91,5 +86,5 @@
 	<a href=https://colby.idm.oclc.org/login?url=https://colby.illiad.oclc.org/illiad/illiad.dll>
 		ILL Request
 	</a> |
-	<a href=https://libguides.colby.edu/worldcat_help>Help with WorldCat</a>
+	<a href=https://help.oclc.org/Discovery_and_Reference/WorldCat-org?sl=en>Help with WorldCat</a>
 </div>
