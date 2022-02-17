@@ -84,7 +84,7 @@ class dismissAlertBox {
 						
 					// Output alert...
 					?>
-					<div id="homeMessage" class="<?php echo get_option( 'dismissalertbox_preventanimation' ) != "1"? 'stretchRight':''; ?>" data-site-id="<?php echo get_current_blog_id();?>" data-alert-id="<?php echo get_the_id() ;?>">
+					<div id="homeMessage" class="<?php echo get_option( 'dismissalertbox_preventanimation' ) != "1"? 'stretchRight':''; ?>" data-alert-id="<?php echo get_the_id() ;?>">
 						<a href="javascript:void(0)" id="home-close-icon" title="Close"></a>
 						<div id="homeMessageText"><?php the_content(); ?></div>
 					</div>
