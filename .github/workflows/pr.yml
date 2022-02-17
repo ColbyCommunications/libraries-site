@@ -40,7 +40,7 @@ jobs:
           cd platform-remote
           git config --global user.email "webmaster@colby.edu"
           git config --global user.name "Colby Webmaster"
-          git pull -X theirs git@github.com:ColbyCommunications/small-town-jewish-life-site.git ${GITHUB_HEAD_REF}
+          git pull -X theirs git@github.com:ColbyCommunications/libraries-site.git ${GITHUB_HEAD_REF}
           ~/.platformsh/bin/platform environment:push -vv --target=${GITHUB_HEAD_REF} --project=${{ secrets.PLATFORM_PROJECT_ID }} --environment=${GITHUB_HEAD_REF} --force
 
   test_prep:
