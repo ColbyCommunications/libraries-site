@@ -79,7 +79,7 @@ class dismissAlertBox {
 
 				if( !strlen( $expirationDate ) || ( strlen( $expirationDate ) && $expirationDate > strtotime( 'now' ) ) ) {
 				
-					if( !isset( $_COOKIE['dismissAlertBoxSet' . get_current_blog_id() . "-" . get_the_id()] ) || 
+					if( !isset( $_COOKIE['dismissAlertBoxSet' . "-" . get_the_id()] ) || 
 						get_option('dismissalertbox_hideonclose') == "1" ) { 
 						
 					// Output alert...
