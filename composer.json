@@ -30,8 +30,7 @@
     "wpackagist-plugin/nextgen-gallery": "^3.9.3",
     "wpackagist-plugin/unfiltered-mu": "^1.3.1",
     "wpackagist-plugin/siteimprove": "1.2.1",
-    "wpackagist-plugin/query-monitor": "^3.7.1",
-    "colbycommunications/colby-dismissable-alert-box": "dev-master"
+    "wpackagist-plugin/query-monitor": "^3.7.1"
   },
   "authors": [
     {
@@ -51,10 +50,6 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org/"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/ColbyCommunications/colbyDismissAlertBox"
     }
   ],
   "extra": {

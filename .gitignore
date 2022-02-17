@@ -20,6 +20,7 @@
 !/web/wp-content/uploads/index.php
 /web/wp-content/upgrade/*
 !/web/wp-content/upgrade/index.php
+!/web/wp-content/plugins/colbyDismissAlertBox
 
 # gravity forms
 !/web/wp-content/plugins/gravity-forms-add-menu-link

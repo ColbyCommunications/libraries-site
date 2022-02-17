@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bccee0d73eaefac51bb958d697fd23e3",
+    "content-hash": "a77d37179ba6b0a700a684970ee68ee9",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -112,28 +112,6 @@
                 "wordpress"
             ],
             "time": "2021-04-15T19:24:09+00:00"
-        },
-        {
-            "name": "colbycommunications/colby-dismissable-alert-box",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ColbyCommunications/colbyDismissAlertBox",
-                "reference": "f50279ff8d8935ab4bb304213230c6cf29fa345e"
-            },
-            "default-branch": true,
-            "type": "wordpress-plugin",
-            "authors": [
-                {
-                    "name": "Brandon Waltz",
-                    "email": "brandon.waltz@colby.edu"
-                }
-            ],
-            "description": "A dismissable alert box",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2022-02-11T17:58:10+00:00"
         },
         {
             "name": "colbycommunications/colby-groups",
@@ -2657,8 +2635,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "colbycommunications/colby-groups": 20,
-        "colbycommunications/colby-base-theme": 20,
-        "colbycommunications/colby-dismissable-alert-box": 20
+        "colbycommunications/colby-base-theme": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
