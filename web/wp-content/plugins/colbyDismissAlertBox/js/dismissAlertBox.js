@@ -10,6 +10,7 @@ jQuery(document).ready(function () {
       jQuery(this)
         .parent()
         .hide(function () {
+          jQuery(this).remove();
           document.cookie =
             "dismissAlertBoxSet" +
             "-" +
