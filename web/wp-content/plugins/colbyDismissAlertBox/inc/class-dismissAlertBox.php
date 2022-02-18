@@ -78,7 +78,9 @@ class dismissAlertBox {
 				$expirationDate = get_post_meta( get_the_id(), '_dismissalertbox_expirationdate', true );
 
 				if( !strlen( $expirationDate ) || ( strlen( $expirationDate ) && $expirationDate > strtotime( 'now' ) ) ) {
-				
+					var_dump(get_the_id());
+					var_dump(isset( $_COOKIE['dismissAlertBoxSet' . "-" . get_the_id()] ));
+					var_dump(get_option('dismissalertbox_hideonclose') == "1");
 					if( !isset( $_COOKIE['dismissAlertBoxSet' . "-" . get_the_id()] ) || 
 						get_option('dismissalertbox_hideonclose') == "1" ) { 
 						
