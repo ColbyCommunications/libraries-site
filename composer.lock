@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a77d37179ba6b0a700a684970ee68ee9",
+    "content-hash": "21ca8e18a425771773f3a9f99f6b946d",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -2466,6 +2466,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/nextgen-gallery/"
+        },
+        {
+            "name": "wpackagist-plugin/notibar",
+            "version": "1.9.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/notibar/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/notibar.zip?timestamp=1643213325"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/notibar/"
         },
         {
             "name": "wpackagist-plugin/public-post-preview",
