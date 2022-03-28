@@ -16,10 +16,10 @@
 <form id=tab7_form2 class=option2>
 	<a href=https://www.colby.edu/specialcollections/collections/specialcollections/>
 		Browse List of Major Collections 
-	</a>
-	>
+	</a>&nbps;&nbps;
+	>&nbps;&nbps;
 	<a href="https://archivesspace.colby.edu/">
-		Browse Colby's  ArchivesSpace
+		Browse Colby's ArchivesSpace
 	</a>
 </form>
 
