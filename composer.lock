@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21ca8e18a425771773f3a9f99f6b946d",
+    "content-hash": "55b933d71e61504995013285f6b1ae7e",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -2540,6 +2540,24 @@
             "homepage": "https://wordpress.org/plugins/siteimprove/"
         },
         {
+            "name": "wpackagist-plugin/svg-support",
+            "version": "2.4.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/svg-support/",
+                "reference": "tags/2.4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/svg-support.2.4.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/svg-support/"
+        },
+        {
             "name": "wpackagist-plugin/tablepress",
             "version": "1.14",
             "source": {
@@ -2659,5 +2677,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
