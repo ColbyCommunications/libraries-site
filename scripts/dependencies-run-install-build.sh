@@ -2,8 +2,6 @@
 
 printf "Installing Colby library dependencies \n"
 
-
-
 # colby library plugins
 
 cd web/wp-content/plugins/colby-onesearch
