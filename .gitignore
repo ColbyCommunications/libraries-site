@@ -1,3 +1,5 @@
+# node modules
+node_modules
 #ignore packages installed by composer
 /vendor/
 #ignore core wordpress files installed by composer
