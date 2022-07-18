@@ -47,16 +47,4 @@ if (is_plugin_active('colby-onesearch/colby-onesearch.php') && ! $_GET['summon-s
   <p><a href=https://libguides.colby.edu/onesearch_help>
     Help with OneSearch
   </a>
-  <?php if (is_plugin_active('colby-onesearch/colby-onesearch.php') && ! $_GET['summon-search'] ) : ?>
-
-<!--   <p><a href="https://www.cbbnet.org/new-books-and-media/">
-    CBB New Books and Media
-      </a></p> -->
-  <?php elseif (is_plugin_active('colby-onesearch/colby-onesearch.php') ) : ?>
-
-  <p><a href=?>
-    OneSearch 2.0
-      </a></p>
-  <?php endif; ?>
-
 </div>
