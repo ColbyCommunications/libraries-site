@@ -12,6 +12,9 @@ if ('ON' === getenv('LANDO')) {
     define('DB_CHARSET', 'utf8');
     define('DB_COLLATE', '');
     define('WP_DEBUG', false);
+    ini_set('display_errors', 'Off');
+    ini_set('error_reporting', E_ALL);
+    define('WP_DEBUG_DISPLAY', false);
     define('WP_DEBUG_LOG', false);
     define('WP_DEBUG_SCREEN', false);
 

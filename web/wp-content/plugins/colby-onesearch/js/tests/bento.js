@@ -1,3 +1,0 @@
-QUnit.test( "", function( assert ) {
-	
-});

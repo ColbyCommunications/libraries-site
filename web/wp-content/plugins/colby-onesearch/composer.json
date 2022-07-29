@@ -1,6 +1,0 @@
-{
-    "require-dev": {
-        "phpunit/phpunit": "^4.8",
-        "frozzare/wp-autoload": "^2.0"
-    }
-}
