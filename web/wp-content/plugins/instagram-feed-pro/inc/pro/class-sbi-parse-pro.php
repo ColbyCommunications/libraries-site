@@ -210,10 +210,21 @@ class SB_Instagram_Parse_Pro extends SB_Instagram_Parse
 							'media' => $carousel_item['media_url']
 						);
 					} else {
-						$permalink = SB_Instagram_Parse::fix_permalink( SB_Instagram_Parse::get_permalink( $post ) );
+						$media = trailingslashit( SBI_PLUGIN_URL ) . 'img/thumb-placeholder.png';
+						//attempt to get
+						$permalink = SB_Instagram_Parse::fix_permalink( SB_Instagram_Parse::get_permalink( $carousel_item ) );
+						$single = new SB_Instagram_Single( $permalink );
+						$single->init();
+						$carousel_item_post = $single->get_post();
+
+						if ( isset( $carousel_item_post['thumbnail_url'] ) ) {
+							$media = $carousel_item_post['thumbnail_url'];
+						} elseif ( isset( $carousel_item_post['media_url'] ) && strpos( $carousel_item_post['media_url'], '.mp4' ) === false ) {
+							$media = $carousel_item_post['media_url'];
+						}
 						$car_obj['data'][ $i ] = array(
 							'type' => 'image',
-							'media' => $permalink . 'media/?size=l'
+							'media' => $media
 						);
 					}
 				} elseif ( $carousel_item['media_type'] === 'VIDEO' ) {
@@ -227,10 +238,21 @@ class SB_Instagram_Parse_Pro extends SB_Instagram_Parse
 							$car_obj['vid_first'] = true;
 						}
 					} else {
-						$permalink = SB_Instagram_Parse::fix_permalink( SB_Instagram_Parse::get_permalink( $post ) );
+						$media = trailingslashit( SBI_PLUGIN_URL ) . 'img/thumb-placeholder.png';
+						//attempt to get
+						$permalink = SB_Instagram_Parse::fix_permalink( SB_Instagram_Parse::get_permalink( $carousel_item ) );
+						$single = new SB_Instagram_Single( $permalink );
+						$single->init();
+						$carousel_item_post = $single->get_post();
+
+						if ( isset( $carousel_item_post['thumbnail_url'] ) ) {
+							$media = $carousel_item_post['thumbnail_url'];
+						} elseif ( isset( $carousel_item_post['media_url'] ) && strpos( $carousel_item_post['media_url'], '.mp4' ) === false ) {
+							$media = $carousel_item_post['media_url'];
+						}
 						$car_obj['data'][ $i ] = array(
 							'type' => 'image',
-							'media' => $permalink . 'media/?size=l'
+							'media' => $media
 						);
 					}
 				}
