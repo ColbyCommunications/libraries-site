@@ -8,17 +8,16 @@
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
-            "version": "5.11.4",
+            "version": "5.12.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/advanced-custom-fields-pro.git",
-                "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c"
+                "reference": "74d33a020a76ec04d846b4eed07777de70b92782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-48af38e1aae394e6f259c5a163723abf9f3afe5c-zip-156b29.zip",
-                "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c",
-                "shasum": "f347fbdc98e444cdcf955956cd65e7299ee08c5b"
+                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-74d33a020a76ec04d846b4eed07777de70b92782-zip-1d49fe.zip",
+                "reference": "74d33a020a76ec04d846b4eed07777de70b92782"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -32,7 +31,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-04-18T18:41:00+00:00"
+            "time": "2022-08-25T14:30:08+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -45,8 +44,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/colby-ticket/colbycommunications-colby-ticket-48a50e77d781470f2ba01426f64dec1ce6e1d53b-zip-2804bc.zip",
-                "reference": "48a50e77d781470f2ba01426f64dec1ce6e1d53b",
-                "shasum": "530ec1450b47a07402403a30e9740e54dbb825e8"
+                "reference": "48a50e77d781470f2ba01426f64dec1ce6e1d53b"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -73,8 +71,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://satis.colby.edu/dist/colbycommunications/gravityforms/colbycommunications-gravityforms-5ddb13278d981cafcfc887b0e122c52307dd6d15-zip-34a4a8.zip",
-                "reference": "5ddb13278d981cafcfc887b0e122c52307dd6d15",
-                "shasum": "0e7be17845d40f82fecaada587c4b2337487b22e"
+                "reference": "5ddb13278d981cafcfc887b0e122c52307dd6d15"
             },
             "type": "wordpress-plugin",
             "authors": [
