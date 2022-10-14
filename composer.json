@@ -26,7 +26,8 @@
 		"wpackagist-plugin/siteimprove": "1.2.1",
 		"wpackagist-plugin/query-monitor": "^3.7.1",
 		"wpackagist-plugin/notibar": "^1.9.8",
-		"wpackagist-plugin/svg-support": "^2.4"
+		"wpackagist-plugin/svg-support": "^2.4",
+		"wpackagist-plugin/wordpress-importer": "^0.8.0"
 	},
 	"authors": [
 		{
