@@ -172,6 +172,7 @@ if (MULTISITE) {
 }
 
 define('WP_CONTENT_URL', $strContentURL);
+define('IMPORT_DEBUG', true);
 
 // Since you can have multiple installations in one database, you need a unique
 // prefix.
