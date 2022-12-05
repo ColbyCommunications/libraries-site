@@ -23,35 +23,35 @@ require_once ABSPATH . '/wp-load.php'; // Needed for calling WordPress functions
 $aboutBlog = $blog_details = get_blog_details('about');
 
 if ($aboutBlog) {
-    switch_to_blog($aboutBlog->blog_id);
+ switch_to_blog($aboutBlog->blog_id);
 }
 
 $jsonValue = '[';
 
 if (false === ($aboutquery = get_transient('aboutautocomplete'))) {
-    // Cache to speed up future queries...
-    $args = array(
-        'post_type'      => 'a_z_terms',
-        'posts_per_page' => '1000',
-        'no_found_rows'  => true,
-    );
+ // Cache to speed up future queries...
+ $args = array(
+  'post_type'      => 'a_z_terms',
+  'posts_per_page' => '1000',
+  'no_found_rows'  => true,
+ );
 
-    $aboutquery = new WP_Query($args);
+ $aboutquery = new WP_Query($args);
 
-    set_transient('aboutautocomplete', $aboutquery, .25 * HOUR_IN_SECONDS);
+ set_transient('aboutautocomplete', $aboutquery, .25 * HOUR_IN_SECONDS);
 
 }
 
 if ($aboutquery->have_posts()) {
-    while ($aboutquery->have_posts()) {
-        $aboutquery->the_post();
+ while ($aboutquery->have_posts()) {
+  $aboutquery->the_post();
 
-        if ($jsonValue != '[') {
-            $jsonValue .= ',';
-        }
+  if ($jsonValue != '[') {
+   $jsonValue .= ',';
+  }
 
-        $jsonValue .= "{'TERMURL' : '" . addslashes(get_permalink()) . "','TERMTEXT' : '" . addslashes(get_the_title()) . "'}";
-    }
+  $jsonValue .= "{'TERMURL' : '" . addslashes(get_permalink()) . "','TERMTEXT' : '" . addslashes(get_the_title()) . "'}";
+ }
 }
 $jsonValue .= ']';
 
@@ -105,7 +105,7 @@ wp_reset_postdata();
 					  <div class="input-append">
 						<?php
 if (preg_match('/(?i)msie [1-8]/', $_SERVER['HTTP_USER_AGENT'])) {
-    echo 'Search for: ';
+ echo 'Search for: ';
 }
 ?>
 							<script>
@@ -114,7 +114,7 @@ if (preg_match('/(?i)msie [1-8]/', $_SERVER['HTTP_USER_AGENT'])) {
 						  <button class="btn" type="submit"><i class="icon-search"></i></button>
 							</div>
 							<div id="directoryLinks" class="clearfix" style="border-top:0;">
-							<a href="/about/a_z_terms/">A-Z Index</a> | <a href="/search/">Advanced Search</a> |  <a href="https://colby.edu/academics/majors-minors/">Areas of Study</a>
+							<a href="https://colby.edu/about/a_z_terms/">A-Z Index</a> | <a href="/search/">Advanced Search</a> |  <a href="https://colby.edu/academics/majors-minors/">Areas of Study</a>
 						</div>
 					</form>
 				</div>
@@ -127,15 +127,15 @@ if (preg_match('/(?i)msie [1-8]/', $_SERVER['HTTP_USER_AGENT'])) {
 						</div>
 						 <div id="directoryDivisions">
 						  <ul>
-								<li id="admin"><a href="/directory/?division=ADM">Administration</a></li>
-								<li id="human"><a href="/directory/?division=HUM">Humanities</a></li>
-								<li id="studies"><a href="/directory/?division=INT">Interdisciplinary Studies</a></li>
-								<li id="natural"><a href="/directory/?division=NAT">Natural Sciences</a></li>
-								<li id="social"><a href="/directory/?division=SOC">Social Sciences</a></li>
+								<li id="admin"><a href="https://colby.edu/directory/?division=ADM">Administration</a></li>
+								<li id="human"><a href="https://colby.edu/directory/?division=HUM">Humanities</a></li>
+								<li id="studies"><a href="https://colby.edu/directory/?division=INT">Interdisciplinary Studies</a></li>
+								<li id="natural"><a href="https://colby.edu/directory/?division=NAT">Natural Sciences</a></li>
+								<li id="social"><a href="https://colby.edu/directory/?division=SOC">Social Sciences</a></li>
 							  </ul>
 						</div>
 						<div id="directoryLinks" class="clearfix">
-							<a href="http://alumni.colby.edu/s/1470/index.aspx?sid=1470&gid=1&pgid=6&cid=41">Alumni Directory</a> | <a href="/campus_cs/security/emergency/">Emergency Contacts</a> | <a href="/contact">Contact Colby College</a>
+							<a href="http://alumni.colby.edu/s/1470/index.aspx?sid=1470&gid=1&pgid=6&cid=41">Alumni Directory</a> | <a href="/campus_cs/security/emergency/">Emergency Contacts</a> | <a href="https://colby.edu/contact">Contact Colby College</a>
 						</div>
 					</form>
 
@@ -158,32 +158,32 @@ if (preg_match('/(?i)msie [1-8]/', $_SERVER['HTTP_USER_AGENT'])) {
 								<ul id="offices-ul" class="">
 									<?php
 if (wp_is_mobile()) {
-    ?>
+ ?>
 									<li>
-										<a href="/offices/">All Offices ></a>
+										<a href="https://colby.edu/offices/">All Offices ></a>
 									</li>
 									<?php
 } else {
-    ?>
+ ?>
 
 									<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="/offices/">Offices <b class="caret"></b></a>
+									<a class="dropdown-toggle" data-toggle="dropdown" href="https://colby.edu/offices/">Offices <b class="caret"></b></a>
 									<!-- dropdown menu links -->
 									<ul class="dropdown-menu">
 									  <ul class="dropdown-menucol">
 										<!-- col 1 -->
-										<li><a href="/administration_cs/">Administrative Offices</a></li>
+										<li><a href="https://colby.edu/administration_cs/">Administrative Offices</a></li>
 										<li><a href="http://www.colby.edu/admission/">Admissions</a></li>
 										<li><a href="http://www.colby.edu/campuslife/">Campus Life</a></li>
 										<li><a href="http://www.colby.edu/careercenter/">Career Center</a></li>
-										<li><a href="/administration_cs/dos/index.cfm">Dean of Students</a></li>
+										<li><a href="https://colby.edu/administration_cs/dos/index.cfm">Dean of Students</a></li>
 									</ul>
 									<ul class="dropdown-menucol">
 										<!-- col 2 -->
 										<li><a href="http://www.colby.edu/provost/">Provost and Dean of Faculty</a></li>
-										<li><a href="/administration_cs/healthservices/">Health Services</a></li>
-										<li><a href="/administration_cs/humanresources/">Human Resources</a></li>
-										<li><a href="/its">Information Technology Services (ITS)</a></li>
+										<li><a href="https://colby.edu/administration_cs/healthservices/">Health Services</a></li>
+										<li><a href="https://colby.edu/administration_cs/humanresources/">Human Resources</a></li>
+										<li><a href="https://colby.edu/its">Information Technology Services (ITS)</a></li>
 										<li><a href="http://www.colby.edu/administration_cs/ir/">Institutional Research</a></li>
 										<li><a href="http://www.colby.edu/offcampus/">Off-Campus Study</a></li>
 									</ul>
@@ -191,14 +191,14 @@ if (wp_is_mobile()) {
 										<!-- col 3 -->
 										<li><a href="http://www.colby.edu/president/">President's Office</a></li>
 										<li><a href="http://www.colby.edu/registrar/">Registrar</a></li>
-										<li><a href="/administration_cs/scheduling/">Scheduling and Facilities</a></li>
+										<li><a href="https://colby.edu/administration_cs/scheduling/">Scheduling and Facilities</a></li>
 										<li class="divider"></li>
-										<li><a href="/offices/">All Offices <span class="more-link">></span></a></li>
+										<li><a href="https: //colby.edu/offices/">All Offices <span class="more-link">></span></a></li>
 									  </ul>
 									  </li>
 									  </ul>
 									<?php }?>
-								  <li><a href="/offices/">Administrative Offices</a></li>
+								  <li><a href="https://colby.edu/offices/">Administrative Offices</a></li>
 								</ul>
 							</div>
 							</div>
@@ -217,7 +217,7 @@ if (wp_is_mobile()) {
 								<ul id="initiatives-col2" class="">
 									<li><a href="http://www.colby.edu/museum/">Museum of Art</a></li>
 									<li><a href="http://www.colby.edu/research/">Research</a></li>
-									<li><a href="/administration_cs/special_programs/">Summer Programs</a></li>
+									<li><a href="https://colby.edu/administration_cs/special_programs/">Summer Programs</a></li>
 								</ul>
 								</div>
 								</div>
