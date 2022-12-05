@@ -88,7 +88,7 @@ if (is_active_sidebar('footercontact')) {
 } else {
 
  // Output standard footer contact information
- echo 'Colby College<br />Mayflower Hill Drive<br />Waterville, ME 04901<br />207-859-4000<br /><a href="/contact-colby-college/">Contact Us</a>';
+ echo 'Colby College<br />Mayflower Hill Drive<br />Waterville, ME 04901<br />207-859-4000<br /><a href="https://colby.edu/contact-colby-college/">Contact Us</a>';
 }?>
 				</div>
 				<div id="connectSupport">

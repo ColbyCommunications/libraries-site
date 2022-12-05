@@ -56,3 +56,4 @@ variables:
   php:
     upload_max_filesize: 128M
     memory_limit: 512M
+
