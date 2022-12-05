@@ -1,44 +1,44 @@
 <?php
-	$printView = (isset($_GET['print']) || isset($_GET['renderforprint'])?true:false);
+$printView = (isset($_GET['print']) || isset($_GET['renderforprint']) ? true : false);
 ?>
 			<?php
-		          $pageTemplate = get_page_template();
-		          if (is_active_sidebar('footer1') && (strpos($pageTemplate,'/page-three-column.php')===false )){
-		          ?>
+$pageTemplate = get_page_template();
+if (is_active_sidebar('footer1') && (strpos($pageTemplate, '/page-three-column.php') === false)) {
+ ?>
 
 		            <?php
-		            	$pageTemplate =  get_page_template();
+$pageTemplate = get_page_template();
 
-		            	if(strpos($pageTemplate,'/page-three-column.php')!==false || strpos($pageTemplate,'homepage')!==false) { ?>
+ if (strpos($pageTemplate, '/page-three-column.php') !== false || strpos($pageTemplate, 'homepage') !== false) {?>
 			            	<div id="siteFooter">
 					          <div id="inner-footer" class="clearfix">
 					          <div id="widget-footer" class="clearfix row-fluid">
 		            	<?php
-			            	dynamic_sidebar('footer1');?>
+dynamic_sidebar('footer1');?>
 			            	</div>
 					<nav class="clearfix">
 						<?php //
-						// If we decide to use footer links, uncomment here.
-						//bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+  // If we decide to use footer links, uncomment here.
+  //bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					</div>
 			            	<?php
-			            }
-						?>
+}
+ ?>
 
 				</div>
 
 					<?php
-					}?>
+}?>
 			</div>
 
 <?php
-	if(!$printView) {?>
+if (!$printView) {?>
 	<div class="push"></div>
 <?php
 }?>
 			<?php
-			if(!$printView){?>
+if (!$printView) {?>
 			<footer id="colbytemplatefooter">
 
 			<div id="footerWrapper">
@@ -46,7 +46,7 @@
 				<ul class="footerCol firstCol">
 					<li><a href="https://news.colby.edu">News</a></li>
 					<li><a href="https://events.colby.edu">Events</a></li>
-					<li><a href="https://news.colby.edu/magazine/"><em>Colby</em> Magazine</a></li>
+					<li><a href="https://magazine.colby.edu/"><em>Colby</em> Magazine</a></li>
 					<li><a href="https://www.colby.edu/museum">Museum of Art</a></li>
 					<li><a href="/">Libraries</a></li>
 				</ul>
@@ -77,28 +77,27 @@
 			</div>
 
 			<div id="contactSupportConnect">
-				<div id="footerContactInfo"<?php if (is_active_sidebar('footercontact') ) {
-					echo ' class="customFooterContact"';
-					}?>><?php
-					if (is_active_sidebar('footercontact') ) {
+				<div id="footerContactInfo"<?php if (is_active_sidebar('footercontact')) {
+ echo ' class="customFooterContact"';
+}?>><?php
+if (is_active_sidebar('footercontact')) {
 
-						// Output whatever widgetized content that is set...
-						dynamic_sidebar('footercontact');
+ // Output whatever widgetized content that is set...
+ dynamic_sidebar('footercontact');
 
-					}
-					else {
+} else {
 
-						 // Output standard footer contact information
-						 echo 'Colby College<br />Mayflower Hill Drive<br />Waterville, ME 04901<br />207-859-4000<br /><a href="/contact-colby-college/">Contact Us</a>';
-					} ?>
+ // Output standard footer contact information
+ echo 'Colby College<br />Mayflower Hill Drive<br />Waterville, ME 04901<br />207-859-4000<br /><a href="/contact-colby-college/">Contact Us</a>';
+}?>
 				</div>
 				<div id="connectSupport">
 				<div id="footerSupport">
 					<?php
-						if ( is_active_sidebar( 'footer_right' ) ) {
-							dynamic_sidebar("footer_right");
-						}
-					?>
+if (is_active_sidebar('footer_right')) {
+ dynamic_sidebar("footer_right");
+}
+ ?>
 				</div>
 				<div id="footerConnect" class=connect-wrapper>
 					<h4>Connect with Colby</h4>
@@ -127,12 +126,12 @@
 				</div>
 			</footer>
 			<?php
-			} ?>
+}?>
 		<!--[if lt IE 7 ]>
   			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
   			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 		<![endif]-->
-		<!--[if lt IE 9]><script src="<?php echo get_template_directory_uri();?>/library/js/respond.min.js"></script><![endif]-->
+		<!--[if lt IE 9]><script src="<?php echo get_template_directory_uri(); ?>/library/js/respond.min.js"></script><![endif]-->
 
 		<script>(function() {
 		var _fbq = window._fbq || (window._fbq = []);
