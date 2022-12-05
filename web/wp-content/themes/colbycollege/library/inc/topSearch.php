@@ -1,5 +1,5 @@
 <?php
-	require_once( ABSPATH . '/wp-load.php' ); // Needed for calling WordPress functions...
+require_once ABSPATH . '/wp-load.php'; // Needed for calling WordPress functions...
 
 ?>
 <div class="topSlideDown" style="display:none;height:auto;">
@@ -9,55 +9,55 @@
 		</div>
 		<div class="tabbable">
 			<ul class="nav nav-tabs">
-				   <li id="top-search" class="<?php echo isset( $_GET['activeTab'] ) && $_GET['activeTab'] == '1' ? ' active' : ''; ?>"><a href="#tab1" data-toggle="tab">Search Colby.edu</a></li>
-				   <li id="top-directory" class="<?php echo isset( $_GET['activeTab'] ) && $_GET['activeTab'] == '2' ? ' active' : ''; ?>"><a href="#tab2" data-toggle="tab">College Directory</a></li>
-				   <li id="top-offices" class="<?php echo isset( $_GET['activeTab'] ) && $_GET['activeTab'] == '3' ? ' active' : ''; ?>"><a href="#tab3" data-toggle="tab">Offices and Resources</a></li>
+				   <li id="top-search" class="<?php echo isset($_GET['activeTab']) && $_GET['activeTab'] == '1' ? ' active' : ''; ?>"><a href="#tab1" data-toggle="tab">Search Colby.edu</a></li>
+				   <li id="top-directory" class="<?php echo isset($_GET['activeTab']) && $_GET['activeTab'] == '2' ? ' active' : ''; ?>"><a href="#tab2" data-toggle="tab">College Directory</a></li>
+				   <li id="top-offices" class="<?php echo isset($_GET['activeTab']) && $_GET['activeTab'] == '3' ? ' active' : ''; ?>"><a href="#tab3" data-toggle="tab">Offices and Resources</a></li>
 			  </ul>
 			<div class="tab-content">
-				  <div class="tab-pane<?php echo isset( $_GET['activeTab'] ) && $_GET['activeTab'] == '1' ? ' active in' : ''; ?>" id="tab1">
+				  <div class="tab-pane<?php echo isset($_GET['activeTab']) && $_GET['activeTab'] == '1' ? ' active in' : ''; ?>" id="tab1">
 					<h2 id="search-title" class="page-title">Search</h1>
 				  <form class="form-search" action="/search/" method="GET">
 					<?php
-					  // -- Autocomplete Code --
-					  // Create JSON object for typeahead values, pulled from the 'About' site RSS feed for a_z_terms for the site
-					  $aboutBlog = $blog_details = get_blog_details( 'about' );
+// -- Autocomplete Code --
+// Create JSON object for typeahead values, pulled from the 'About' site RSS feed for a_z_terms for the site
+$aboutBlog = $blog_details = get_blog_details('about');
 
-					if ( $aboutBlog ) {
-						switch_to_blog( $aboutBlog->blog_id );
-					}
+if ($aboutBlog) {
+    switch_to_blog($aboutBlog->blog_id);
+}
 
-					  $jsonValue = '[';
+$jsonValue = '[';
 
-					if ( false === ( $aboutquery = get_transient( 'aboutautocomplete' ) ) ) {
-						// Cache to speed up future queries...
-						$args = array(
-							'post_type' => 'a_z_terms',
-							'posts_per_page' => '1000',
-							'no_found_rows' => true,
-						);
+if (false === ($aboutquery = get_transient('aboutautocomplete'))) {
+    // Cache to speed up future queries...
+    $args = array(
+        'post_type'      => 'a_z_terms',
+        'posts_per_page' => '1000',
+        'no_found_rows'  => true,
+    );
 
-						$aboutquery = new WP_Query( $args );
+    $aboutquery = new WP_Query($args);
 
-						set_transient( 'aboutautocomplete', $aboutquery, .25 * HOUR_IN_SECONDS );
+    set_transient('aboutautocomplete', $aboutquery, .25 * HOUR_IN_SECONDS);
 
-					}
+}
 
-					if ( $aboutquery->have_posts() ) {
-						while ( $aboutquery->have_posts() ) {
-							$aboutquery->the_post();
+if ($aboutquery->have_posts()) {
+    while ($aboutquery->have_posts()) {
+        $aboutquery->the_post();
 
-							if ( $jsonValue != '[' ) {
-								$jsonValue .= ',';
-							}
+        if ($jsonValue != '[') {
+            $jsonValue .= ',';
+        }
 
-							$jsonValue .= "{'TERMURL' : '" . addslashes( get_permalink() ) . "','TERMTEXT' : '" . addslashes( get_the_title() ) . "'}";
-						}
-					}
-					  $jsonValue .= ']';
+        $jsonValue .= "{'TERMURL' : '" . addslashes(get_permalink()) . "','TERMTEXT' : '" . addslashes(get_the_title()) . "'}";
+    }
+}
+$jsonValue .= ']';
 
-					restore_current_blog();
-					  wp_reset_postdata();
-						?>
+restore_current_blog();
+wp_reset_postdata();
+?>
 						<script>
 							var searchTerms = <?php echo $jsonValue; ?>;
 							var objs = [];
@@ -104,21 +104,21 @@
 
 					  <div class="input-append">
 						<?php
-						if ( preg_match( '/(?i)msie [1-8]/',$_SERVER['HTTP_USER_AGENT'] ) ) {
-							echo 'Search for: ';
-						}
-						?>
+if (preg_match('/(?i)msie [1-8]/', $_SERVER['HTTP_USER_AGENT'])) {
+    echo 'Search for: ';
+}
+?>
 							<script>
 						  </script>
 						  <input id="searchBox" type="text" class="input-large span2" placeholder="Search for..." autofocus="autofocus" autocomplete = "off" name="q">
 						  <button class="btn" type="submit"><i class="icon-search"></i></button>
 							</div>
 							<div id="directoryLinks" class="clearfix" style="border-top:0;">
-							<a href="/about/a_z_terms/">A-Z Index</a> | <a href="/search/">Advanced Search</a> |  <a href="/academics/majors-minors/">Areas of Study</a>
+							<a href="/about/a_z_terms/">A-Z Index</a> | <a href="/search/">Advanced Search</a> |  <a href="https://colby.edu/academics/majors-minors/">Areas of Study</a>
 						</div>
 					</form>
 				</div>
-				<div class="tab-pane<?php echo isset( $_GET['activeTab'] ) && $_GET['activeTab'] == '2' ? ' active in' : ''; ?>" id="tab2">
+				<div class="tab-pane<?php echo isset($_GET['activeTab']) && $_GET['activeTab'] == '2' ? ' active in' : ''; ?>" id="tab2">
 					<h2>College Directory</h2>
 					<form class="form-search" action="/directory/">
 					  <div class="input-append">
@@ -140,7 +140,7 @@
 					</form>
 
 				</div>
-				<div class="tab-pane<?php echo isset( $_GET['activeTab'] ) && $_GET['activeTab'] == '3' ? ' active in' : ''; ?>" id="tab3">
+				<div class="tab-pane<?php echo isset($_GET['activeTab']) && $_GET['activeTab'] == '3' ? ' active in' : ''; ?>" id="tab3">
 					<h2>Offices and Resources</h2>
 					<div id="Offices-Resources-wrapper">
 							<div id="Offices-Resources">
@@ -157,14 +157,14 @@
 								</ul>
 								<ul id="offices-ul" class="">
 									<?php
-									if ( wp_is_mobile() ) {
-									?>
+if (wp_is_mobile()) {
+    ?>
 									<li>
 										<a href="/offices/">All Offices ></a>
 									</li>
 									<?php
-									} else {
-									?>
+} else {
+    ?>
 
 									<li class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" href="/offices/">Offices <b class="caret"></b></a>
@@ -197,7 +197,7 @@
 									  </ul>
 									  </li>
 									  </ul>
-									<?php } ?>
+									<?php }?>
 								  <li><a href="/offices/">Administrative Offices</a></li>
 								</ul>
 							</div>
