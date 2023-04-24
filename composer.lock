@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4df42b70740081ce305ade899d7f3e93",
+    "content-hash": "468156747a84adf82c527dab882175cf",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -5676,24 +5676,6 @@
             "time": "2023-04-12T22:59:37+00:00"
         },
         {
-            "name": "wpackagist-plugin/classic-editor",
-            "version": "1.6.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/classic-editor/",
-                "reference": "tags/1.6.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.3.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/classic-editor/"
-        },
-        {
             "name": "wpackagist-plugin/cloudflare",
             "version": "4.11.0",
             "source": {
@@ -5746,24 +5728,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/header-footer/"
-        },
-        {
-            "name": "wpackagist-plugin/nextgen-gallery",
-            "version": "3.35",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/nextgen-gallery/",
-                "reference": "tags/3.35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/nextgen-gallery.3.35.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/nextgen-gallery/"
         },
         {
             "name": "wpackagist-plugin/notibar",
@@ -5856,6 +5820,24 @@
             "homepage": "https://wordpress.org/plugins/svg-support/"
         },
         {
+            "name": "wpackagist-plugin/timber-library",
+            "version": "1.22.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/1.22.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.22.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/timber-library/"
+        },
+        {
             "name": "wpackagist-plugin/unfiltered-mu",
             "version": "1.3.1",
             "source": {
@@ -5944,24 +5926,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-search-with-algolia/"
-        },
-        {
-            "name": "wpackagist-theme/twentyseventeen",
-            "version": "2.9",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
-                "reference": "2.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.2.9.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentyseventeen/"
         }
     ],
     "packages-dev": [],
