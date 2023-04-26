@@ -15,5 +15,10 @@ yarn
 yarn scripts:build
 cd -
 
+cd web/wp-content/themes/colby-libraries-theme
+composer install
+composer dump-autoload
+cd -
+
 # npm install
 shopt -u extglob
