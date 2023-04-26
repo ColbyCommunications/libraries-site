@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e1766cad4d15d5eccf45ebe3986fe58",
+    "content-hash": "78df57ffb150b48f463285986b0101e9",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -68,16 +68,16 @@
         },
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
-            "version": "5.11.4",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/advanced-custom-fields-pro.git",
-                "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c"
+                "reference": "b0d13e0e6780463b3f72700e77b6a854c56fab77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-48af38e1aae394e6f259c5a163723abf9f3afe5c-zip-156b29.zip",
-                "reference": "48af38e1aae394e6f259c5a163723abf9f3afe5c"
+                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-b0d13e0e6780463b3f72700e77b6a854c56fab77-zip-37333d.zip",
+                "reference": "b0d13e0e6780463b3f72700e77b6a854c56fab77"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -91,7 +91,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2022-04-18T18:41:00+00:00"
+            "time": "2022-10-19T16:09:28+00:00"
         },
         {
             "name": "colbycommunications/colby-college-theme",
