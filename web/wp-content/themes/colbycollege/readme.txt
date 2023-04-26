@@ -1,1 +1,0 @@
-Official theme for Colby's College's Wordpress environment. Please refer to http://www.colby.edu/weboffice for specific information on how to use theme and plugins
