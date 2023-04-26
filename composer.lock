@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78df57ffb150b48f463285986b0101e9",
+    "content-hash": "430386a78226bb244fd81f586b18cfd3",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -5674,6 +5674,24 @@
                 "source": "https://github.com/wp-cli/wp-config-transformer/tree/v1.3.2"
             },
             "time": "2023-04-12T22:59:37+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-gutenberg",
+            "version": "3.1.4.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-gutenberg/",
+                "reference": "tags/3.1.4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-gutenberg.3.1.4.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-gutenberg/"
         },
         {
             "name": "wpackagist-plugin/cloudflare",
