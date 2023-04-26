@@ -123,7 +123,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-libraries-theme",
-                "reference": "40578a6ccdeca05dc53b952af3f71606d64b41d9"
+                "reference": "ae6cd73913fba42d603a421ef6944f7781c7a075"
             },
             "require": {
                 "timber/timber": "1.*"
@@ -140,7 +140,7 @@
                 }
             ],
             "description": "Starter theme to build a Timber theme",
-            "time": "2023-04-17T12:07:40+00:00"
+            "time": "2023-04-26T15:51:56+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
