@@ -52,7 +52,7 @@ class LocationManager {
 				}
 			}
 		}
-		die(var_dump($theme_locs));
+
 		return $theme_locs;
 	}
 
