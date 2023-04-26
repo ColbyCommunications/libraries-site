@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
 
-printf "Installing Colby library dependencies \n"
+printf "Installing NPM dependencies for Colby dependencies \n"
 
-# colby library plugins
+shopt -s extglob # Turns on extended globbing
 
-cd web/wp-content/plugins/colby-onesearch
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+printf "Build Colby Theme... \n"
+cd web/wp-content/themes/colby-college-theme
 composer install
 composer dump-autoload
+yarn
+yarn scripts:build
 cd -
 
-cd web/wp-content/plugins/colby-libraries
-composer install
-composer dump-autoload
-cd -
-
-cd web/wp-content/plugins/colby-openhours
-composer install
-composer dump-autoload
-cd -
+# npm install
+shopt -u extglob

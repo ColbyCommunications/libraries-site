@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "468156747a84adf82c527dab882175cf",
+    "content-hash": "0e1766cad4d15d5eccf45ebe3986fe58",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -5694,6 +5694,24 @@
             "homepage": "https://wordpress.org/plugins/cloudflare/"
         },
         {
+            "name": "wpackagist-plugin/disable-comments",
+            "version": "2.4.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-comments/",
+                "reference": "tags/2.4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-comments/"
+        },
+        {
             "name": "wpackagist-plugin/duplicate-post",
             "version": "4.5",
             "source": {
@@ -5728,24 +5746,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/header-footer/"
-        },
-        {
-            "name": "wpackagist-plugin/notibar",
-            "version": "2.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/notibar/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/notibar.zip?timestamp=1680507336"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/notibar/"
         },
         {
             "name": "wpackagist-plugin/public-post-preview",
@@ -5784,6 +5784,24 @@
             "homepage": "https://wordpress.org/plugins/query-monitor/"
         },
         {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "3.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/3.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
+        },
+        {
             "name": "wpackagist-plugin/siteimprove",
             "version": "1.2.1",
             "source": {
@@ -5802,24 +5820,6 @@
             "homepage": "https://wordpress.org/plugins/siteimprove/"
         },
         {
-            "name": "wpackagist-plugin/svg-support",
-            "version": "2.5.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/svg-support/",
-                "reference": "tags/2.5.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/svg-support.2.5.5.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/svg-support/"
-        },
-        {
             "name": "wpackagist-plugin/timber-library",
             "version": "1.22.1",
             "source": {
@@ -5836,42 +5836,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/timber-library/"
-        },
-        {
-            "name": "wpackagist-plugin/unfiltered-mu",
-            "version": "1.3.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/unfiltered-mu/",
-                "reference": "tags/1.3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/unfiltered-mu.1.3.1.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/unfiltered-mu/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-importer",
-            "version": "0.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "tags/0.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-importer/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
