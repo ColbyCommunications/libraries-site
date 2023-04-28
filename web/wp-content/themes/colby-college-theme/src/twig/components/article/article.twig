@@ -1,0 +1,47 @@
+{% import "macros.twig" as macros %}
+
+{% if in_component_library %}
+  {% set context = '@context' %}
+{% else %}
+  {% set context = 'context.twig' %}
+{% endif %}
+
+<article class="article space-y-4{% if border %} pt-1 border-t-2 border-solid border-indigo-600{% endif %}">
+  {% if image %}
+    {% if buttons %}
+      <a class="article__image relative block overflow-hidden {% if post_type == 'people' %}article__image__person{% endif %}" href="{{ buttons[0].button.url }}">
+        {{ macros.picture(
+          'w-full object-cover hover:scale-105 transition-all duration-500 ease-in-out',
+          image.srcset,
+          image.src,
+          image.sizes.desktop,
+          image.sizes.mobile,
+          image.alt,
+          in_component_library
+        ) }}
+      </a>
+    {% else %}
+      <div class="article__image relative {% if post_type == 'people' %}article__image__person{% endif %}">
+        {{ macros.picture(
+          'w-full object-cover',
+          image.srcset,
+          image.src,
+          image.sizes.desktop,
+          image.sizes.mobile,
+          image.alt,
+          in_component_library
+        ) }}
+      </div>
+    {% endif %}
+  {% endif %}
+  {% include context with {
+    size: size ? size : 'small',
+    static: true,
+    subheading: subheading,
+    heading: heading,
+    paragraph: paragraph,
+    buttons: {
+      items: buttons,
+    },
+  } %}
+</article>
