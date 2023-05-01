@@ -22,6 +22,7 @@
         "wpackagist-plugin/query-monitor": "3.12.1",
         "colbycommunications/colby-college-theme": "1.2.3",
         "colbycommunications/colby-libraries-theme": "dev-master",
+        "wpackagist-plugin/timber-library": "1.22.1",
         "wpackagist-plugin/regenerate-thumbnails": "3.1.5",
         "wpackagist-plugin/disable-comments": "2.4.3",
         "wpackagist-plugin/advanced-gutenberg": "3.1.4.2"

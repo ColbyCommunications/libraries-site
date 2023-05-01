@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35cfa7ad79f4ea8f0ebfa741d4013b2a",
+    "content-hash": "430386a78226bb244fd81f586b18cfd3",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -123,7 +123,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-libraries-theme",
-                "reference": "4b795509756fa4d21faa3d663e666a6f09edf339"
+                "reference": "880125ce2c486c989cc37ce3931ecdf97a087c36"
             },
             "require": {
                 "timber/timber": "1.*"
@@ -140,7 +140,7 @@
                 }
             ],
             "description": "Starter theme to build a Timber theme",
-            "time": "2023-04-26T20:53:23+00:00"
+            "time": "2023-05-01T16:29:56+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -5838,6 +5838,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/siteimprove/"
+        },
+        {
+            "name": "wpackagist-plugin/timber-library",
+            "version": "1.22.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/1.22.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.22.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/timber-library/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
