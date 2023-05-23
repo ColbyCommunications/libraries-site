@@ -52,57 +52,69 @@ class Colby_Libraries {
 	 *
 	 * @var $placeholder_text string
 	 */
-	public $placeholder_text = 'Enter search term';
+	public $placeholder_text = 'Find articles, books, journals and more.';
 
 	/**
 	 * The array of post types registered by this plugin.
 	 *
 	 * @var $post_types array
 	 */
-	public $post_types = [];
+	public $post_types = array();
 
 	/**
 	 * The array of scripts enqueued by this plugin.
 	 *
 	 * @var $scripts array
 	 */
-	public $scripts = [];
+	public $scripts = array();
 
 	/**
 	 * The pretty names of the search tabs.
 	 *
 	 * @var $search_tabs array
 	 */
-	public $search_tabs = [
-		'OneSearch',
-		'Books and More',
-		'Journals and Articles',
+	public $search_tabs = array(
+		'LibrarySearch',
+		'Journals & Newspapers',
 		'Databases',
-		'Reserves',
-		'Research How To',
-		'Special Collections',
-	];
+		'Research Guides',
+		'Special Collections & Archives',
+	);
+
+		/**
+	 * The pretty names of the search tabs.
+	 *
+	 * @var $search_tabs array
+	 */
+	public $search_tab_ids = array(
+		'librarysearch',
+		'journals-newspapers',
+		'databases',
+		'research-guides',
+		'special-collections-archives',
+	);
+
 
 	/**
 	 * The array of shortcodes added by this plugin.
 	 *
 	 * @var $shortcodes array.
 	 */
-	public $shortcodes = [];
+	public $shortcodes = array();
 
 	/**
 	 * The array of stylesheets enqueued by this plugin.
 	 *
 	 * @var $stylesheets array
 	 */
-	public $stylesheets = [];
+	public $stylesheets = array();
 
 	/**
 	 * The array of taxonomies added by this plugin.
 	 *
 	 * @var $taxonomies array
 	 */
-	public $taxonomoies = [];
+	public $taxonomoies = array();
 
 	/**
 	 * The plugin's text domain.
@@ -139,15 +151,15 @@ class Colby_Libraries {
 	 * @param array  $plugin_data The plugin data set in the main file.
 	 */
 	public function __construct( $main_file, $plugin_data ) {
-		$this->main_file = $main_file;
-		$this->debug = isset( $_GET['debug'] ) ? true : false;
-		$this->path = trailingslashit( dirname( $main_file ) );
-		$this->url = trailingslashit( plugin_dir_url( $main_file ) );
-		$this->assets_url = substr( $this->url, ( strpos( $this->url, '//' ) ) ) . 'assets/';
-		$this->text_domain = $plugin_data['Text Domain'];
+		$this->main_file              = $main_file;
+		$this->debug                  = isset( $_GET['debug'] ) ? true : false;
+		$this->path                   = trailingslashit( dirname( $main_file ) );
+		$this->url                    = trailingslashit( plugin_dir_url( $main_file ) );
+		$this->assets_url             = substr( $this->url, ( strpos( $this->url, '//' ) ) ) . 'assets/';
+		$this->text_domain            = $plugin_data['Text Domain'];
 		$this->text_domain_underscore = str_replace( '-', '_', $this->text_domain );
-		$this->version = $plugin_data['Version'];
-		$this->min = true === $this->debug ? '' : '.min';
+		$this->version                = $plugin_data['Version'];
+		$this->min                    = true === $this->debug ? '' : '.min';
 
 		$this->taxonomies();
 		$this->shortcodes();
@@ -159,65 +171,65 @@ class Colby_Libraries {
 	 * Set an associative array of this plugin's post types -- name => settings.
 	 * Example:
 	 * $this->post_types = [
-	 *		'type' => [
-	 *			'label' => 'Types',
-	 *			'labels' => [
-	 *				'singular_name' => 'Type',
-	 *			],
-	 *			'public' => true,
-	 *			'supports' => [ 'title', 'editor' ],
-	 *			'hierarchical' => false,
-	 *			'taxonomies' => [ 'type-categories' ],
-	 *		],
-	 *	];
+	 *      'type' => [
+	 *          'label' => 'Types',
+	 *          'labels' => [
+	 *              'singular_name' => 'Type',
+	 *          ],
+	 *          'public' => true,
+	 *          'supports' => [ 'title', 'editor' ],
+	 *          'hierarchical' => false,
+	 *          'taxonomies' => [ 'type-categories' ],
+	 *      ],
+	 *  ];
 	 */
 	public function post_types() {
-		$this->post_types = [];
+		$this->post_types = array();
 	}
 
 	/**
 	 * Set an array of arrays corresponding to wp_enqueue_script parameters.
 	 */
 	public function scripts() {
-		$this->scripts = [
-			[ $this->text_domain, "{$this->assets_url}scripts{$this->min}.js", [], $this->version, true ],
-		];
+		$this->scripts = array(
+			array( $this->text_domain, "{$this->assets_url}scripts{$this->min}.js", array(), $this->version, true ),
+		);
 	}
 
 	/**
 	 * Set an array of namespaces corresponding to this plugin's shortcode classes.
 	 */
 	public function shortcodes() {
-		$this->shortcodes = [
+		$this->shortcodes = array(
 			'Colby_Libraries\\Shortcodes\\Library_Search',
-		];
+		);
 	}
 
 	/**
 	 * Set an array of arrays corresponding to wp_enqueue_style parameters.
 	 */
 	public function styles() {
-		$this->stylesheets = [
-			[ $this->text_domain, "{$this->assets_url}style{$this->min}.css", [], $this->version ],
-		];
+		$this->stylesheets = array(
+			array( $this->text_domain, "{$this->assets_url}style{$this->min}.css", array(), $this->version ),
+		);
 	}
 
 	/** Set an associative array of this plugin's taxonomies -- name => settings
 	 * Example:
 	 * $this->taxonomies = [
-	 *		'type-categories' => [
-	 *			'type' => 'type',
-	 *			'args' => [
-	 *				'label' => 'Type Categories',
-	 *				'labels' => [
-	 *					'singular_name' => 'Type Category',
-	 *				],
-	 *				'hierarchical' => true,
-	 *			],
-	 *		],
-	 *	];
+	 *      'type-categories' => [
+	 *          'type' => 'type',
+	 *          'args' => [
+	 *              'label' => 'Type Categories',
+	 *              'labels' => [
+	 *                  'singular_name' => 'Type Category',
+	 *              ],
+	 *              'hierarchical' => true,
+	 *          ],
+	 *      ],
+	 *  ];
 	 */
 	public function taxonomies() {
-		$this->taxonomies = [];
+		$this->taxonomies = array();
 	}
 }

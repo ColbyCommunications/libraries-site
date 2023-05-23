@@ -5,16 +5,14 @@
  * @package colby-libraries
  */
 
-global $colby_libraries; 
+global $colby_libraries;
 
 // OneSearch tab IDs
-$oneSearchTabID[0] = "OneSearch";
-$oneSearchTabID[1] = "BooksAndMore";
-$oneSearchTabID[2] = "JournalsAndArticles";
-$oneSearchTabID[3] = "Databases";
-$oneSearchTabID[4] = "Reserves";
-$oneSearchTabID[5] = "ResearchHowTo";
-$oneSearchTabID[6] = "SpecialCollections";
+$oneSearchTabID[0] = 'LibrarySearch';
+$oneSearchTabID[1] = 'Journals & Newspapers';
+$oneSearchTabID[2] = 'Databases';
+$oneSearchTabID[3] = 'Research Guides';
+$oneSearchTabID[4] = 'Special Collections & Archives';
 
 ?>
 
@@ -22,10 +20,12 @@ $oneSearchTabID[6] = "SpecialCollections";
 	<ul class="nav nav-tabs">
 		<?php foreach ( $colby_libraries->search_tabs as $index => $tab ) : ?>
 
-		<li<?php 
-			echo 0 === $index ? ' class=active' : '' ; // add active class
-			echo ' id="'.$oneSearchTabID[$index].'" '; // add ID specific to tab
-			?>>
+		<li
+			<?php
+			echo 0 === $index ? ' class=active' : ''; // add active class
+			echo ' id="' . $oneSearchTabID[ $index ] . '" '; // add ID specific to tab
+			?>
+			>
 
 			<a href=#<?php echo $index; ?> data-toggle="tab">
 				<?php echo $tab; ?>
@@ -36,8 +36,10 @@ $oneSearchTabID[6] = "SpecialCollections";
 	</ul>
 
 	<div class="tab-content">
-		<?php foreach ( $colby_libraries->search_tabs as $index => $tab ) :
-			$tab = strtolower( str_replace( ' ', '-', $tab ) ); ?>
+		<?php
+		foreach ( $colby_libraries->search_tab_ids as $index => $tab ) :
+			$tab = strtolower( str_replace( ' ', '-', $tab ) );
+			?>
 
 		<div class="tab-pane<?php echo 0 === $index ? ' active' : ''; ?>" id=<?php echo $index; ?>>
 			<?php include "{$colby_libraries->path}templates/search-tabs/{$tab}.php"; ?>
