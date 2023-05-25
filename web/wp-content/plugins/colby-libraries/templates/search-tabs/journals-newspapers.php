@@ -20,7 +20,7 @@
 		<option value=I_M>ISSN/ISBN equals</option>
 		</select>
 		<input type=text class=summon-search-field id=SS_CFocusTag name=C placeholder="<?php echo $colby_libraries->placeholder_text; ?>">
-		<input value="Search >" type=Submit>
+		  <input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search" >
 </form>
 <form id="tab3_form2" class="option2" method="GET" action="https://libguides.colby.edu/az.php">
 	<fieldset>
@@ -50,44 +50,3 @@
 	<input name="q" type="text" class="summon-search-field" placeholder="<?php echo $colby_libraries->placeholder_text; ?>">
 	<input type="submit" value="Search >">&nbsp;
 </form>
-
-<form class=radioArea>
-	<label for=tab3_option1 class=selected>
-		<input data-inputid=1 name=tab3_option1 checked id=tab3_option1 type=radio class=option1>
-		Journals by Title
-	</label>
-	<label for=tab3_option2>
-		<input id=tab3_option2 data-inputid=2 name=tab3_option2 type=radio class=option2>
-		Databases
-	</label>
-
-	<label for=tab3_option3>
-		<input id=tab3_option3 data-inputid=3 name=tab3_option3 type=radio class=option2>
-		Interlibrary Loan Request
-	</label>
-	<label for=tab3_option4>
-		<input id=tab3_option4 data-inputid=4 name=tab3_option4 type=radio class=option2>
-		Articles
-	</label>
-</form>
-
-<div class="bottom-text option1">
-	<strong>What's this?</strong>
-	<p>Titles (A-Z) of journals to which Colby subscribes with links to their contents.</p>
-<!-- 	<a href="https://libguides.colby.edu/offcampusaccess">Off-Campus Access</a> | <a href="https://colby.idm.oclc.org/login?url=https://colby.illiad.oclc.org/illiad/illiad.dll">ILL Request</a> -->
-</div>
-<div class="bottom-text option2">
-	<strong>What's this?</strong>
-	<p>Lists of our electronic databases, with links for access.</p>
-	<a href="https://libguides.colby.edu/offcampusaccess">Off-Campus Access</a>
-</div>
-<div class="bottom-text option3">
-	<strong>What's this?</strong>
-	<p>Request a book, chapter, journal article, or thesis that Colby does not own or check the status of your requests.</p>
-	<a href="mailto:illmail@colby.edu">For assistance contact: illmail@colby.edu</a>
-</div>
-<div class="bottom-text option4">
-	<strong>What's this?</strong>
-	<p>Easily search for articles across thousands of sources.</p>
-	<a href="https://colby.idm.oclc.org/login?url=https://colby.illiad.oclc.org/illiad/illiad.dll">ILL Request</a>
-</div>

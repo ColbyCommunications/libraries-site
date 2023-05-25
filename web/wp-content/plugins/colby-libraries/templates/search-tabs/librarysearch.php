@@ -36,17 +36,28 @@ if ( is_plugin_active( 'colby-onesearch/colby-onesearch.php' ) && ! $_GET['summo
 	   class=summon-search-field
 	   name=s.q
 	   autocomplete=off>
-  <input type=submit value="Search >">
+  <input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
   <input type=hidden name=s.fvf[] value="ContentType,Newspaper Article,t">
   <input type=hidden name=keep_r value=true>
-  <a href=https://colby.summon.serialssolutions.com/advanced>More search options ></a>
+  <a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced"
+ class="advanced-search">advanced search</a>
+ <div class="ls-btn-container">
+	 <input id="library-search-btn" type="radio" name="library-search" checked="checked">
+	 <label for="library-search-btn">LibrarySearch</label>
+	 <input id="mainecat-btn" type="radio" name ="library-search">
+	 <label for="mainecat-btn">MaineCat</label>
+	 <input id="worldcat-btn" type="radio" name ="library-search">
+	 <label for="worldcat-btn">WorldCat</label>
+</div >
 </form>
 <?php endif; ?>
 
-<div class=bottom-text>
-  <strong>What's this?</strong>
-  <p>Articles, books, audio, video, images and more.
-  <p><a href=https://libguides.colby.edu/onesearch_help>
-	Help with OneSearch
-  </a>
+<div>
+  <p><strong>LibrarySearch</strong> is a comprehensive search for all Colby, Bates, and Bowdoin library holdings. use the <strong>dropdown menu</strong> to limit your search to <strong>Books and More, Articles and More or Cours Reserves</strong>.
+	<br/>
+	<br/>
+	<strong>Not finding what you need?</strong>
+	 <br/>
+	Search and request from libraries statewide via <strong>MaineCat</strong>, or worldwide via <strong>WorldCat.</strong>
+	</p>
 </div>

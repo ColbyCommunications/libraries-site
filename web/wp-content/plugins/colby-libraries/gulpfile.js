@@ -76,6 +76,7 @@ function watchFiles() {
   watch(["assets/sass/*.scss", "assets/sass/**/*.scss"], compileSass);
   watch("assets/js/*.js", compileJs);
   watch("./*.html").on("change", browserSync.reload);
+  watch("./**/*.php").on("change", browserSync.reload);
 }
 
 // Default task
