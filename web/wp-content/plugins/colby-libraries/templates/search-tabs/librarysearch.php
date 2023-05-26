@@ -47,11 +47,11 @@
 		</p>
 	</div>
 
-	<div id="content_2">
+	<div id="content_2" style="display: none;">
 		<p>Use <strong>MaineCat</strong> to search for and request items from <strong>academic and public libraries in Maine</strong>.</p>
 	</div>
 
-	<div id="content_3">
+	<div id="content_3" style="display: none;">
 		<p>Use <strong>WorldCat</strong> to search for and request items from <strong>libraries worldwide</strong>.
 		<ul>
 			<li>

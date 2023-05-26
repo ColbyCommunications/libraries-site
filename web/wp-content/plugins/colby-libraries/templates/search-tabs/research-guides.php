@@ -12,14 +12,6 @@
 			class=summon-search-field
 			name=s.q
 			autocomplete=off>
-			<div class="drop-down">
-				<select>
-					<option>Everything</option>
-					<option>Articles</option>
-					<option>Books and More</option>
-					<option>Course Reserves</option>
-				</select>
-			</div>
 		<input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
   <input type=hidden name=s.fvf[] value="ContentType,Newspaper Article,t">
