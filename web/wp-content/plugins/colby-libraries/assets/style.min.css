@@ -28,8 +28,9 @@
 #librarySearch .nav-tabs li{margin:0;padding:0;height:50px !important;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}
 #librarySearch .nav-tabs li a{margin:0;padding:0 0 0 10px;width:100%;height:100%;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;color:#002169;border-radius:0}
 #librarySearch .nav{margin-bottom:0;width:130px;height:100%;border:none !important}
-#librarySearch .content-section{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:100%;height:100%}
-#librarySearch .tab-content{margin:0 !important;padding:10px 20px 0 25px;height:250px !important;font-size:.8em}
+#librarySearch .content-section{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;width:100%;height:100%}
+#librarySearch .tab-content{margin:0 !important;padding-top:10px;height:100%;font-size:12.5px}
+#librarySearch .tab-pane{position:relative;height:100%}
 #librarySearch .tab-content label{display:inline;margin-right:14px;margin-bottom:2px;font-size:1em;color:#fff;display:inline-block}
 #librarySearch .tab-content a{color:orange}
 #librarySearch .tab-content label.selected{font-weight:500}
@@ -41,7 +42,9 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a{color:#
 #librarySearch .nav-tabs>.active>a,.nav-tabs>.active>a:hover,#librarySearch .nav-tabs>.active>a:focus{background-color:#002878;color:#fff}
 #librarySearch select{max-width:138px;font-size:.85em;height:25px;margin-bottom:15px}
 #librarySearch .formEntryArea{padding-top:5px}
-#librarySearch form{margin-bottom:0;padding-bottom:10px;margin-left:20px}
+#librarySearch form{margin-bottom:0;padding-bottom:10px;margin-left:45px}
+.content-area{margin:0 20px 0 45px}
+.content-area ul p{margin:0}
 .ls-btn-container{font-size:12px}
 .arrow-right{width:0;height:0;border-top:25px solid rgba(0,0,0,0);border-bottom:25px solid rgba(0,0,0,0);border-left:25px solid #002878;width:12px;float:right;margin-right:-37px;display:none}
 li.active .arrow-right{display:block}
@@ -49,6 +52,7 @@ span.pipe{color:#ccc}
 #librarySearch .tab-content input[type=text].inputfocus{font-style:normal !important}
 #librarySearch select[name=searchscope]{display:none}
 .summon-search-field{border:none !important}
+form #search-box{display:-ms-flexbox;display:flex}
 form.option2,form.option3,form.option4,form.option5{display:none}
 form.option1,form.option2,form.option3,form.option4,form.option5{font-size:1.1em}
 div.option2,div.option3,div.option4,div.option5{display:none}
@@ -70,5 +74,5 @@ ul#audienceLinksInner{left:54% !important}
 #wooslider-library{max-width:250px !important}
 #tab4_form1 .dropdown-menu{top:20px}
 .advanced-search{display:block;margin-bottom:5px;text-transform:uppercase;font-size:14px}
-.search-footer{height:50px !important;background-color:#002169}
+.search-footer{height:50px !important;background-color:#002169;position:absolute;bottom:0}
 .search-footer .search-footer-links{list-style:none;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;height:100%}
