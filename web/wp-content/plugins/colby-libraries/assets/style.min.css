@@ -38,21 +38,28 @@
 #librarySearch #g .radioArea label{margin-right:5px;font-size:1em}
 #librarySearch #g form{margin-bottom:0 !important;padding-bottom:0 !important}
 body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a{color:#fff !important}
-#librarySearch .tab-content input[type=text]{border-radius:2px;padding:.5em;border:1px solid #ccc;width:70%;height:2rem}
+#librarySearch .tab-content input[type=text]{width:62%;box-shadow:none}
 #librarySearch .nav-tabs>.active>a,.nav-tabs>.active>a:hover,#librarySearch .nav-tabs>.active>a:focus{background-color:#002878;color:#fff}
-#librarySearch select{max-width:138px;font-size:.85em;height:25px;margin-bottom:15px}
 #librarySearch .formEntryArea{padding-top:5px}
-#librarySearch form{margin-bottom:0;padding-bottom:10px;margin-left:45px}
-.content-area{margin:0 20px 0 45px}
+#librarySearch form{margin-bottom:0;padding-bottom:10px;margin-left:35px}
+.content-area{margin:0 10px 0 35px}
+.content-area p{color:#232b3b}
 .content-area ul p{margin:0}
-.ls-btn-container{font-size:12px}
+.ls-btn-container,.sc-btn-container{font-size:12px;color:#232b3b}
 .arrow-right{width:0;height:0;border-top:25px solid rgba(0,0,0,0);border-bottom:25px solid rgba(0,0,0,0);border-left:25px solid #002878;width:12px;float:right;margin-right:-37px;display:none}
 li.active .arrow-right{display:block}
 span.pipe{color:#ccc}
-#librarySearch .tab-content input[type=text].inputfocus{font-style:normal !important}
 #librarySearch select[name=searchscope]{display:none}
 .summon-search-field{border:none !important}
-form #search-box{display:-ms-flexbox;display:flex}
+form #search-box{margin:0 10px 10px 0;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;background-color:#fff}
+form #search-box input.search-bar{margin:0;padding:0 5px;height:100%;box-shadow:none;border:0;color:#232b3b;font-size:12px}
+form #search-box input.search-bar-full{margin:0;padding:0 5px;height:100%;box-shadow:none;border:0;color:#232b3b;font-size:12px;width:100% !important}
+form #search-box input.search-bar:-ms-input-placeholder{color:#9c9c9c;font-size:12px}
+form #search-box input.search-bar::placeholder{color:#9c9c9c;font-size:12px}
+form #search-box .drop-down{padding-right:10px;width:38%;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}
+form #search-box .drop-down:before{content:"/";position:relative;left:.3rem;color:#232b3b}
+form #search-box .drop-down select{margin:0;width:100%;height:100%;box-shadow:none;border:0;font-size:14px;color:#232b3b;font-size:12px;border-radius:0;outline:0}
+form #search-box input[type=image]{background-color:#002168}
 form.option2,form.option3,form.option4,form.option5{display:none}
 form.option1,form.option2,form.option3,form.option4,form.option5{font-size:1.1em}
 div.option2,div.option3,div.option4,div.option5{display:none}

@@ -1,5 +1,5 @@
 <form class=option1>
- <div class="ls-btn-container">
+ <div class="sc-btn-container">
 	 <input id="physical-collections-btn" type="radio" name="special-collections" checked="checked" autocomplete="off">
 	 <label for="physical-collections-btn">Physical Collections</label>
 	 <input id="digital-collections-btn" type="radio" name="special-collections" autocomplete="off">

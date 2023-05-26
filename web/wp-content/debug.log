@@ -2754,3 +2754,27 @@
 [26-May-2023 13:27:47 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
 [26-May-2023 13:27:47 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
 [26-May-2023 13:27:47 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 15:12:10 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 15:12:10 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 15:12:10 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 15:12:10 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 15:12:10 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 15:12:10 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 17:39:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /app/web/wp/wp-includes/class-wpdb.php on line 2019
+[26-May-2023 17:39:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /app/web/wp/wp-includes/class-wpdb.php on line 2019
+[26-May-2023 17:39:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /app/web/wp/wp-includes/class-wpdb.php on line 2019
+[26-May-2023 17:39:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /app/web/wp/wp-includes/class-wpdb.php on line 2019
+[26-May-2023 17:39:48 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 17:39:48 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[26-May-2023 14:37:22 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[26-May-2023 14:37:22 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[26-May-2023 14:37:22 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[26-May-2023 14:37:26 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[26-May-2023 14:37:26 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[26-May-2023 14:37:26 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[26-May-2023 14:38:20 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[26-May-2023 14:38:20 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[26-May-2023 14:38:20 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[26-May-2023 14:38:28 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[26-May-2023 14:38:28 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[26-May-2023 14:38:28 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584

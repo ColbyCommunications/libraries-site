@@ -8,8 +8,8 @@
   <input name=utf8 type=hidden value=✓>
 	<div id="search-box">
 		<input type=text
-			placeholder="<?php echo $colby_libraries->placeholder_text; ?>"
-			class=summon-search-field
+			placeholder="Find a research guide by subject or course"
+			class="summon-search-field search-bar-full"
 			name=s.q
 			autocomplete=off>
 		<input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
@@ -23,10 +23,10 @@
 		<p>Research guides are curated collections of library resources and helpful information created by our subject specialists.</p>
 		<ul>
 			<li>
-				<p>Browse guides by <a href="#">subject</a> or <a href="#">course</a></p>
+				<p>Browse guides by <a href="https://libguides.colby.edu/">subject</a> or <a href="https://libguides.colby.edu/course_guides">course</a></p>
 			</li>
 			<li>
-				<p>Find and contact a <a href="#">library liaison</a> in your subject area</p>
+				<p>Find and contact a <a href="https://libraries.colby.edu/research-help/subjectspecialists/">library liaison</a> in your subject area</p>
 			</li>
 		</ul>
 	</div>

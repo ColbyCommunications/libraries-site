@@ -8,8 +8,8 @@
   <input name=utf8 type=hidden value=✓>
 	<div id="search-box">
 		<input type=text
-			placeholder="<?php echo $colby_libraries->placeholder_text; ?>"
-			class=summon-search-field
+			placeholder="Find the best library databases for your research"
+			class="summon-search-field search-bar-full"
 			name=s.q
 			autocomplete=off>
 		<input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
