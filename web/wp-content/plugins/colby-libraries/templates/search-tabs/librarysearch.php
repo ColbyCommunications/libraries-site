@@ -83,12 +83,15 @@
 			const content_2 = document.getElementById('content_2');
 			const content_3 = document.getElementById('content_3');
 			const dynamic_link_1 = document.getElementById('ls-link-1');
+			const dropDown = document.querySelectorAll( '.drop-down' )[0];
 
 			if (radio_1.checked) {
 				content_1.style.display = 'block';
 				dynamic_link_1.href='https://libguides.colby.edu/librarysearch';
+				dropDown.style.display = 'flex';
 			} else {
 				content_1.style.display = 'none';
+				dropDown.style.display = 'none';
 			}
 
 			if (radio_2.checked) {
