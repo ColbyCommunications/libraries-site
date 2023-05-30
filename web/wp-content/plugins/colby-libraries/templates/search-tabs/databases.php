@@ -26,8 +26,8 @@
 
 <div class="search-footer">
 	<ul class="search-footer-links">
-		<li><a href="https://libanswers.colby.edu/"><img src='/wp-content/plugins/colby-libraries/assets/img/get_help.svg' alt="Get Help"></a></li>
-		<li><a href="https://libraries.colby.edu/ill/"><img src='/wp-content/plugins/colby-libraries/assets/img/interlibrary_loan.svg' alt="Interlibrary Loan"></a></li>
-		<li><a href="https://libraries.colby.edu/remote-library-access"><img src='/wp-content/plugins/colby-libraries/assets/img/remote_access.svg' alt="Remote Access"></a></li>
+		<li><a href="https://libanswers.colby.edu/"><img src='/wp-content/plugins/colby-libraries/assets/img/get_help.svg' alt="Get Help"><span>get help</span</a></li>
+		<li><a href="https://libraries.colby.edu/ill/"><img src='/wp-content/plugins/colby-libraries/assets/img/interlibrary_loan.svg' alt="Interlibrary Loan"><span>interlibrary loan</span</a></li>
+		<li><a href="https://libraries.colby.edu/remote-library-access"><img src='/wp-content/plugins/colby-libraries/assets/img/remote_access.svg' alt="Remote Access"><span>remote access</span</a></li>
 	</ul>
 </div>
