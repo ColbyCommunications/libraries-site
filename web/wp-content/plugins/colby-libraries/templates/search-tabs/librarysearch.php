@@ -149,13 +149,14 @@
 			if (dropDownValue === 'DN_and_CI') {
 				queryTemp.placeholder = 'Find articles, books, and more.';
 			} else if (dropDownValue === 'CentralIndex') {
-				queryTemp.placeholder = 'Colby’s books & media.';
-			} else if (dropDownValue === 'MyInstitution') {
 				queryTemp.placeholder = 'Colby’s articles & book chapters.';
+			} else if (dropDownValue === 'MyInstitution') {
+				queryTemp.placeholder = 'Colby’s books & media.';
 			} else if (dropDownValue === 'CourseReserves') {
 				queryTemp.placeholder = 'Locate course reserves.';
 			}
 		}
+
 
 		handleRendering();
 		handlePlaceholder();
