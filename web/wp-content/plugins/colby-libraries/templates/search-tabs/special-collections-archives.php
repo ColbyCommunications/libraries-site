@@ -11,9 +11,9 @@
 	<div id="content_7">
 		<p>Our physical collections include culturally significant materials in various formats from the 13th through the 21st centuries.</p>
 		<ul>
-			<li>
+			<!-- <li>
 				<p>Use <a href="#">LibrarySearch</a> to search for published special collections and archives materials and collection-level records for unpublished materials.</p>
-			</li>
+			</li> -->
 			<li>
 				<p>Use <a href="https://archivesspace.colby.edu/">ArchivesSpace</a> to search for detailed finding aids describing many of our manuscript and archival collections.</p>
 			</li>
