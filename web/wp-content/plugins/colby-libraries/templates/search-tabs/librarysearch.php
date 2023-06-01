@@ -1,3 +1,4 @@
+<!-- LibrarySearch -->
 <form class="option1"
 	id="search-libsearch"
 	name="searchForm"
@@ -10,9 +11,9 @@
 		<input type="text"
 			placeholder="Find articles, books, and more."
 			class="summon-search-field search-bar"
-			id="queryTemp"
+			id="option1QueryTemp"
 			autocomplete="off">
-		<input type="hidden" name="query" id="query">
+		<input type="hidden" name="query" id="option1Query">
 		<input type="hidden" name="tab" value="Library">
 		<input type="hidden" name="vid" value="01CBB_CCLIBRAR:COLBY">
 		<div class="drop-down">
@@ -27,30 +28,35 @@
 	</div>
 	<a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
 </form>
-
+<!-- MaineCat -->
 <form class="option2"
 	id="search-mainecat"
-	name="searchForm"
+	name="mcForm"
 	method="GET"
-	action="https://colby.primo.exlibrisgroup.com/discovery/search"
+	action="https://mainecat.maine.edu/search/"
 	class="summon-search-widget"
-	accept-charset="utf-8">
+	accept-charset="utf-8"
+	onsubmit="searchMaineCat()">
+	<input type="hidden" name="searchtype" id="searchtype">
 	<div id="search-box">
 		<input type="text"
 			placeholder="Search for and request items from libraries statewide."
-			class="summon-search-field search-bar-full"
-			id="queryTemp"
-			autocomplete="off">
-		<input type="image" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
+			class="summon-search-field search-bar"
+			id="option2QueryTemp"
+			autocomplete="off"
+			name="searcharg">
+		<div class="drop-down">
+			<select id="mainecatOptions">
+				<option value="X">Keyword</option>
+				<option value="t">Title</option>
+				<option value="a">Author (Last, First)</option>
+			</select>
+		</div>
+		<input type="image" onclick="searchMaineCat()"src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
 	<a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
 </form>
-
-<form class="option3"
-	id="search-worldcat"
-	accept-charset="utf-8">
-</form>
-
+<!-- Radio Controlls -->
 <form>
 	<div class="ls-btn-container">
 		<input id="library-search-btn" type="radio" name="library-search" checked="checked" autocomplete="off">
@@ -61,17 +67,15 @@
 		<label for="worldcat-btn">WorldCat</label>
 	</div>
 </form>
-
+<!-- Content Section -->
 <section class="content-area">
 	<div id="content_1">
-		<p><strong>LibrarySearch</strong> is a comprehensive search for all Colby, Bates, and Bowdoin library holdings. Use the <strong>dropdown menu</strong> to limit your search to <strong>Books and More, Articles and More, or Course Reserves</strong>.</p>
-		<strong>Not finding what you need?</strong>
-		<br/>
-		Search and request from libraries statewide via <strong>MaineCat</strong>, or worldwide via <strong>WorldCat</strong>.
+		<p><strong>LibrarySearch:</strong> locate books, articles, and more from Colby, Bates and Bowdoin.</p>
+		<p><strong>Not finding what you need?</strong> Try <strong>MaineCat</strong>, or <strong>WorldCat</strong>.</p>
 	</div>
 
 	<div id="content_2" style="display: none;">
-		<p>Use <strong>MaineCat</strong> to search for and request items from <strong>academic and public libraries in Maine</strong>. Use ILL to request items from MaineCat.</p>
+		<p><strong>MaineCat:</strong> discover items from the <strong>libraries across Maine</strong>. Use ILL to request items from MaineCat.</p>
 	</div>
 
 	<div id="content_3" style="display: none;">
@@ -86,7 +90,7 @@
 		</ul>
 	</div>
 </section>
-
+<!-- Icon Footer -->
 <div class="search-footer">
 	<ul class="search-footer-links">
 		<li><a id="ls-link-1" href="https://libguides.colby.edu/librarysearch"><img src="/wp-content/plugins/colby-libraries/assets/img/more_info.svg" alt="More Info"><span>more info</span></a></li>
@@ -98,8 +102,14 @@
 
 <script type="text/javascript">
 	const searchPrimo = () => {
-		const query = document.getElementById('query');
-		query.value = 'any,contains,' + document.getElementById('queryTemp').value;
+		const query1 = document.getElementById('option1Query');
+		query1.value = 'any,contains,' + document.getElementById('option1QueryTemp').value;
+		document.forms['searchForm'].submit();
+	}
+
+	const searchMaineCat = () => {
+		const searchtype = document.getElementById('searchtype');
+		searchtype.value = document.getElementById('mainecatOptions').value;
 		document.forms['searchForm'].submit();
 	}
 
@@ -114,7 +124,7 @@
 			const content_2 = document.getElementById('content_2');
 			const content_3 = document.getElementById('content_3');
 			const dynamic_link_1 = document.getElementById('ls-link-1');
-			const queryTemp = document.getElementById('queryTemp');
+			const option1QueryTemp = document.getElementById('option1QueryTemp');
 
 			if (radio_1.checked) {
 				option_1.style.display = 'block';
@@ -144,16 +154,16 @@
 
 		const handlePlaceholder = () => {
 			const dropDownValue = document.getElementsByName("search_scope")[0].value;
-			const queryTemp = document.getElementById('queryTemp');
+			const option1QueryTemp = document.getElementById('option1QueryTemp');
 
 			if (dropDownValue === 'DN_and_CI') {
-				queryTemp.placeholder = 'Find articles, books, and more.';
+				option1QueryTemp.placeholder = 'Find articles, books, and more.';
 			} else if (dropDownValue === 'CentralIndex') {
-				queryTemp.placeholder = 'Colby’s articles & book chapters.';
+				option1QueryTemp.placeholder = 'Colby’s articles & book chapters.';
 			} else if (dropDownValue === 'MyInstitution') {
-				queryTemp.placeholder = 'Colby’s books & media.';
+				option1QueryTemp.placeholder = 'Colby’s books & media.';
 			} else if (dropDownValue === 'CourseReserves') {
-				queryTemp.placeholder = 'Locate course reserves.';
+				option1QueryTemp.placeholder = 'Locate course reserves.';
 			}
 		}
 
