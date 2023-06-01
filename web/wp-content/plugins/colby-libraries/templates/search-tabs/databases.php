@@ -1,21 +1,17 @@
-<form class=option1
-	id=search-cbbcat
-	name=search-cbbcat
-	action=https://colby.summon.serialssolutions.com/search
-	class=summon-search-widget
-	accept-charset=utf-8
-	id=sb1a9a060f7150131756b2ae8d1b2df50>
-  <input name=utf8 type=hidden value=✓>
+<form
+	id="dbSearch"
+	name="dbForm"
+	method="GET"
+	action="https://libguides.colby.edu/az.php"
+	accept-charset="utf-8">
 	<div id="search-box">
 		<input type=text
 			placeholder="Find the best library databases for your research"
 			class="summon-search-field search-bar-full"
-			name=s.q
-			autocomplete=off>
+			name="q"
+			autocomplete="off">
 		<input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
-  <input type=hidden name=s.fvf[] value="ContentType,Newspaper Article,t">
-  <input type=hidden name=keep_r value=true>
 </form>
 
 <section class="content-area">
