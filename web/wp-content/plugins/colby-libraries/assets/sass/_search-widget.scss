@@ -1,5 +1,4 @@
 // Code from previous iteration of plugin.
-
 * {
   box-sizing: border-box;
 }
@@ -106,7 +105,7 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a {
 }
 
 #librarySearch .tab-content input[type="text"] {
-  width: 62%;
+  width: 100%;
   box-shadow: none;
 }
 
@@ -212,9 +211,7 @@ form #search-box {
 
   .drop-down {
     padding-right: 10px;
-    width: 38%;
     display: flex;
-    justify-content: flex-end;
     &:before {
       content: "/";
       position: relative;
@@ -222,9 +219,8 @@ form #search-box {
       color: #232b3b;
     }
     select {
-      margin: 0;
-      width: 100%;
       height: 100%;
+      width: 130px !important;
       box-shadow: none;
       border: 0;
       font-size: 14px;
@@ -411,11 +407,11 @@ ul#audienceLinksInner {
   }
 }
 
-// @media (max-width: 979px) {
-//   #librarySearch .nav {
-//     padding-bottom: 60px;
-//   }
-// }
+@media (max-width: 890px) {
+  #librarySearch.tabbable {
+    flex-direction: column;
+  }
+}
 
 // @media (max-width: 797px) {
 //   #librarySearch .nav {

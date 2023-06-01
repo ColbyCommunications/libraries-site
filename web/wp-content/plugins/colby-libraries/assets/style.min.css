@@ -38,7 +38,7 @@
 #librarySearch #g .radioArea label{margin-right:5px;font-size:1em}
 #librarySearch #g form{margin-bottom:0 !important;padding-bottom:0 !important}
 body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a{color:#fff !important}
-#librarySearch .tab-content input[type=text]{width:62%;box-shadow:none}
+#librarySearch .tab-content input[type=text]{width:100%;box-shadow:none}
 #librarySearch .nav-tabs>.active>a,.nav-tabs>.active>a:hover,#librarySearch .nav-tabs>.active>a:focus{background-color:#002878;color:#fff}
 #librarySearch .formEntryArea{padding-top:5px}
 #librarySearch form{margin-bottom:0;padding-bottom:10px;margin-left:35px}
@@ -56,9 +56,9 @@ form #search-box input.search-bar{margin:0;padding:0 5px;height:100%;box-shadow:
 form #search-box input.search-bar-full{margin:0;padding:0 5px;height:100%;box-shadow:none;border:0;color:#232b3b;font-size:12px;width:100% !important}
 form #search-box input.search-bar:-ms-input-placeholder{color:#9c9c9c;font-size:12px}
 form #search-box input.search-bar::placeholder{color:#9c9c9c;font-size:12px}
-form #search-box .drop-down{padding-right:10px;width:38%;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}
+form #search-box .drop-down{padding-right:10px;display:-ms-flexbox;display:flex}
 form #search-box .drop-down:before{content:"/";position:relative;left:.3rem;color:#232b3b}
-form #search-box .drop-down select{margin:0;width:100%;height:100%;box-shadow:none;border:0;font-size:14px;color:#232b3b;font-size:12px;border-radius:0;outline:0}
+form #search-box .drop-down select{height:100%;width:130px !important;box-shadow:none;border:0;font-size:14px;color:#232b3b;font-size:12px;border-radius:0;outline:0}
 form #search-box input[type=image]{background-color:#002168}
 form.option2,form.option3,form.option4,form.option5{display:none}
 form.option1,form.option2,form.option3,form.option4,form.option5{font-size:1.1em}
@@ -88,3 +88,5 @@ ul#audienceLinksInner{left:54% !important}
 .search-footer a:hover{text-decoration:unset !important}
 .search-footer a img{margin-right:10px;width:30px;height:30px}
 .search-footer a span{font-size:12.5px;text-transform:uppercase;color:#fff}
+@media(max-width:890px){#librarySearch.tabbable{-ms-flex-direction:column;flex-direction:column}
+}

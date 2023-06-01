@@ -40,7 +40,7 @@
 	<input type="hidden" name="searchtype" id="searchtype">
 	<div id="search-box">
 		<input type="text"
-			placeholder="Search for and request items from libraries statewide."
+			placeholder="Search libraries statewide."
 			class="summon-search-field search-bar"
 			id="option2QueryTemp"
 			autocomplete="off"
