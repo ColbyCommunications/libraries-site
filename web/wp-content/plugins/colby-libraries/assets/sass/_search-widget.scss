@@ -61,6 +61,10 @@
   padding-top: 10px;
   height: 100%;
   font-size: 12.5px;
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 #librarySearch .tab-pane {
@@ -75,10 +79,6 @@
   font-size: 1em;
   color: #fff;
   display: inline-block;
-}
-
-#librarySearch .tab-content a {
-  color: orange;
 }
 
 #librarySearch .tab-content label.selected {
@@ -395,6 +395,9 @@ ul#audienceLinksInner {
   a {
     display: flex;
     align-items: center;
+    &:hover {
+      text-decoration: unset !important;
+    }
     img {
       margin-right: 10px;
       width: 30px;
