@@ -1,21 +1,23 @@
-<form class=option1
-	id=search-cbbcat
-	name=search-cbbcat
-	action=https://colby.summon.serialssolutions.com/search
-	class=summon-search-widget
-	accept-charset=utf-8
-	id=sb1a9a060f7150131756b2ae8d1b2df50>
-  <input name=utf8 type=hidden value=✓>
+<form
+	id="jsearch"
+	name="jForm"
+	action="https://colby.primo.exlibrisgroup.com/discovery/jsearch?query=any,contains,test&tab=jsearch_slot&vid=01CBB_CCLIBRAR:COLBY&offset=0&journals=any,test"
+	accept-charset="utf-8"
+	method="GET"
+	action="https://colby.primo.exlibrisgroup.com/discovery/"
+	accept-charset="utf-8"
+	onsubmit="journalSearch()">
 	<div id="search-box">
 		<input type=text
+			id="jsearchQueryTemp"
 			placeholder="Find a journal or newspaper by title or ISSN"
 			class="summon-search-field search-bar-full"
-			name=s.q
 			autocomplete=off>
-		<input type=image src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
+		<input type="hidden" name="query" id="jsearchQuery">
+		<input type="hidden" name="tab" value="jsearch">
+		<input type="hidden" name="vid" value="01CBB_CCLIBRAR:COLBY">
+		<input type=image onclick="journalSearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
-  <input type=hidden name=s.fvf[] value="ContentType,Newspaper Article,t">
-  <input type=hidden name=keep_r value=true>
 </form>
 
 <section class="content-area">
@@ -33,3 +35,11 @@
 		<li><a href="https://libraries.colby.edu/remote-library-access"><img src='/wp-content/plugins/colby-libraries/assets/img/remote_access.svg' alt="Remote Access"><span>remote access</span></a></li>
 	</ul>
 </div>
+
+<script type="text/javascript">
+	const journalSearch = () => {
+		const jsearchQuery = document.getElementById('jsearchQuery');
+		jsearchQuery.value = 'any,contains,' + document.getElementById('jsearchQueryTemp').value;
+		document.forms['jForm'].submit();
+	}
+</script>

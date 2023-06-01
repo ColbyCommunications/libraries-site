@@ -6,7 +6,7 @@
 	action="https://colby.primo.exlibrisgroup.com/discovery/search"
 	class="summon-search-widget"
 	accept-charset="utf-8"
-	onsubmit="searchPrimo()">
+	onsubmit="librarySearch()">
 	<div id="search-box">
 		<input type="text"
 			placeholder="Find articles, books, and more."
@@ -24,7 +24,7 @@
 				<option value="CourseReserves">Course Reserves</option>
 			</select>
 		</div>
-		<input type="image" onclick="searchPrimo()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
+		<input type="image" onclick="librarySearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
 	<a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
 </form>
@@ -46,7 +46,7 @@
 			autocomplete="off"
 			name="searcharg">
 		<div class="drop-down">
-			<select id="mainecatOptions">
+			<select id="maineCatOptions">
 				<option value="X">Keyword</option>
 				<option value="t">Title</option>
 				<option value="a">Author (Last, First)</option>
@@ -101,7 +101,7 @@
 </div>
 
 <script type="text/javascript">
-	const searchPrimo = () => {
+	const librarySearch = () => {
 		const query1 = document.getElementById('option1Query');
 		query1.value = 'any,contains,' + document.getElementById('option1QueryTemp').value;
 		document.forms['searchForm'].submit();
@@ -109,7 +109,7 @@
 
 	const searchMaineCat = () => {
 		const searchtype = document.getElementById('searchtype');
-		searchtype.value = document.getElementById('mainecatOptions').value;
+		searchtype.value = document.getElementById('maineCatOptions').value;
 		document.forms['searchForm'].submit();
 	}
 
