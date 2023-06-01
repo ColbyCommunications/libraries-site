@@ -88,5 +88,3 @@ ul#audienceLinksInner{left:54% !important}
 .search-footer a:hover{text-decoration:unset !important}
 .search-footer a img{margin-right:10px;width:30px;height:30px}
 .search-footer a span{font-size:12.5px;text-transform:uppercase;color:#fff}
-@media(max-width:890px){#librarySearch.tabbable{-ms-flex-direction:column;flex-direction:column}
-}
