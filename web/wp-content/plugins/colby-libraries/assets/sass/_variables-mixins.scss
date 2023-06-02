@@ -10,17 +10,51 @@ $hidden_mobile: $width_phablet - 1px;
 $hidden_phablet: $width_tablet - 1px;
 $wordpress_admin: 783px;
 
-
 // Media queries
 // @include mobile { selector: style; }
 //––––––––––––––––––––––––––––––––––––––––––––––––––
-@mixin mobile   { @media (min-width: #{$width_mobile})  { @content; } }
-@mixin phablet  { @media (min-width: #{$width_phablet}) { @content; } }
-@mixin tablet   { @media (min-width: #{$width_tablet})  { @content; } }
-@mixin laptop   { @media (min-width: #{$width_laptop})  { @content; } }
-@mixin desktop  { @media (min-width: #{$width_desktop}) { @content; } }
-@mixin hdtv     { @media (min-width: #{$width_hdtv})    { @content; } }
-@mixin nomobile { @media (max-width: #{$hidden_mobile}) { @content; } }
-@mixin nophablet { @media (max-width: #{$hidden_phablet}) { @content; } }
-@mixin wpadmin	{ @media (min-width: #{$wordpress_admin}) { @content; } }
-
+@mixin mobile {
+  @media (max-width: #{$width_mobile}) {
+    @content;
+  }
+}
+@mixin phablet {
+  @media (max-width: #{$width_phablet}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$width_tablet}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (max-width: #{$width_laptop}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: #{$width_desktop}) {
+    @content;
+  }
+}
+@mixin hdtv {
+  @media (min-width: #{$width_hdtv}) {
+    @content;
+  }
+}
+@mixin nomobile {
+  @media (max-width: #{$hidden_mobile}) {
+    @content;
+  }
+}
+@mixin nophablet {
+  @media (max-width: #{$hidden_phablet}) {
+    @content;
+  }
+}
+@mixin wpadmin {
+  @media (min-width: #{$wordpress_admin}) {
+    @content;
+  }
+}

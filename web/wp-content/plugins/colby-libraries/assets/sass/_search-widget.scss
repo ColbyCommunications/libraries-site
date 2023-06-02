@@ -1,4 +1,6 @@
 // Code from previous iteration of plugin.
+@import "./variables-mixins";
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +13,16 @@
   display: flex;
   justify-content: flex-start;
   height: 300px;
+  min-width: 300px;
+
+  @include phablet {
+    height: 330px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 #librarySearch .nav-tabs {
@@ -19,6 +31,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @include mobile {
+    width: 100%;
+    flex-direction: row;
+    font-size: 11px;
+    text-align: center;
+  }
 }
 
 #librarySearch .nav-tabs li {
@@ -27,6 +46,12 @@
   height: 50px !important;
   display: flex;
   align-items: center;
+
+  @include mobile {
+    justify-content: center;
+    border-left: 1px solid #e4e8f0;
+    border-right: 1px solid #e4e8f0;
+  }
 }
 
 #librarySearch .nav-tabs li a {
@@ -38,6 +63,10 @@
   align-items: center;
   color: #002169;
   border-radius: 0;
+
+  @include mobile {
+    padding: 0 5px;
+  }
 }
 
 #librarySearch .nav {
@@ -60,6 +89,14 @@
   padding-top: 10px;
   height: 100%;
   font-size: 12.5px;
+
+  @include phablet {
+    font-size: 11px;
+  }
+
+  @include mobile {
+    height: 350px;
+  }
 
   a:hover {
     text-decoration: underline;
@@ -124,6 +161,11 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a {
   margin-bottom: 0;
   padding-bottom: 10px;
   margin-left: 35px;
+
+  @include mobile {
+    margin-left: 10px;
+    padding-top: 10px;
+  }
 }
 
 .content-area {
@@ -136,12 +178,19 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a {
       margin: 0;
     }
   }
+  @include mobile {
+    margin-left: 10px;
+  }
 }
 
 .ls-btn-container,
 .sc-btn-container {
   font-size: 12.5px;
   color: #232b3b;
+
+  @include phablet {
+    font-size: 11px;
+  }
 }
 
 .arrow-right {
@@ -154,6 +203,10 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a {
   float: right;
   margin-right: -37px;
   display: none;
+
+  @include mobile {
+    display: none !important;
+  }
 }
 
 li.active .arrow-right {
@@ -207,6 +260,10 @@ form #search-box {
   input.search-bar::placeholder {
     color: rgb(156, 156, 156);
     font-size: 12px;
+
+    @include phablet {
+      font-size: 11px;
+    }
   }
 
   .drop-down {
@@ -228,6 +285,10 @@ form #search-box {
       font-size: 12px;
       border-radius: 0;
       outline: none;
+
+      @include phablet {
+        font-size: 11px;
+      }
     }
   }
   input[type="image"] {
@@ -240,14 +301,6 @@ form.option3,
 form.option4,
 form.option5 {
   display: none;
-}
-
-form.option1,
-form.option2,
-form.option3,
-form.option4,
-form.option5 {
-  font-size: 1.1em;
 }
 
 div.option2,
@@ -360,6 +413,10 @@ ul#audienceLinksInner {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-size: 14px;
+
+  @include phablet {
+    font-size: 12.5px;
+  }
 }
 
 .search-footer {
@@ -371,6 +428,14 @@ ul#audienceLinksInner {
   position: absolute;
   bottom: 0;
 
+  @include phablet {
+    height: unset !important;
+  }
+
+  @include mobile {
+    height: unset !important;
+  }
+
   ul.search-footer-links {
     margin: 0;
     padding: 0 10px;
@@ -380,12 +445,34 @@ ul#audienceLinksInner {
     align-items: center;
     width: 100%;
     height: 100%;
+
+    @include phablet {
+      padding: 5px 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      padding: 5px 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   li {
     padding: 0 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include phablet {
+      padding: 5px 0;
+      justify-content: flex-start;
+    }
+
+    @include mobile {
+      padding: 5px 0;
+      justify-content: flex-start;
+    }
   }
 
   a {
@@ -398,96 +485,21 @@ ul#audienceLinksInner {
       margin-right: 10px;
       width: 30px;
       height: 30px;
+
+      @include tablet {
+        width: 25px;
+        height: 20px;
+      }
+
+      @include mobile {
+        width: 20px;
+        height: 20px;
+      }
     }
     span {
-      font-size: 12.5px;
+      font-size: 11px;
       text-transform: uppercase;
       color: white;
     }
   }
 }
-
-// @media (max-width: 890px) {
-//   #librarySearch.tabbable {
-//     flex-direction: column;
-//   }
-// }
-
-// @media (max-width: 797px) {
-//   #librarySearch .nav {
-//     max-width: 30%;
-//   }
-//   input[type="submit"] {
-//     margin-left: 5px;
-//     padding-left: 0;
-//   }
-// }
-
-// @media (max-width: 767px) {
-//   #librarySearch .tab-content label {
-//     margin-right: 35px;
-//     display: inline-block;
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   #librarySearch .tab-content label {
-//     margin-right: 50px;
-//   }
-//   input[type="submit"] {
-//     margin-left: 5px;
-//     padding-left: 0;
-//   }
-//   #librarySearch.tabs-left > .nav-tabs > li > a {
-//     font-size: 0.7em;
-//     padding-left: 5px;
-//     padding-right: 5px;
-//     line-height: 1.5em;
-//     padding-top: 8px;
-//     padding-bottom: 8px;
-//   }
-//   #librarySearch .tab-content input[type="text"] {
-//     width: 90%;
-//     font-size: 0.7em !important;
-//   }
-//   #librarySearch .tab-content {
-//     padding: 15px 15px 10px 0;
-//   }
-//   #librarySearch .nav {
-//     padding-bottom: 125px;
-//   }
-//   .bottom-text p {
-//     line-height: 1.4em;
-//     margin: 5px 0 0;
-//   }
-//   #librarySearch.tabbable {
-//     background-position: 100% 10%;
-//   }
-
-//   input[type="radio"] {
-//     margin-right: 0;
-//     margin-top: 2px;
-//     display: block;
-//     float: left;
-//     margin-left: -20px;
-//   }
-//   #librarySearch .tab-content label {
-//     margin-left: 20px;
-//     margin-right: 10px;
-//     display: block;
-//     padding-left: 20px;
-//     line-height: 1.2em;
-//     margin-bottom: 10px;
-//   }
-//   .radioArea {
-//     margin-bottom: 0;
-//     padding-bottom: 5px;
-//     margin-top: 0;
-//     padding-top: 0;
-//     margin: 6px 0;
-//     margin-left: -20px;
-//   }
-//   .radioArea br {
-//     display: none;
-//   }
-// }
