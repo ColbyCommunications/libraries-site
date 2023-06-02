@@ -153,6 +153,19 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a {
   color: #fff;
 }
 
+#librarySearch .nav-tabs .active:after {
+  @include mobile {
+    content: "";
+    position: absolute;
+    margin-top: 60px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 10px solid #002878;
+  }
+}
+
 #librarySearch .formEntryArea {
   padding-top: 5px;
 }
