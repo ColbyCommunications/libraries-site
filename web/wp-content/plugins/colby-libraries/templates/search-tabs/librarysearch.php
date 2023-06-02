@@ -79,10 +79,10 @@
 	</div>
 
 	<div id="content_3" style="display: none;">
-		<p>Use <strong>WorldCat</strong> to search for and request items from <strong>libraries worldwide</strong>.</p>
+		<p><strong>WorldCat</strong>: explore items from <strong>libraries worldwide</strong>.</p>
 		<ul>
 			<li>
-				<p>Use <a href="https://colby.idm.oclc.org/login?url=https://firstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP">FirstSearch</a> to focus your search and for automated <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> requests.</p>
+				<p><a href="https://colby.idm.oclc.org/login?url=https://firstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP">FirstSearch</a>: focused searches and automated <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> requests.</p>
 			</li>
 			<li>
 				<p>Use <a href="https://www.worldcat.org/">WorldCat.org</a> for the most intuitive browsing experience.</p>
