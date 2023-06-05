@@ -21,13 +21,12 @@
 	</div>
 
 	<div id="content_8">
-		<p>The Libraries’ digital collections provide online access to unique digitized manuscripts, scholarly works, college publications, photographs, audio, video, and more.</p>
 		<ul>
 			<li>
-				<p><a href="https://digitalcommons.colby.edu/">Digital Commons</a> houses materials such as senior theses, newspapers, college publications, yearbooks, reunion books, and more.</p>
+				<p><a href="https://digitalcommons.colby.edu/">Digital Commons</a>: Explore senior theses, college publications, yearbooks, and more.</p>
 			</li>
 			<li>
-				<p><a href="https://library.artstor.org/#/browse/institution">Artstor</a> houses the Libraries’ archival photo collection, art image sets, and unique materials from the Libraries’ special collections and archives and beyond. </p>
+				<p><a href="https://library.artstor.org/#/browse/institution">Artstor</a>: Discover archival photo collection, unique materials and items from the Libraries’ special collections and beyond.</p>
 			</li>
 			<li>
 				<p>Special Collections and Archives’ <a href="https://web.colby.edu/csc-home/">web portal</a> contains digital exhibits displaying curated collection holdings selections.</p>
