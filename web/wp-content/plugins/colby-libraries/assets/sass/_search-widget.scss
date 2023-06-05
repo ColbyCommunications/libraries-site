@@ -283,12 +283,12 @@ form #search-box {
     &:before {
       content: "/";
       position: relative;
-      left: 0.3rem;
+      left: -0.25rem;
       color: #232b3b;
     }
     select {
       height: 100%;
-      width: 130px !important;
+      width: 135px !important;
       box-shadow: none;
       border: 0;
       font-size: 14px;
@@ -296,9 +296,6 @@ form #search-box {
       font-size: 12px;
       border-radius: 0;
       transition: border-color 0.3s ease; /* Add a transition for smoother changes */
-      &:focus {
-        outline-offset: 0.5rem;
-      }
 
       @include phablet {
         font-size: 11px;
