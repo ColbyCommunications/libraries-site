@@ -38,7 +38,7 @@
 #librarySearch #g .radioArea label{margin-right:5px;font-size:1em}
 #librarySearch #g form{margin-bottom:0 !important;padding-bottom:0 !important}
 body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a{color:#fff !important}
-#librarySearch .tab-content input[type=text]{height:100%;box-shadow:none;border-radius:0}
+#librarySearch .tab-content input[type=text]{height:100%;width:100%;box-shadow:none;border-radius:0}
 #librarySearch .nav-tabs>.active>a,.nav-tabs>.active>a:hover,#librarySearch .nav-tabs>.active>a:focus{background-color:#002878;color:#fff}
 #librarySearch .formEntryArea{padding-top:5px}
 #librarySearch form{margin-bottom:0;padding-bottom:10px;margin-left:35px}
