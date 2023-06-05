@@ -70,16 +70,16 @@
 <!-- Content Section -->
 <section class="content-area">
 	<div id="content_1">
-		<p><strong>LibrarySearch:</strong> locate books, articles, and more from Colby, Bates and Bowdoin.</p>
+		<p><strong>LibrarySearch:</strong> Locate books, articles, and more from Colby, Bates and Bowdoin.</p>
 		<p><strong>Not finding what you need?</strong> Try <strong>MaineCat</strong>, or <strong>WorldCat</strong>.</p>
 	</div>
 
 	<div id="content_2" style="display: none;">
-		<p><strong>MaineCat:</strong> discover items from the <strong>libraries across Maine</strong>. Use ILL to request items from MaineCat.</p>
+		<p><strong>MaineCat:</strong> Discover items from the <strong>libraries across Maine</strong>. Use ILL to request items from MaineCat.</p>
 	</div>
 
 	<div id="content_3" style="display: none;">
-		<p><strong>WorldCat</strong>: explore items from <strong>libraries worldwide</strong>.</p>
+		<p><strong>WorldCat</strong>: Explore items from <strong>libraries worldwide</strong>.</p>
 		<ul>
 			<li>
 				<p><a href="https://colby.idm.oclc.org/login?url=https://firstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP">FirstSearch</a>: focused searches and automated <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> requests.</p>
