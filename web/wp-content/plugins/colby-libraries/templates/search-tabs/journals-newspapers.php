@@ -42,4 +42,5 @@
 		jsearchQuery.value = 'any,contains,' + document.getElementById('jsearchQueryTemp').value;
 		document.forms['jForm'].submit();
 	}
+
 </script>
