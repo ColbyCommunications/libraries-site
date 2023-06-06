@@ -275,8 +275,8 @@ form #search-box {
     font-size: 12px;
     width: 100% !important;
   }
-
-  input.search-bar::placeholder {
+  input.search-bar::placeholder,
+  input.search-bar-full::placeholder {
     color: rgb(156, 156, 156);
     font-size: 12px;
 

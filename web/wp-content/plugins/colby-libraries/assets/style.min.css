@@ -54,8 +54,8 @@ span.pipe{color:#ccc}
 form #search-box{margin:0 10px 10px 0;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;background-color:#fff}
 form #search-box input.search-bar{margin:0;padding:0 5px;height:100%;box-shadow:none;border:0;color:#232b3b;font-size:12px}
 form #search-box input.search-bar-full{margin:0;padding:0 5px;height:100%;box-shadow:none;border:0;color:#232b3b;font-size:12px;width:100% !important}
-form #search-box input.search-bar:-ms-input-placeholder{color:#9c9c9c;font-size:12px}
-form #search-box input.search-bar::placeholder{color:#9c9c9c;font-size:12px}
+form #search-box input.search-bar:-ms-input-placeholder,form #search-box input.search-bar-full:-ms-input-placeholder{color:#9c9c9c;font-size:12px}
+form #search-box input.search-bar::placeholder,form #search-box input.search-bar-full::placeholder{color:#9c9c9c;font-size:12px}
 form #search-box .drop-down{padding-right:10px;display:-ms-flexbox;display:flex;position:relative}
 form #search-box .drop-down:before{content:"/";margin:auto 0;display:inline-block;position:relative;bottom:2px;color:#232b3b}
 form #search-box .drop-down:after{content:"";border-right:.5em solid rgba(0,0,0,0);border-left:.5em solid rgba(0,0,0,0);border-top:.4em solid #002169;position:absolute;top:40%;left:80%}
@@ -90,8 +90,8 @@ ul#audienceLinksInner{left:54% !important}
 }@media(max-width:640px){#librarySearch.tabbable{height:330px}
 #librarySearch .tab-content{font-size:11px}
 .ls-btn-container,.sc-btn-container{font-size:11px}
-form #search-box input.search-bar:-ms-input-placeholder{font-size:11px}
-form #search-box input.search-bar::placeholder{font-size:11px}
+form #search-box input.search-bar:-ms-input-placeholder,form #search-box input.search-bar-full:-ms-input-placeholder{font-size:11px}
+form #search-box input.search-bar::placeholder,form #search-box input.search-bar-full::placeholder{font-size:11px}
 form #search-box .drop-down select{font-size:11px}
 .advanced-search{font-size:12.5px}
 .search-footer{height:unset !important}
