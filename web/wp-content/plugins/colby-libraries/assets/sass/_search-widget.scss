@@ -281,12 +281,25 @@ form #search-box {
   .drop-down {
     padding-right: 10px;
     display: flex;
+    position: relative;
     &:before {
       content: "/";
+      margin: auto 0;
+      display: inline-block;
       position: relative;
-      left: -0.25rem;
+      bottom: 2px;
       color: #232b3b;
     }
+    &:after {
+      content: "";
+      border-right: 0.5em solid transparent;
+      border-left: 0.5em solid transparent;
+      border-top: 0.4em solid #002169;
+      position: absolute;
+      top: 40%;
+      left: 80%;
+    }
+
     select {
       height: 100%;
       width: 135px !important;
@@ -296,7 +309,9 @@ form #search-box {
       color: #232b3b;
       font-size: 12px;
       border-radius: 0;
-      transition: border-color 0.3s ease; /* Add a transition for smoother changes */
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
 
       @include phablet {
         font-size: 11px;
@@ -305,7 +320,7 @@ form #search-box {
   }
 
   input[type="image"] {
-    background-color: #002168;
+    background-color: #002169;
   }
 }
 
