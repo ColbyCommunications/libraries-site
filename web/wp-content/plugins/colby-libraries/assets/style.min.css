@@ -88,8 +88,6 @@ ul#audienceLinksInner{left:54% !important}
 .search-footer a span{font-size:11px;text-transform:uppercase;color:#fff}
 @media(max-width:800px){.search-footer a img{width:25px;height:20px}
 }@media(max-width:640px){#librarySearch.tabbable{height:330px}
-#librarySearch .tab-content{font-size:11px}
-.ls-btn-container,.sc-btn-container{font-size:11px}
 form #search-box input.search-bar:-ms-input-placeholder,form #search-box input.search-bar-full:-ms-input-placeholder{font-size:11px}
 form #search-box input.search-bar::placeholder,form #search-box input.search-bar-full::placeholder{font-size:11px}
 form #search-box .drop-down select{font-size:11px}

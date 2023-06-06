@@ -92,10 +92,6 @@
   height: 100%;
   font-size: 12.5px;
 
-  @include phablet {
-    font-size: 11px;
-  }
-
   @include mobile {
     height: 350px;
   }
@@ -210,10 +206,6 @@ body .accordion .accordion-body .accordion-inner ul.nav-tabs li.active a {
 .sc-btn-container {
   font-size: 12.5px;
   color: #232b3b;
-
-  @include phablet {
-    font-size: 11px;
-  }
 }
 
 .arrow-right {
