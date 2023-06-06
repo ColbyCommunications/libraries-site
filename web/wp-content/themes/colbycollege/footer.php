@@ -55,33 +55,32 @@ if ( ! $printView ) {
 					<li><a href="https://news.colby.edu">News</a></li>
 					<li><a href="https://events.colby.edu">Events</a></li>
 					<li><a href="https://magazine.colby.edu/"><em>Colby</em> Magazine</a></li>
-					<li><a href="https://www.colby.edu/museum">Museum of Art</a></li>
+					<li><a href="https://museum.colby.edu/">Museum of Art</a></li>
 					<li><a href="/">Libraries</a></li>
 				</ul>
 				<ul class="footerCol secondCol">
-					<li><a href="https://www.colby.edu/about/">About Colby</a></li>
+					<li><a href="https://www.colby.edu/academics/course-catalogue/about-colby/">About Colby</a></li>
 					<li><a href="https://www.colby.edu/visit/">Visit Colby</a></li>
-					<li><a href="https://www.colby.edu/directory/">Directory</a></li>
+					<li><a href="https://www.colby.edu/people/people-directory/">Directory</a></li>
 					<li><a href="https://map.colby.edu">Campus Map</a></li>
-					<li><a href="https://www.colby.edu/employment">Employment</a></li>
+					<li><a href="https://www.colby.edu/humanresources/employment">Employment</a></li>
 
 				</ul>
 				<ul class="footerCol thirdCol">
 					<li><a href="http://my.colby.edu">myColby</a></li>
 
-					<li><a href="http://www.colby.edu/accessibility-policy/">Accessibility Policy</a></li>
-					<li><a href="https://www.colby.edu/careercenter/">DavisConnects</a></li>
+					<li><a href="https://www.colby.edu/people/offices-directory/general-counsel/">Accessibility Policy</a></li>
+					<li><a href="https://davisconnects.colby.edu/">DavisConnects</a></li>
 					<li><a href="https://colby.cafebonappetit.com/">Dining Menus</a></li>
 					<li><a href="https://www.colby.edu/contact-colby-college/">Site Feedback</a></li>
 				</ul>
 				<ul class="footerCol lastCol">
 					<li id="colby-loginli"></li>
-					<li><a href="https://www.colby.edu/generalcounsel/privacy-policy/">Privacy Policy</a></li>
+					<li><a href="https://www.colby.edu/people/offices-directory/general-counsel/">Privacy Policy</a></li>
 					<li><a href="https://www.colby.edu/colbyalumni/">Alumni</a></li>
 					<li><a href="https://www.colby.edu/parents/">Parents</a></li>
-					<li><a href="https://www.colby.edu/admission/">Admissions</a></li>
+					<li><a href="https://afa.colby.edu/">Admissions</a></li>
 				</ul>
-				<a rel="nofollow" href="/reflective.php" style="display:none;">uvular-surrounding</a>
 			</div>
 
 			<div id="contactSupportConnect">
