@@ -2872,3 +2872,156 @@
 [06-Jun-2023 16:02:12 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
 [06-Jun-2023 12:02:12 America/New_York] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_transient_1__2951165530' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('/app/web/wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, M_Ajax::register_scripts, ExtensibleObject->__call, ExtensibleObject->get_mixin_providing, ExtensibleObject->_instantiate_mixin, A_WordPress_Base_Url->initialize, C_Photocrati_Transient_Manager::fetch, C_Photocrati_Transient_Manager->get, get_transient, delete_option
 [06-Jun-2023 12:02:12 America/New_York] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_transient_1__2951165530' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('/app/web/wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, M_Ajax::register_scripts, ExtensibleObject->__call, ExtensibleObject->get_mixin_providing, ExtensibleObject->_instantiate_mixin, A_WordPress_Base_Url->initialize, C_Photocrati_Transient_Manager::fetch, C_Photocrati_Transient_Manager->get, get_transient, delete_option
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:37:51 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 15:37:52 America/New_York] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_transient_1__2951165530' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('/app/web/wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, M_Ajax::register_scripts, ExtensibleObject->__call, ExtensibleObject->get_mixin_providing, ExtensibleObject->_instantiate_mixin, A_WordPress_Base_Url->initialize, C_Photocrati_Transient_Manager::fetch, C_Photocrati_Transient_Manager->get, get_transient, delete_option
+[06-Jun-2023 15:37:52 America/New_York] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_transient_1__2951165530' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('/app/web/wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, M_Ajax::register_scripts, ExtensibleObject->__call, ExtensibleObject->get_mixin_providing, ExtensibleObject->_instantiate_mixin, A_WordPress_Base_Url->initialize, C_Photocrati_Transient_Manager::fetch, C_Photocrati_Transient_Manager->get, get_transient, delete_option
+[06-Jun-2023 15:49:11 America/New_York] PHP Notice:  Function wp_enqueue_script() was called <strong>incorrectly</strong>. "wp-editor" script should not be enqueued together with the new widgets editor (wp-edit-widgets or wp-customize-widgets). Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.8.0.) in /app/web/wp/wp-includes/functions.php on line 5865
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:15 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 15:49:16 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 19:55:41 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:55:41 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:58:17 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 19:58:17 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 20:07:56 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 20:07:56 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 20:08:10 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 20:08:10 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 20:08:18 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 20:08:18 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[06-Jun-2023 16:20:51 America/New_York] PHP Notice:  Function wp_enqueue_script() was called <strong>incorrectly</strong>. "wp-editor" script should not be enqueued together with the new widgets editor (wp-edit-widgets or wp-customize-widgets). Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.8.0.) in /app/web/wp/wp-includes/functions.php on line 5865
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:57 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:20:58 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:21:57 America/New_York] PHP Notice:  Function wp_enqueue_script() was called <strong>incorrectly</strong>. "wp-editor" script should not be enqueued together with the new widgets editor (wp-edit-widgets or wp-customize-widgets). Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 5.8.0.) in /app/web/wp/wp-includes/functions.php on line 5865
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:01 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 539
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 563
+[06-Jun-2023 16:22:02 America/New_York] PHP Warning:  Attempt to read property "ID" on null in /app/web/wp-content/themes/colbycollege/functions.php on line 584
+[07-Jun-2023 14:10:06 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:10:06 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:10:21 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:10:21 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:10:45 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:10:45 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:12:15 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:12:15 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:12:33 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:12:33 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:02 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:02 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:13 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:13 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:18 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:18 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:27 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:27 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:32 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:13:32 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:14:18 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:14:18 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 10:14:19 America/New_York] PHP Warning:  Undefined variable $use_gradient in /app/web/wp-content/themes/colbycollege/functions.php on line 911
+[07-Jun-2023 14:14:27 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 14:14:27 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[07-Jun-2023 10:24:08 America/New_York] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:24:08 America/New_York] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:24:08 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
+[07-Jun-2023 10:25:27 America/New_York] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:25:27 America/New_York] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:25:27 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
+[07-Jun-2023 10:25:34 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
+[07-Jun-2023 10:25:35 America/New_York] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:25:35 America/New_York] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:25:35 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
+[07-Jun-2023 10:26:24 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
+[07-Jun-2023 10:26:25 America/New_York] PHP Deprecated:  Function screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:26:25 America/New_York] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
+[07-Jun-2023 10:26:25 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
+[07-Jun-2023 11:27:23 America/New_York] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query UPDATE `wp_options` SET `option_value` = '1686153443' WHERE `option_name` = '_transient_timeout_1__2951165530' made by A_WordPress_Base_Url->cache_lookups, C_Photocrati_Transient_Manager::update, C_Photocrati_Transient_Manager->set, set_transient, update_option

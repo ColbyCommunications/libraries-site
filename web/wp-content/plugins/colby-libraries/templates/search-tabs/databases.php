@@ -16,7 +16,7 @@
 
 <section class="content-area">
 	<div id="content_5">
-		<p>You can also browse our <strong>databases by title</strong>, quickly access our most <strong>popular databases</strong>, or check out our <strong>trial databases</strong> <a href="https://libguides.colby.edu/az.php">here</a>.</p>
+		<p>Browse our <a href="https://libguides.colby.edu/az.php">databases by title or subject</a>, use <a href="https://libguides.colby.edu/az.php">popular databases</a> to jump start your research, or explore our <a href="https://libguides.colby.edu/az.php">trial databases</a>.</p>
 	</div>
 </section>
 

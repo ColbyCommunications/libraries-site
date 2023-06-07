@@ -9,7 +9,7 @@
 
 <section class="content-area">
 	<div id="content_7">
-		<p>Our physical collections include culturally significant materials in various formats from the 13th through the 21st centuries.</p>
+		<p><p>Discover Colby’s <strong>physical</strong> Special Collections & Archives collections which include both culturally significant materials and Colby documents and memorabilia from the 13th through the 21st centuries.</p></p>
 		<ul>
 			<!-- <li>
 				<p>Use <a href="#">LibrarySearch</a> to search for published special collections and archives materials and collection-level records for unpublished materials.</p>
@@ -21,12 +21,13 @@
 	</div>
 
 	<div id="content_8">
+		<p>Explore Colby’s <strong>digital</strong> Special Collections & Archives collections include both culturally significant materials and Colby documents and memorabilia from the 13th through the 21st centuries.</p>
 		<ul>
 			<li>
 				<p><a href="https://digitalcommons.colby.edu/">Digital Commons</a>: Explore senior theses, college publications, yearbooks, and more.</p>
 			</li>
 			<li>
-				<p><a href="https://library.artstor.org/#/browse/institution">Artstor</a>: Discover archival photo collection, unique materials and items from the Libraries’ special collections and beyond.</p>
+				<p><a href="https://library.artstor.org/#/browse/institution">Artstor</a>: Discover archival photo collections, unique materials and items from the Libraries’ special collections and beyond.</p>
 			</li>
 			<li>
 				<p>Special Collections and Archives’ <a href="https://web.colby.edu/csc-home/">web portal</a> contains digital exhibits displaying curated collection holdings selections.</p>

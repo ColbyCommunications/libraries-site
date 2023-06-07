@@ -70,16 +70,23 @@
 <!-- Content Section -->
 <section class="content-area">
 	<div id="content_1">
-		<p><strong>LibrarySearch:</strong> Locate books, articles, and more from Colby, Bates and Bowdoin.</p>
-		<p><strong>Not finding what you need?</strong> Try <strong>MaineCat</strong>, or <strong>WorldCat</strong>.</p>
+		<p><a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&lang=en">LibrarySearch</a>
+		is the Colby Libraries' search platform for exploring and accessing Colby, Bates, abd Bowdoin's library 
+		collections.</p>
+		<ul>
+			<li>
+				<p><strong>Explore and utilize the dropdown options in the search box to get the best search results.</strong></p>
+			</li>
+		</ul>
+		<p>Click on the MORE INFO button below to learn more about LibrarySearch. <em>Not finding what you need?</em> Try MaineCat, or WorldCat.</p>
 	</div>
 
 	<div id="content_2" style="display: none;">
-		<p><strong>MaineCat:</strong> Discover items from the <strong>libraries across Maine</strong>. Use ILL to request items from MaineCat.</p>
+		<p><strong>MaineCat:</strong> Discover items from the public and academic libraries across Maine. Use ILL to request items from MaineCat.</p>
 	</div>
 
 	<div id="content_3" style="display: none;">
-		<p><strong>WorldCat</strong>: Explore items from <strong>libraries worldwide</strong>.</p>
+		<p><strong>WorldCat</strong>: Explore and request items from academic libraries worldwide.</p>
 		<ul>
 			<li>
 				<p><a href="https://colby.idm.oclc.org/login?url=https://firstsearch.oclc.org/dbname=WorldCat;done=referer;FSIP">FirstSearch</a>: focused searches and automated <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> requests.</p>
