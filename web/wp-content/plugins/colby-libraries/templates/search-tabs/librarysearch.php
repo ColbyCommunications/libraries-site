@@ -75,14 +75,14 @@
 		collections.</p>
 		<ul>
 			<li>
-				<p><strong>Explore and utilize the dropdown options in the search box to get the best search results.</strong></p>
+				<p><a href="https://libguides.colby.edu/librarysearch/about/">Explore</a> and utilize the dropdown options in the search box to get the best search results.</p>
 			</li>
 		</ul>
-		<p>Click on the MORE INFO button below to learn more about LibrarySearch. <em>Not finding what you need?</em> Try MaineCat, or WorldCat.</p>
+		<p><em>Not finding what you need?</em> Try MaineCat, or WorldCat.</p>
 	</div>
 
 	<div id="content_2" style="display: none;">
-		<p><strong>MaineCat:</strong> Discover items from the public and academic libraries across Maine. Use ILL to request items from MaineCat.</p>
+		<p><strong>MaineCat:</strong> Discover items from the public and academic libraries across Maine. Use <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> to request items from MaineCat.</p>
 	</div>
 
 	<div id="content_3" style="display: none;">
