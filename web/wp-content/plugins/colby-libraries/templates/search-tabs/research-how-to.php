@@ -23,5 +23,4 @@
 <div class=bottom-text>
 	<strong>What's this?</strong>
 	<p>Guides to scholarly resources, vetted and organized by subject specialists.
-	<p><a href="https://www.colby.edu/libraries/research-help/researchlibrarians/" target="_blank">Meet with a Subject Specialist ></a>
 </div>
