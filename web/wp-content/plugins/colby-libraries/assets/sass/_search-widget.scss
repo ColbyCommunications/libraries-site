@@ -96,10 +96,6 @@
     font-size: 12.5px;
   }
 
-  @include tablet {
-    font-size: 12.5px;
-  }
-
   @include tablet2 {
     font-size: 14px;
   }
@@ -287,7 +283,7 @@ form #search-box {
     box-shadow: none;
     border: 0;
     color: #232b3b;
-    font-size: 12px;
+    font-size: 12.5px;
   }
 
   input.search-bar-full {
@@ -297,17 +293,13 @@ form #search-box {
     box-shadow: none;
     border: 0;
     color: #232b3b;
-    font-size: 12px;
+    font-size: 12.5px;
     width: 100% !important;
   }
   input.search-bar::placeholder,
   input.search-bar-full::placeholder {
     color: rgb(156, 156, 156);
-    font-size: 12px;
-
-    @include phablet {
-      font-size: 11px;
-    }
+    font-size: 12.5px;
   }
 
   .drop-down {
@@ -319,7 +311,7 @@ form #search-box {
       margin: auto 0;
       display: inline-block;
       position: relative;
-      bottom: 1px;
+      bottom: 2px;
       color: #232b3b;
     }
     &:after {
@@ -339,15 +331,11 @@ form #search-box {
       border: 0;
       font-size: 13px;
       color: #232b3b;
-      font-size: 12px;
+      font-size: 12.5px;
       border-radius: 0;
       appearance: none;
       -moz-appearance: none;
       -webkit-appearance: none;
-
-      @include phablet {
-        font-size: 11px;
-      }
     }
   }
 
@@ -451,7 +439,11 @@ ul#audienceLinksInner {
   }
 
   @include laptop {
-    font-size: 12.5px;
+    font-size: 14px;
+  }
+
+  @include tablet2 {
+    font-size: 14px;
   }
 }
 
