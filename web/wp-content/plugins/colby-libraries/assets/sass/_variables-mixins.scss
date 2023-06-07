@@ -2,6 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 $width_mobile: 480px;
 $width_phablet: 640px;
+$width_tablet2: 767px;
 $width_tablet: 800px;
 $width_laptop: 1000px;
 $width_desktop: 1200px;
@@ -25,6 +26,11 @@ $wordpress_admin: 783px;
 }
 @mixin tablet {
   @media (max-width: #{$width_tablet}) {
+    @content;
+  }
+}
+@mixin tablet2 {
+  @media (max-width: #{$width_tablet2}) {
     @content;
   }
 }
