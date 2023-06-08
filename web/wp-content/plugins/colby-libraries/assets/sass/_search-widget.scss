@@ -108,8 +108,11 @@
     height: 350px;
   }
 
-  a:hover {
-    text-decoration: underline;
+  a {
+    color: #0039bd !important;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

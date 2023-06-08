@@ -30,6 +30,7 @@
 #librarySearch .nav{margin-bottom:0;width:130px;height:100%;border:none !important}
 #librarySearch .content-section{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:justify;justify-content:space-between;width:100%;height:100%}
 #librarySearch .tab-content{margin:0 !important;padding-top:10px;height:100%;font-size:14px}
+#librarySearch .tab-content a{color:#0039bd !important}
 #librarySearch .tab-content a:hover{text-decoration:underline}
 #librarySearch .tab-pane{position:relative;height:100%}
 #librarySearch .tab-content label{display:inline;margin-right:14px;margin-bottom:2px;font-size:1em;color:#fff;display:inline-block}
