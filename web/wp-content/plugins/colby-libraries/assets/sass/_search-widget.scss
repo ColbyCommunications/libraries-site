@@ -5,7 +5,7 @@
 }
 
 #librarySearch.tabbable {
-  background-color: #ebebeb !important;
+  background-color: #e4e8f0 !important;
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0 !important;
@@ -300,7 +300,7 @@ form #search-box {
   }
   input.search-bar::placeholder,
   input.search-bar-full::placeholder {
-    color: rgb(156, 156, 156);
+    color: #7e8385 !important;
     font-size: 12.5px;
   }
 
@@ -413,22 +413,6 @@ input[type="radio"] {
 
 .btn-group.open .btn.dropdown-toggle {
   box-shadow: none;
-}
-
-ul#audienceLinksInner {
-  left: 54% !important;
-}
-
-#wooslider-library .wooslider-control-nav {
-  display: none;
-}
-
-#wooslider-library {
-  max-width: 250px !important;
-}
-
-#tab4_form1 .dropdown-menu {
-  top: 20px;
 }
 
 .advanced-search {
