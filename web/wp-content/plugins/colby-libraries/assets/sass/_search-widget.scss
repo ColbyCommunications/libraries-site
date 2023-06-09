@@ -63,6 +63,9 @@
   align-items: center;
   color: #002169;
   border-radius: 0;
+  &:hover {
+    background-color: #e4e8f0;
+  }
 
   @include mobile {
     padding: 0 5px;

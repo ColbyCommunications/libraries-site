@@ -21,7 +21,7 @@
 	</div>
 
 	<div id="content_8">
-		<p>Explore Colby’s <strong>digital</strong> Special Collections & Archives collections include both culturally significant materials and Colby documents and memorabilia from the 13th through the 21st centuries.</p>
+		<p>Explore Colby’s <strong>digital</strong> Special Collections & Archives collections which include both culturally significant materials and Colby documents and memorabilia from the 13th through the 21st centuries.</p>
 		<ul>
 			<li>
 				<p><a href="https://digitalcommons.colby.edu/">Digital Commons</a>: Explore senior theses, college publications, yearbooks, and more.</p>
