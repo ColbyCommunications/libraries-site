@@ -1,10 +1,9 @@
 <form
 	id="jsearch"
 	name="jForm"
-	action="https://librarysearch.colby.edu/discovery/jsearch?query=any,contains,test&tab=jsearch_slot&vid=01CBB_CCLIBRAR:COLBY&offset=0&journals=any,test"
+	action="https://librarysearch.colby.edu/discovery/jsearch/"
 	accept-charset="utf-8"
 	method="GET"
-	action="https://librarysearch.colby.edu/discovery/"
 	accept-charset="utf-8"
 	onsubmit="journalSearch()">
 	<div id="search-box">
@@ -16,6 +15,7 @@
 		<input type="hidden" name="query" id="jsearchQuery">
 		<input type="hidden" name="tab" value="jsearch">
 		<input type="hidden" name="vid" value="01CBB_CCLIBRAR:COLBY">
+		<input type="hidden" name="journals" id="jsearchJournals">
 		<input type=image onclick="journalSearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
 </form>
@@ -40,7 +40,9 @@
 <script type="text/javascript">
 	const journalSearch = () => {
 		const jsearchQuery = document.getElementById('jsearchQuery');
+		const jsearchJournals = document.getElementById('jsearchJournals');
 		jsearchQuery.value = 'any,contains,' + document.getElementById('jsearchQueryTemp').value;
+		jsearchJournals.value = 'any,' + document.getElementById('jsearchQueryTemp').value;
 		document.forms['jForm'].submit();
 	}
 
