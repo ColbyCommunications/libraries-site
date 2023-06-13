@@ -22,7 +22,7 @@
 
 <section class="content-area">
 	<div id="content_4">
-		<p>Locate and access Colby's academic journal and newspaper holdings. Use <a href="https://colby.primo.exlibrisgroup.com/discovery/npsearch?vid=01CBB_CCLIBRAR:COLBY">Search Newspapers</a> to locate articles by keyword.</p>
+		<p>Locate and access Colby's academic journal and newspaper holdings. Use <a href="https://colby.primo.exlibrisgroup.com/discovery/npsearch?vid=01CBB_CCLIBRAR:COLBY">Search Newspapers</a> to locate newspaper articles by keyword.</p>
 		<br>
 		<p>Did you know the Libraries provide subscriptions to the digital editions of the New York Times, Wall Street Journal, and Morning Sentinel to current students, faculty, and staff? <a href="https://libguides.colby.edu/newspapers-at-colby/setup">Register here for yours!</a></p>
 	</div>

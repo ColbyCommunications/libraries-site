@@ -71,11 +71,7 @@
 <section class="content-area">
 	<div id="content_1">
 		<p>Use <a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&lang=en">LibrarySearch</a> to access Colby, Bates, and Bowdoin's library collections.</p>
-		<ul>
-			<li>
-				<p><a href="https://libguides.colby.edu/librarysearch/about/">Explore</a> and utilize the dropdown options in the search box to get the best search results.</p>
-			</li>
-		</ul>
+		<p><a href="https://libguides.colby.edu/librarysearch/about/">Explore</a> and utilize the dropdown options in the search box to get the best search results.</p>
 		<p style="padding: 1rem 0; text-align: center;"><em>Not finding what you need?</em> Try MaineCat, or WorldCat.</p>
 	</div>
 
