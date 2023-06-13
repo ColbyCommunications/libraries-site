@@ -1,10 +1,10 @@
 <form
 	id="jsearch"
 	name="jForm"
-	action="https://colby.primo.exlibrisgroup.com/discovery/jsearch?query=any,contains,test&tab=jsearch_slot&vid=01CBB_CCLIBRAR:COLBY&offset=0&journals=any,test"
+	action="https://librarysearch.colby.edu/discovery/jsearch?query=any,contains,test&tab=jsearch_slot&vid=01CBB_CCLIBRAR:COLBY&offset=0&journals=any,test"
 	accept-charset="utf-8"
 	method="GET"
-	action="https://colby.primo.exlibrisgroup.com/discovery/"
+	action="https://librarysearch.colby.edu/discovery/"
 	accept-charset="utf-8"
 	onsubmit="journalSearch()">
 	<div id="search-box">
@@ -22,7 +22,7 @@
 
 <section class="content-area">
 	<div id="content_4">
-		<p>Locate and access Colby's academic journal and newspaper holdings. Use <a href="https://colby.primo.exlibrisgroup.com/discovery/npsearch?vid=01CBB_CCLIBRAR:COLBY">Search Newspapers</a> to locate newspaper articles by keyword.</p>
+		<p>Locate and access Colby's academic journal and newspaper holdings. Use <a href="https://librarysearch.colby.edu/discovery/npsearch?vid=01CBB_CCLIBRAR:COLBY">Search Newspapers</a> to locate newspaper articles by keyword.</p>
 		<br>
 		<p>Did you know the Libraries provide subscriptions to the digital editions of the New York Times, Wall Street Journal, and Morning Sentinel to current students, faculty, and staff? <a href="https://libguides.colby.edu/newspapers-at-colby/setup">Register here for yours!</a></p>
 	</div>

@@ -3,7 +3,7 @@
 	id="search-libsearch"
 	name="searchForm"
 	method="GET"
-	action="https://colby.primo.exlibrisgroup.com/discovery/search"
+	action="https://librarysearch.colby.edu/discovery/search"
 	class="summon-search-widget"
 	accept-charset="utf-8"
 	onsubmit="librarySearch()">
@@ -26,7 +26,7 @@
 		</div>
 		<input type="image" onclick="librarySearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
-	<a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
+	<a href="https://librarysearch.colby.edu/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
 </form>
 <!-- MaineCat -->
 <form class="option2"
@@ -54,7 +54,7 @@
 		</div>
 		<input type="image" onclick="searchMaineCat()"src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
-	<a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
+	<a href="https://librarysearch.colby.edu/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
 </form>
 <!-- Radio Controlls -->
 <form>
@@ -70,7 +70,7 @@
 <!-- Content Section -->
 <section class="content-area">
 	<div id="content_1">
-		<p>Use <a href="https://colby.primo.exlibrisgroup.com/discovery/search?vid=01CBB_CCLIBRAR:COLBY&lang=en">LibrarySearch</a> to access Colby, Bates, and Bowdoin's library collections.</p>
+		<p>Use <a href="https://librarysearch.colby.edu/discovery/search?vid=01CBB_CCLIBRAR:COLBY&lang=en">LibrarySearch</a> to access Colby, Bates, and Bowdoin's library collections.</p>
 		<p><a href="https://libguides.colby.edu/librarysearch/about/">Explore</a> and utilize the dropdown options in the search box to get the best search results.</p>
 		<p style="padding: 1rem 0; text-align: center;"><em>Not finding what you need?</em> Try MaineCat, or WorldCat.</p>
 	</div>
