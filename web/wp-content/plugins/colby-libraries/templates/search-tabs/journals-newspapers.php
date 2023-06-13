@@ -13,7 +13,6 @@
 			class="summon-search-field search-bar-full"
 			autocomplete=off>
 		<input type="hidden" name="query" id="jsearchQuery">
-		<input type="hidden" name="tab" value="jsearch">
 		<input type="hidden" name="vid" value="01CBB_CCLIBRAR:COLBY">
 		<input type="hidden" name="journals" id="jsearchJournals">
 		<input type=image onclick="journalSearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
