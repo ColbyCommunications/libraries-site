@@ -57,30 +57,30 @@ jQuery(document).ready(function () {
     if (jQuery(this).val() == "") jQuery(this).removeClass("inputfocus");
   });
 
-  jQuery("#librarySearch .tab-content form").submit(function () {
-    if (jQuery(this).children("input[type='text']").val() == "") {
-      alert("A value is required.");
-      jQuery(this).children("input[type='text']").focus();
-      return false;
-    }
+  // jQuery("#librarySearch .tab-content form").submit(function () {
+  //   if (jQuery(this).children("input[type='text']").val() == "") {
+  //     alert("A value is required.");
+  //     jQuery(this).children("input[type='text']").focus();
+  //     return false;
+  //   }
 
-    var searchForm = jQuery(this);
+  //   var searchForm = jQuery(this);
 
-    // Add 'loading' div...
-    jQuery("#librarySearch").before('<div class="loading">&nbsp;</div>');
+  //   // Add 'loading' div...
+  //   jQuery("#librarySearch").before('<div class="loading">&nbsp;</div>');
 
-    // Rearrange the items so 'searchtype' is first.
-    if (
-      jQuery(this)
-        .children(".formEntryArea")
-        .children("select[name='searchtype']")
-    ) {
-      var tempItem = jQuery(this)
-        .children(".formEntryArea")
-        .children("select[name='searchtype']")
-        .detach();
-      jQuery(this).prepend(tempItem);
-      jQuery(this).hide();
-    }
-  });
+  //   // Rearrange the items so 'searchtype' is first.
+  //   if (
+  //     jQuery(this)
+  //       .children(".formEntryArea")
+  //       .children("select[name='searchtype']")
+  //   ) {
+  //     var tempItem = jQuery(this)
+  //       .children(".formEntryArea")
+  //       .children("select[name='searchtype']")
+  //       .detach();
+  //     jQuery(this).prepend(tempItem);
+  //     jQuery(this).hide();
+  //   }
+  // });
 });
