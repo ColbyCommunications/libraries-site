@@ -12,12 +12,12 @@ class Setup {
 	public function __construct( $plugin ) {
 		$this->plugin = $plugin;
 
-		register_activation_hook( $plugin->main_file, [ $this, 'activate' ] );
-		add_action( 'init', [ $this, 'add_taxonomies' ], 98 );
-		add_action( 'init', [ $this, 'add_post_types' ], 99 );
-		add_action( 'init', [ $this, 'add_shortcodes' ] );
-		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ], 99 );
-		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 99 );
+		register_activation_hook( $plugin->main_file, array( $this, 'activate' ) );
+		add_action( 'init', array( $this, 'add_taxonomies' ), 98 );
+		add_action( 'init', array( $this, 'add_post_types' ), 99 );
+		add_action( 'init', array( $this, 'add_shortcodes' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 99 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 99 );
 	}
 
 	public function activate() {
@@ -49,7 +49,7 @@ class Setup {
 	public function add_shortcodes() {
 		foreach ( $this->plugin->shortcodes as $class ) {
 			$shortcode = new $class();
-			add_shortcode( $shortcode->shortcode, [ $shortcode, 'run' ] );
+			add_shortcode( $shortcode->shortcode, array( $shortcode, 'run' ) );
 		}
 	}
 

@@ -11,9 +11,14 @@ class ComposerStaticInitbe0a4c35db2adc65bd6749e40f78a45b
         'c89a5808b501166f7d14a1114c641cf9' => __DIR__ . '/../..' . '/wp-autoload/index.php',
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInitbe0a4c35db2adc65bd6749e40f78a45b::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,28 +1,27 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "102793d10c02e38efe259bff9c3277e8",
     "content-hash": "4d6411f5d9787e7daae191c9c0593ae8",
     "packages": [
         {
             "name": "frozzare/wp-autoload",
-            "version": "v2.0.4",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/frozzare/wp-autoload.git",
-                "reference": "081d479868d3da9376d0ede7bb94f51d7a915c4d"
+                "url": "https://github.com/wpup/autoload.git",
+                "reference": "bd18f47b5e08eb1ba1228bde1fc939f1dca07e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/frozzare/wp-autoload/zipball/081d479868d3da9376d0ede7bb94f51d7a915c4d",
-                "reference": "081d479868d3da9376d0ede7bb94f51d7a915c4d",
+                "url": "https://api.github.com/repos/wpup/autoload/zipball/bd18f47b5e08eb1ba1228bde1fc939f1dca07e6e",
+                "reference": "bd18f47b5e08eb1ba1228bde1fc939f1dca07e6e",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0"
+                "php": ">=5.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
@@ -49,7 +48,11 @@
                 "namespace",
                 "wordpress"
             ],
-            "time": "2016-05-01 15:41:07"
+            "support": {
+                "issues": "https://github.com/wpup/autoload/issues",
+                "source": "https://github.com/wpup/autoload/tree/v2.0.3"
+            },
+            "time": "2015-08-18T13:56:00+00:00"
         }
     ],
     "packages-dev": [],
@@ -59,5 +62,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
