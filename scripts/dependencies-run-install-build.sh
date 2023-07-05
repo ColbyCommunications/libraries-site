@@ -16,7 +16,7 @@ yarn scripts:build
 cd -
 
 printf "Build Advancement Theme... \n"
-cd web/wp-content/themes/colby-advancement-theme
+cd web/wp-content/themes/colby-libraries-theme
 composer install
 composer dump-autoload
 yarn
