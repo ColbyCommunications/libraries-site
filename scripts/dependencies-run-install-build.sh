@@ -15,9 +15,12 @@ yarn
 yarn scripts:build
 cd -
 
-cd web/wp-content/themes/colby-libraries-theme
+printf "Build Advancement Theme... \n"
+cd web/wp-content/themes/colby-advancement-theme
 composer install
 composer dump-autoload
+yarn
+yarn scripts:build
 cd -
 
 # npm install
