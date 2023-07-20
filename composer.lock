@@ -63,7 +63,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-libraries-theme",
-                "reference": "2028c1b35e89dd5f9cf2b1c4f3f88740daff4a0f"
+                "reference": "1a6c90be94f87d970bb314b935afd60e4748b339"
             },
             "require": {
                 "php": ">=8.0"
@@ -80,7 +80,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2023-07-20T19:50:22+00:00"
+            "time": "2023-07-20T20:16:01+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
