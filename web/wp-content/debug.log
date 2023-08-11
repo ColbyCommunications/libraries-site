@@ -3025,3 +3025,25 @@
 [07-Jun-2023 10:26:25 America/New_York] PHP Deprecated:  Function get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /app/web/wp/wp-includes/functions.php on line 5423
 [07-Jun-2023 10:26:25 America/New_York] PHP Warning:  Attempt to read property "slug" on array in /app/web/wp-content/themes/colbycollege/options.php on line 69
 [07-Jun-2023 11:27:23 America/New_York] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query UPDATE `wp_options` SET `option_value` = '1686153443' WHERE `option_name` = '_transient_timeout_1__2951165530' made by A_WordPress_Base_Url->cache_lookups, C_Photocrati_Transient_Manager::update, C_Photocrati_Transient_Manager->set, set_transient, update_option
+[10-Aug-2023 15:51:27 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_theme_roots' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('/app/web/wp-config.php'), require_once('wp-settings.php'), do_action('setup_theme'), WP_Hook->do_action, WP_Hook->apply_filters, _add_default_theme_supports, wp_is_block_theme, wp_get_theme, WP_Theme->__construct, search_theme_directories, get_site_transient, delete_site_option, delete_network_option, delete_option
+[10-Aug-2023 15:51:27 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_theme_roots' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('/app/web/wp-config.php'), require_once('wp-settings.php'), do_action('setup_theme'), WP_Hook->do_action, WP_Hook->apply_filters, _add_default_theme_supports, wp_is_block_theme, wp_get_theme, WP_Theme->__construct, search_theme_directories, get_site_transient, delete_site_option, delete_network_option, delete_option
+[10-Aug-2023 15:51:28 UTC] PHP Fatal error:  Uncaught Error: Class "Timber" not found in /app/web/wp-content/themes/colby-college-theme/page.php:24
+Stack trace:
+#0 /app/web/wp/wp-includes/template-loader.php(106): include()
+#1 /app/web/wp/wp-blog-header.php(19): require_once('/app/web/wp/wp-...')
+#2 /app/web/index.php(17): require('/app/web/wp/wp-...')
+#3 {main}
+  thrown in /app/web/wp-content/themes/colby-college-theme/page.php on line 24
+[10-Aug-2023 15:51:28 UTC] PHP Fatal error:  Uncaught Error: Class "Timber" not found in /app/web/wp-content/themes/colby-college-theme/page.php:24
+Stack trace:
+#0 /app/web/wp/wp-includes/template-loader.php(106): include()
+#1 /app/web/wp/wp-blog-header.php(19): require_once('/app/web/wp/wp-...')
+#2 /app/web/index.php(17): require('/app/web/wp/wp-...')
+#3 {main}
+  thrown in /app/web/wp-content/themes/colby-college-theme/page.php on line 24
+[10-Aug-2023 16:26:08 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /app/web/wp-content/plugins/colby-openhours/colby-openhours.php on line 15
+[10-Aug-2023 16:26:26 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /app/web/wp-content/plugins/colby-openhours/colby-openhours.php on line 15
+[10-Aug-2023 16:26:55 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /app/web/wp-content/plugins/colby-openhours/colby-openhours.php on line 15
+[10-Aug-2023 16:28:32 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /app/web/wp-content/plugins/colby-openhours/colby-openhours.php on line 15
+[10-Aug-2023 16:30:28 UTC] PHP Deprecated:  Required parameter $args follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437
+[10-Aug-2023 16:30:28 UTC] PHP Deprecated:  Required parameter $output follows optional parameter $depth in /app/web/wp-content/themes/colbycollege/functions.php on line 437

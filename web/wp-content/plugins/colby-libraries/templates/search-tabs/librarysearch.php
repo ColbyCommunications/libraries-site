@@ -37,7 +37,7 @@
 	class="summon-search-widget"
 	accept-charset="utf-8"
 	onsubmit="searchMaineCat()">
-	<input type="hidden" name="searchtype" id="searchtype">
+	<!-- <input type="hidden" name="searchtype" id="searchtype">
 	<div id="search-box">
 		<input type="text"
 			placeholder="Search libraries statewide."
@@ -54,7 +54,7 @@
 		</div>
 		<input type="image" onclick="searchMaineCat()"src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
-	<a href="https://librarysearch.colby.edu/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a>
+	<a href="https://librarysearch.colby.edu/discovery/search?vid=01CBB_CCLIBRAR:COLBY&mode=advanced" class="advanced-search">advanced search</a> -->
 </form>
 <!-- Radio Controlls -->
 <form>
@@ -76,7 +76,8 @@
 	</div>
 
 	<div id="content_2" style="display: none;">
-		<p><strong>MaineCat:</strong> Discover items from the public and academic libraries across Maine. Use <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> to request items from MaineCat.</p>
+		<!-- <p><strong>MaineCat:</strong> Discover items from the public and academic libraries across Maine. Use <a href="https://libraries.colby.edu/ill/">Interlibrary Loan</a> to request items from MaineCat.</p> -->
+		<p>MaineCat borrowing is currently unavailable and will resume during the fall semester. Until then, please use <a href="https://libraries.colby.edu/ill/">interlibrary loan</a> to request materials</p>
 	</div>
 
 	<div id="content_3" style="display: none;">
