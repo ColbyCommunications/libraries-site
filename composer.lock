@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a812472a9861751379994b9008b92115",
+    "content-hash": "bc968f522a189512f14aaa0c7b47ab83",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -135,6 +135,32 @@
                 "wordpress"
             ],
             "time": "2023-01-16T20:20:31+00:00"
+        },
+        {
+            "name": "colbycommunications/instagram-feed-pro",
+            "version": "6.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/instagram-feed-pro.git",
+                "reference": "f3cd559d2eb4798f90debd6478845db64baa56a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/instagram-feed-pro/colbycommunications-instagram-feed-pro-f3cd559d2eb4798f90debd6478845db64baa56a3-zip-62d6f8.zip",
+                "reference": "f3cd559d2eb4798f90debd6478845db64baa56a3"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "homepage": "https://github.com/colbycommunications/instagram-feed-pro",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2023-08-14T20:00:31+00:00"
         },
         {
             "name": "composer/ca-bundle",
