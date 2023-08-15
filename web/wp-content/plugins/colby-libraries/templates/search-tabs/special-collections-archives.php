@@ -9,7 +9,7 @@
 	<div id="sc-search-box">
 		<input type=text
 			id="scSearchQueryTemp"
-			placeholder="Search Colby's physical collections"
+			placeholder="Search for physical materials in our special collections and archives"
 			class="summon-search-field search-bar-full"
 			autocomplete=off>
 		<input type="hidden" name="query" id="scSearchQuery">

@@ -62,7 +62,8 @@ form #search-box input.search-bar::placeholder,form #search-box input.search-bar
 form #search-box .drop-down,form #sc-search-box .drop-down{padding-right:10px;display:-ms-flexbox;display:flex;position:relative}
 form #search-box .drop-down:before,form #sc-search-box .drop-down:before{content:"/";margin:auto 0;display:inline-block;position:relative;bottom:2px;color:#232b3b}
 form #search-box .drop-down:after,form #sc-search-box .drop-down:after{content:"";border-right:.5em solid rgba(0,0,0,0);border-left:.5em solid rgba(0,0,0,0);border-top:.4em solid #002169;position:absolute;top:40%;left:80%}
-form #search-box .drop-down select,form #sc-search-box .drop-down select{height:100%;width:135px !important;box-shadow:none;border:0;font-size:13px;color:#232b3b;font-size:12.5px;border-radius:0;appearance:none;-moz-appearance:none;-webkit-appearance:none}
+form #search-box .drop-down div,form #sc-search-box .drop-down div{width:130px !important}
+form #search-box .drop-down div select,form #sc-search-box .drop-down div select{height:100%;width:110px;box-shadow:none;border:0;font-size:13px;color:#232b3b;font-size:12.5px;border-radius:0;appearance:none;-moz-appearance:none;-webkit-appearance:none}
 form #search-box input[type=image],form #sc-search-box input[type=image]{background-color:#002169}
 form.option2,form.option3,form.option4,form.option5{display:none}
 div.option2,div.option3,div.option4,div.option5{display:none}
