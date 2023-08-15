@@ -20,8 +20,9 @@
 			<select name="search_scope">
 				<option value="DN_and_CI">Everything</option>
 				<option value="CentralIndex">Articles</option>
-				<option value="MyInstitution">Books and More</option>
+				<option value="DiscoveryNetwork">Books and More</option>
 				<option value="CourseReserves">Course Reserves</option>
+				<option value="SCA">Special Collections</option>
 			</select>
 		</div>
 		<input type="image" onclick="librarySearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
