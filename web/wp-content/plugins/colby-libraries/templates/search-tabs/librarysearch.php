@@ -17,12 +17,15 @@
 		<input type="hidden" name="tab" value="Library">
 		<input type="hidden" name="vid" value="01CBB_CCLIBRAR:COLBY">
 		<div class="drop-down">
-			<select name="search_scope">
-				<option value="DN_and_CI">Everything</option>
-				<option value="CentralIndex">Articles</option>
-				<option value="MyInstitution">Books and More</option>
-				<option value="CourseReserves">Course Reserves</option>
-			</select>
+			<div>
+				<select name="search_scope">
+					<option value="DN_and_CI">Everything</option>
+					<option value="CentralIndex">Articles and More</option>
+					<option value="DiscoveryNetwork">Books and More</option>
+					<option value="CourseReserves">Course Reserves</option>
+					<option value="SCA">Special Collections & Archives</option>
+				</select>
+			</div>
 		</div>
 		<input type="image" onclick="librarySearch()" src="/wp-content/plugins/colby-libraries/assets/img/search.svg" alt="search">
 	</div>
@@ -160,12 +163,14 @@
 
 			if (dropDownValue === 'DN_and_CI') {
 				option1QueryTemp.placeholder = 'Find articles, books, and more.';
-			} else if (dropDownValue === 'CentralIndex') {
-				option1QueryTemp.placeholder = 'Colby’s articles & book chapters.';
+			} else if (dropDownValue === 'DiscoveryNetwork') {
+				option1QueryTemp.placeholder = 'Citations and full-text articles, ebook chapters, and more';
 			} else if (dropDownValue === 'MyInstitution') {
-				option1QueryTemp.placeholder = 'Colby’s books & media.';
+				option1QueryTemp.placeholder = 'CBB books, media , and more';
 			} else if (dropDownValue === 'CourseReserves') {
-				option1QueryTemp.placeholder = 'Locate course reserves.';
+				option1QueryTemp.placeholder = 'Course materials selected by faculty';
+			} else if (dropDownValue === 'SCA') {
+				option1QueryTemp.placeholder = "Physical materials in our Special Collections and Archives";
 			}
 		}
 
