@@ -26,7 +26,8 @@
         "wpackagist-plugin/timber-library": "1.22.1",
         "wpackagist-plugin/regenerate-thumbnails": "3.1.5",
         "wpackagist-plugin/disable-comments": "2.4.3",
-        "wpackagist-plugin/advanced-gutenberg": "3.1.4.2"
+        "wpackagist-plugin/advanced-gutenberg": "3.1.4.2",
+        "wpackagist-plugin/notibar": "2.1.4"
     },
     "authors": [
         {
