@@ -19,7 +19,7 @@
         "wpackagist-plugin/wp-search-with-algolia": "2.7.0",
         "vlucas/phpdotenv": "^5.4",
         "wpackagist-plugin/siteimprove": "1.2.1",
-        "colbycommunications/colby-college-theme": "2.0.3",
+        "colbycommunications/colby-college-theme": "dev-after-merge-issues",
         "colbycommunications/instagram-feed-pro": "6.1",
         "colbycommunications/colby-libraries-theme": "dev-master",
         "wpackagist-plugin/timber-library": "1.23.0",
