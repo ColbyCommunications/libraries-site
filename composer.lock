@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89ade9117703030b8c2664ae09dcd20d",
+    "content-hash": "dbfc1556bc4f8808318164d284e85dcb",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5248,15 +5248,15 @@
         },
         {
             "name": "wpackagist-plugin/cloudflare",
-            "version": "4.11.0",
+            "version": "4.12.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cloudflare/",
-                "reference": "tags/4.11.0"
+                "reference": "tags/4.12.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.11.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.12.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -5374,15 +5374,15 @@
         },
         {
             "name": "wpackagist-plugin/siteimprove",
-            "version": "1.2.1",
+            "version": "2.0.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/siteimprove/",
-                "reference": "tags/1.2.1"
+                "reference": "tags/2.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteimprove.1.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/siteimprove.2.0.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
