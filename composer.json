@@ -32,7 +32,8 @@
     "authors": [
         {
             "name": "Morty Mule",
-            "email": "webmaster@colby.edu"
+            "email": "webmaster@colby.edu",
+            "role": "developer"
         }
     ],
     "repositories": [
