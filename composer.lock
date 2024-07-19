@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75baa0f95b294408305b5f2e57797b7e",
+    "content-hash": "6e9e11ad558b1f21de3a277d5f603bdc",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5662,24 +5662,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/header-footer/"
-        },
-        {
-            "name": "wpackagist-plugin/notibar",
-            "version": "2.1.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/notibar/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/notibar.zip?timestamp=1715369780"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/notibar/"
         },
         {
             "name": "wpackagist-plugin/public-post-preview",
