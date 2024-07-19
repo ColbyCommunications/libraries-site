@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75baa0f95b294408305b5f2e57797b7e",
+    "content-hash": "68dd5f12b81566cfc275710903c5e7b7",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
-            "version": "6.2.4",
+            "version": "6.3.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/advanced-custom-fields-pro.git",
-                "reference": "0bf1fccf3eda9b8b1ce39068f55d4227976a4a4f"
+                "reference": "826147ab675cb25c368b57f8dfbe674e77d1691c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-0bf1fccf3eda9b8b1ce39068f55d4227976a4a4f-zip-59f0cd.zip",
-                "reference": "0bf1fccf3eda9b8b1ce39068f55d4227976a4a4f"
+                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-826147ab675cb25c368b57f8dfbe674e77d1691c-zip-238581.zip",
+                "reference": "826147ab675cb25c368b57f8dfbe674e77d1691c"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -31,7 +31,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2023-12-01T15:41:15+00:00"
+            "time": "2024-07-08T15:43:33+00:00"
         },
         {
             "name": "colbycommunications/capabilities-pro",
@@ -224,16 +224,16 @@
         },
         {
             "name": "colbycommunications/gravityforms",
-            "version": "2.6.9",
+            "version": "2.8.13",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/gravityforms.git",
-                "reference": "5c7d6734f9c84b1ebf04678d07ce6596aa287abf"
+                "reference": "383498a580b7594161e8c9d947a3e1f4a315d1af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/gravityforms/colbycommunications-gravityforms-5c7d6734f9c84b1ebf04678d07ce6596aa287abf-zip-e161a5.zip",
-                "reference": "5c7d6734f9c84b1ebf04678d07ce6596aa287abf"
+                "url": "https://satis.colby.edu/dist/colbycommunications/gravityforms/colbycommunications-gravityforms-383498a580b7594161e8c9d947a3e1f4a315d1af-zip-961aff.zip",
+                "reference": "383498a580b7594161e8c9d947a3e1f4a315d1af"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -247,7 +247,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2023-01-16T20:20:31+00:00"
+            "time": "2024-07-03T17:51:32+00:00"
         },
         {
             "name": "colbycommunications/instagram-feed-pro",
