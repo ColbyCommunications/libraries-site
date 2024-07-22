@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10f1ecdb94ca3abb00cfa5ff0861676a",
+    "content-hash": "68dd5f12b81566cfc275710903c5e7b7",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -248,6 +248,32 @@
                 "wordpress"
             ],
             "time": "2024-07-03T17:51:32+00:00"
+        },
+        {
+            "name": "colbycommunications/instagram-feed-pro",
+            "version": "6.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ColbyCommunications/instagram-feed-pro.git",
+                "reference": "f3cd559d2eb4798f90debd6478845db64baa56a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.colby.edu/dist/colbycommunications/instagram-feed-pro/colbycommunications-instagram-feed-pro-f3cd559d2eb4798f90debd6478845db64baa56a3-zip-62d6f8.zip",
+                "reference": "f3cd559d2eb4798f90debd6478845db64baa56a3"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Brandon Waltz",
+                    "email": "brandon.waltz@colby.edu"
+                }
+            ],
+            "homepage": "https://github.com/colbycommunications/instagram-feed-pro",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2023-08-14T20:00:31+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5636,6 +5662,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/header-footer/"
+        },
+        {
+            "name": "wpackagist-plugin/notibar",
+            "version": "2.1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/notibar/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/notibar.zip?timestamp=1715369780"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/notibar/"
         },
         {
             "name": "wpackagist-plugin/public-post-preview",
