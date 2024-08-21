@@ -236,7 +236,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-libraries-theme",
-                "reference": "16f2187e08cba11f5149cacd480818d26c414e5d"
+                "reference": "86df2a934a275cdbf605db7d19df1e7a7543b69e"
             },
             "require": {
                 "php": ">=8.0"
@@ -253,7 +253,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2024-08-21T18:28:47+00:00"
+            "time": "2024-08-21T23:47:07+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
