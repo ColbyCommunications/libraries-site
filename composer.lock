@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7953bae13dcc00ae417ba9b54af811f1",
+    "content-hash": "98a3d0a2dcfaab820cb2dbdd74ff6fe8",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -5866,15 +5866,15 @@
         },
         {
             "name": "wpackagist-plugin/notibar",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/notibar/",
-                "reference": "tags/2.1.4"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/notibar.2.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/notibar.zip?timestamp=1733804609"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -5917,24 +5917,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
-        },
-        {
-            "name": "wpackagist-plugin/siteimprove",
-            "version": "2.0.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/siteimprove/",
-                "reference": "tags/2.0.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/siteimprove.2.0.6.zip"
-            },
-            "require": {
-                "composer/installers": "^1.0 || ^2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/siteimprove/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
@@ -5992,15 +5974,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-search-with-algolia",
-            "version": "2.7.0",
+            "version": "2.8.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-search-with-algolia/",
-                "reference": "tags/2.7.0"
+                "reference": "tags/2.8.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.7.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-search-with-algolia.2.8.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
