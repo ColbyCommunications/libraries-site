@@ -20,6 +20,10 @@
         '^/wp-admin/(.*)':
           to: "/wp/wp-admin/$1"
           regexp: true
+        '^/posts/category/news/':
+          to: "/news"
+          regexp: true
+          code: 301
 
 # *ALL* www.* requests should be redirected back to primary domain
 "https://www.{all}/":
