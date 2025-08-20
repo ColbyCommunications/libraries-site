@@ -4,8 +4,8 @@ describe('Research Support Accordions', () => {
         cy.get('.colby-accordion-block article:first-of-type').click({
             force: true,
         });
-        cy.get(
-            '.colby-accordion-block article:first-of-type > .accordion__window'
-        ).should('have.css', 'visibility: visible');
+        cy.get('.colby-accordion-block article:first-of-type > .accordion__window')
+            .should('have.attr', 'style')
+            .and('include', 'visibility: visible;');
     });
 });
