@@ -1,6 +1,6 @@
 {
     "require": {
-        "wpackagist-plugin/notibar": "2.1.5",
+        "wpackagist-plugin/notibar": "2.1.8",
         "colbycommunications/colby-libraries-theme": "dev-dev"
     },
     "repositories": [
@@ -8,5 +8,11 @@
             "type": "git",
             "url": "https://github.com/ColbyCommunications/colby-libraries-theme"
         }
-    ]
+    ],
+    "extra": {
+        "wordpress-install-dir": "web/wp",
+        "installer-paths": {
+            "web/wp-content/mu-plugins/{$name}": []
+        }
+    }
 }
