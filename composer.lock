@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d55261c0cf1cdb4c7cd9e0d47e2e9327",
+    "content-hash": "972c57aac1f2ca32f46b2ea3813b6ad0",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -153,11 +153,11 @@
         },
         {
             "name": "colbycommunications/colby-college-theme",
-            "version": "3.5.3",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-college-theme",
-                "reference": "024384c2df1dfdccde87b87ba254b8172f372913"
+                "reference": "cae96706fea0f9a19bf1655ac78334f88767e0e5"
             },
             "require": {
                 "php": ">=7.1"
@@ -173,7 +173,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2025-11-06T13:20:40+00:00"
+            "time": "2025-11-18T17:43:26+00:00"
         },
         {
             "name": "colbycommunications/colby-libraries-theme",
@@ -181,7 +181,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-libraries-theme",
-                "reference": "d84dcd058942768c19a0c6a2949783597784512d"
+                "reference": "509a7768e13990ef92f516af437dde16ad29984a"
             },
             "require": {
                 "php": ">=8.0"
@@ -197,7 +197,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2025-02-03T13:49:30+00:00"
+            "time": "2025-11-17T15:50:27+00:00"
         },
         {
             "name": "colbycommunications/colby-ticket",
@@ -6145,11 +6145,12 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "colbycommunications/colby-college-theme": 20,
         "colbycommunications/colby-libraries-theme": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
