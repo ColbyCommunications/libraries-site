@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d55261c0cf1cdb4c7cd9e0d47e2e9327",
+    "content-hash": "a84a17fd82c00113acd6c7bf7a8dc2a8",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
-            "version": "6.4.2",
+            "version": "6.7.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ColbyCommunications/advanced-custom-fields-pro.git",
-                "reference": "288472a52f89837d40f6db829ca168dbea05baf0"
+                "reference": "f9e9eaa3bff0d866503a1e907e8e362da10a4d77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-288472a52f89837d40f6db829ca168dbea05baf0-zip-f3d990.zip",
-                "reference": "288472a52f89837d40f6db829ca168dbea05baf0"
+                "url": "https://satis.colby.edu/dist/colbycommunications/advanced-custom-fields-pro/colbycommunications-advanced-custom-fields-pro-f9e9eaa3bff0d866503a1e907e8e362da10a4d77-zip-323bbc.zip",
+                "reference": "f9e9eaa3bff0d866503a1e907e8e362da10a4d77"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -36,7 +36,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2025-06-27T14:29:22+00:00"
+            "time": "2026-01-05T18:12:50+00:00"
         },
         {
             "name": "colbycommunications/capabilities-pro",
@@ -153,11 +153,11 @@
         },
         {
             "name": "colbycommunications/colby-college-theme",
-            "version": "3.5.3",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-college-theme",
-                "reference": "024384c2df1dfdccde87b87ba254b8172f372913"
+                "reference": "51c505ae2f6257e989036495f2cc3c52c7590ddf"
             },
             "require": {
                 "php": ">=7.1"
@@ -173,7 +173,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2025-11-06T13:20:40+00:00"
+            "time": "2025-11-21T19:03:05+00:00"
         },
         {
             "name": "colbycommunications/colby-libraries-theme",
@@ -1329,16 +1329,16 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "6.8.1",
+            "version": "6.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "702c3bda87abb47ae43f90c7b8868cf0b7dff1e2"
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/702c3bda87abb47ae43f90c7b8868cf0b7dff1e2",
-                "reference": "702c3bda87abb47ae43f90c7b8868cf0b7dff1e2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4626d4e896c36ab77a69ce58627bc76243b5dd07",
+                "reference": "4626d4e896c36ab77a69ce58627bc76243b5dd07",
                 "shasum": ""
             },
             "require": {
@@ -1346,7 +1346,7 @@
                 "php": ">=7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.8.1"
+                "wordpress/core-implementation": "6.9.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -1373,7 +1373,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2025-04-30T16:52:49+00:00"
+            "time": "2025-12-02T19:10:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -5967,15 +5967,15 @@
         },
         {
             "name": "wpackagist-plugin/advanced-gutenberg",
-            "version": "3.2.4",
+            "version": "3.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/advanced-gutenberg/",
-                "reference": "tags/3.2.4"
+                "reference": "tags/3.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-gutenberg.3.2.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/advanced-gutenberg.3.6.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -5985,15 +5985,15 @@
         },
         {
             "name": "wpackagist-plugin/cloudflare",
-            "version": "4.12.8",
+            "version": "4.14.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/cloudflare/",
-                "reference": "tags/4.12.8"
+                "reference": "tags/4.14.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.12.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.4.14.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6003,15 +6003,15 @@
         },
         {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "2.5.2",
+            "version": "2.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.5.2"
+                "reference": "tags/2.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.5.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.6.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -6129,15 +6129,15 @@
         },
         {
             "name": "wpackagist-plugin/user-switching",
-            "version": "1.9.1",
+            "version": "1.11.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/user-switching/",
-                "reference": "tags/1.9.1"
+                "reference": "tags/1.11.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-switching.1.9.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/user-switching.1.11.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
