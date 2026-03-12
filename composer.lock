@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "918845a170c5d9f98cad3575dfff8501",
+    "content-hash": "b70af7fb214934e55b7f6f9c42fb4f19",
     "packages": [
         {
             "name": "colbycommunications/advanced-custom-fields-pro",
@@ -153,11 +153,11 @@
         },
         {
             "name": "colbycommunications/colby-college-theme",
-            "version": "3.9.3",
+            "version": "dev-accessibility-2026",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColbyCommunications/colby-college-theme",
-                "reference": "0a5276c8d3988ba48f9629dd1bc3b8fdb0396224"
+                "reference": "8a72c4b7480192d3b5cf2fe83359f8acd5b028b3"
             },
             "require": {
                 "php": ">=7.1"
@@ -173,7 +173,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2026-03-04T14:42:24+00:00"
+            "time": "2026-03-12T12:54:26+00:00"
         },
         {
             "name": "colbycommunications/colby-libraries-theme",
@@ -5051,16 +5051,16 @@
         },
         {
             "name": "wp-cli/mustangostang-spyc",
-            "version": "0.6.3",
+            "version": "0.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/spyc.git",
-                "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7"
+                "reference": "30f25baaaba939caaff1f4b8c7ed998632f59fe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/spyc/zipball/6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
-                "reference": "6aa0b4da69ce9e9a2c8402dab8d43cf32c581cc7",
+                "url": "https://api.github.com/repos/wp-cli/spyc/zipball/30f25baaaba939caaff1f4b8c7ed998632f59fe2",
+                "reference": "30f25baaaba939caaff1f4b8c7ed998632f59fe2",
                 "shasum": ""
             },
             "require": {
@@ -5096,9 +5096,9 @@
             "description": "A simple YAML loader/dumper class for PHP (WP-CLI fork)",
             "homepage": "https://github.com/mustangostang/spyc/",
             "support": {
-                "source": "https://github.com/wp-cli/spyc/tree/autoload"
+                "source": "https://github.com/wp-cli/spyc/tree/0.6.6"
             },
-            "time": "2017-04-25T11:26:20+00:00"
+            "time": "2026-03-12T12:30:41+00:00"
         },
         {
             "name": "wp-cli/package-command",
@@ -6223,6 +6223,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "colbycommunications/colby-college-theme": 20,
         "colbycommunications/colby-libraries-theme": 20
     },
     "prefer-stable": false,
