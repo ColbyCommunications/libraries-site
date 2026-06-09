@@ -1,6 +1,6 @@
 {
     "require": {
-        "wpackagist-plugin/notibar": "2.1.8",
+        "wpackagist-plugin/notibar": "3.1.1",
         "colbycommunications/colby-libraries-theme": "dev-dev"
     },
     "repositories": [
