@@ -8,3 +8,7 @@
   to: "/news"
   regexp: true
   code: 301
+'^/research-support/library-liaisons/':
+  to: "https://libguides.colby.edu/az/subject-liaisons"
+  regexp: true
+  code: 301
